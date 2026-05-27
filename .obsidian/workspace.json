@@ -1,0 +1,248 @@
+{
+  "main": {
+    "id": "7a0a9369bb773b32",
+    "type": "split",
+    "children": [
+      {
+        "id": "efbb3731963332fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2b247e50e21cb99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fundamentals of AI/Project - Semantic Segmentation/Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "28d1f73ca5162972",
+    "type": "split",
+    "children": [
+      {
+        "id": "c1e074dafb1155d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "549141998eab43d1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora risorse"
+            }
+          },
+          {
+            "id": "51f6cde43f4ea036",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "4f062eb2c69fbf18",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Segnalibri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 270.51103591918945
+  },
+  "right": {
+    "id": "101c0b53c52faf0d",
+    "type": "split",
+    "children": [
+      {
+        "id": "449514fb0a2cb796",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96cd5a5afa8a1860",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Distributed Architecture/01_Hadoop_and_MapReduce/01_Big_Data_Architectures/02 - Hadoop and MapReduce.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti a 02 - Hadoop and MapReduce"
+            }
+          },
+          {
+            "id": "c45eb59a0c4ac489",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Senza nome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita da Senza nome"
+            }
+          },
+          {
+            "id": "72c491aca0acf513",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "f23e7dcc6fc00049",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Tutte le proprietà"
+            }
+          },
+          {
+            "id": "d65b5e526f220acc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura"
+            }
+          },
+          {
+            "id": "4f78b7798fea66ec",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Crea nuova Base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "a2b247e50e21cb99",
+  "lastOpenFiles": [
+    "Fundamentals of AI/Project - Semantic Segmentation/Resources/Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training-1779287738227.webp",
+    "Fundamentals of AI/Project - Semantic Segmentation/Resources/Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training-1779285728186.webp",
+    "Fundamentals of AI/Project - Semantic Segmentation/Cosine Learning Rate Schedule.md",
+    "Fundamentals of AI/Project - Semantic Segmentation/Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training.md",
+    "Fundamentals of AI/Project - Semantic Segmentation/AdamW.md",
+    "Fundamentals of AI/Project - Semantic Segmentation/Radenovic_Filtering_Distillation_and_Hard_Negatives_for_Vision-Language_Pre-Training_CVPR_2023_paper (1).pdf",
+    "Excalidraw/Drawing 2026-05-20 14.55.10.excalidraw.md",
+    "Excalidraw",
+    "Fundamentals of AI/Project - Semantic Segmentation/Resources/Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training-1779192525629.webp",
+    "Fundamentals of AI/Project - Semantic Segmentation/Resources/Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training-1779192385820.webp",
+    "Fundamentals of AI/Project - Semantic Segmentation/Resources/Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training-1779192348476.webp",
+    "Fundamentals of AI/Project - Semantic Segmentation/Resources",
+    "Temp.md",
+    "Fundamentals of AI/Project - Semantic Segmentation",
+    "Fundamentals of AI",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/04.3 - Examples of Programs.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/04.4 - Execute Spark Application.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/04.1 - Spark Programs.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/04 - Spark Programs.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/04.2 - Spark Official Terminology.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/Resources/04 - Spark Programs-1778340828209.webp",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/Resources/04 - Spark Programs-1778340739275.webp",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/03 - Resilient Distributed Data sets.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/Driver.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/citaZIONE.md",
+    "[04.1 - Driver.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/01 - Introduction and Motivations.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/02 - Spark Components.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/Resources/03 - Resilient Distributed Data sets-1778338441297.webp",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/Resources/03 - Resilient Distributed Data sets-1778338318292.webp",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/Resources/Spark Components-1778336996684.webp",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/Resources/Introduction and Motivations-1778336907105.webp",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/Resources",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/Introduction_to_Apache_Spark.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/02_Spark_Core_and_SQL.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Senza nome.md",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/02_Big_Data_Architectures/02 - Hadoop and MapReduce.md",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/01_Introduction/02 - HDFS Architecture.md",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/01_Introduction/01 - Big Data Architectures.md",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/02_Big_Data_Architectures/02_Big_Data_Architectures.md",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/01_Hadoop_and_MapReduce.md",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/01_Introduction",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/03_Design_Patterns/Data Organization Patterns.md",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/Design_Patterns/Design_Patterns.canvas",
+    "Senza nome.canvas"
+  ]
+}
