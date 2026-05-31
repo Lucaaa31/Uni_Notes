@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "📄",
+      "📁",
       "➕",
       "📚",
-      "🤖",
-      "LiImage",
-      "LiDatabase"
+      "🤖"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -69,5 +69,19 @@
   "Fundamentals of AI/Project - Semantic Segmentation/Radenovic_Filtering_Distillation_and_Hard_Negatives_for_Vision-Language_Pre-Training_CVPR_2023_paper (1).pdf": "📚",
   "Fundamentals of AI/Project - Semantic Segmentation/Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training.md": "📄",
   "Fundamentals of AI/Project - Semantic Segmentation/AdamW.md": "➕",
-  "Fundamentals of AI/Project - Semantic Segmentation/Cosine Learning Rate Schedule.md": "➕"
+  "Fundamentals of AI/Project - Semantic Segmentation/Cosine Learning Rate Schedule.md": "➕",
+  "Mathematical Methods for AI": "📚",
+  "Mathematical Methods for AI/Gasparini": "📁",
+  "Mathematical Methods for AI/Vaccarino": "📁",
+  "Mathematical Methods for AI/Gasparini/1 - Recap": "📁",
+  "Mathematical Methods for AI/Gasparini/1 - Recap/2 -  Inference, Goodness-of-Fit, and Sampling Models.md": "📄",
+  "Mathematical Methods for AI/Gasparini/1 - Recap/1 - From Bernoulli Trials to Binomial and Multinomial Distributions.md": "📄",
+  "Mathematical Methods for AI/Gasparini/1 - Recap/3 - Bivariate Categorical Analysis.md": "📄",
+  "Mathematical Methods for AI/Gasparini/2 - Linear Models": "📁",
+  "Mathematical Methods for AI/Gasparini/2 - Linear Models/1 - Linear Models.md": "📄",
+  "Mathematical Methods for AI/Gasparini/2 - Linear Models/2 - Estimation in Linear Models.md": "📄",
+  "Mathematical Methods for AI/Gasparini/2 - Linear Models/3 - Linear Models in R.pdf": "📄",
+  "Mathematical Methods for AI/Gasparini/2 - Linear Models/4 - Inference in Linear Models.md": "📄",
+  "Mathematical Methods for AI/Gasparini/2 - Linear Models/6 - Various Linear Models.md": "📄",
+  "Mathematical Methods for AI/Gasparini/2 - Linear Models/7 -Two-factors.pdf": "📄"
 }
