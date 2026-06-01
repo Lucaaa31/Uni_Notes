@@ -7,5 +7,7 @@
 	- [[2 - Estimation in Linear Models]]
 	- [[4 - Inference in Linear Models]]
 	- [[6 - Various Linear Models]]
+	- [[7 - Confidence vs Prediction Intervals]]
+	- [[8 - Logistic Regression]]
 
 %% End Waypoint %%
