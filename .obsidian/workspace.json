@@ -11,10 +11,14 @@
             "id": "397508cfc5d49f5d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Mathematical Methods for AI/Gasparini/3 - Boh/2 - Conditional Expectations.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "2 - Conditional Expectations"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.51103591918945
+    "width": 270.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "101c0b53c52faf0d",
@@ -192,24 +197,31 @@
   },
   "active": "397508cfc5d49f5d",
   "lastOpenFiles": [
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/2 - Conditional Expectations-1780521176468.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/2 - Conditional Expectations-1780521086585.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/3 - Boh.md",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/2 - Conditional Expectations.md",
+    "Mathematical Methods for AI/Gasparini/2 - Linear Models/2 - Linear Models.md",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/1 - Stochastic Simulation.md",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/1 - Stochastic Simulation-1780520306461.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/1 - Stochastic Simulation-1780520153110.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/1 - Stochastic Simulation-1780519922256.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/1 - Stochastic Simulation-1780519722441.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources",
+    "Mathematical Methods for AI/Gasparini/2 - Linear Models/9 - Classification - LDA, QDA, KNN.md",
+    "Mathematical Methods for AI/Gasparini/3 - Boh",
+    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/9 - Classification - LDA, QDA, KNN-1780519086527.webp",
+    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/9 - Classification - LDA, QDA, KNN-1780519058865.webp",
+    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/9 - Classification - LDA, QDA, KNN-1780518944616.webp",
+    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/9 - Classification - LDA, QDA, KNN-1780518596372.webp",
+    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/9 - Classification - LDA, QDA, KNN-1780518385566.webp",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/8 - Logistic Regression.md",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/8 - Logistic Regression-1780326617356.webp",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/8 - Logistic Regression-1780326400013.webp",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/8 - Logistic Regression-1780325497174.webp",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/8 - Logistic Regression-1780325388338.webp",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/8 - Logistic Regression-1780325357764.webp",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/8 - Logistic Regression-1780325307850.webp",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/8 - Logistic Regression-1780325171230.webp",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/7 - Confidence vs Prediction Intervals.md",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/7 - Confidence vs Prediction Intervals-1780321429441.webp",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/7 - Confidence vs Prediction Intervals-1780320426401.webp",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/7 - Confidence vs Prediction Intervals-1780320369806.webp",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/6 - Various Linear Models.md",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/5 -Two-factors.pdf",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/Senza nome",
     "Mathematical Methods for AI/Vaccarino/Vaccarino.md",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/4 - Inference in Linear Models.md",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/2 - Linear Models.md",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/3 - Linear Models in R.pdf",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/3 - R notebook.md",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/2 - Estimation in Linear Models.md",
@@ -230,13 +242,7 @@
     "Mathematical Methods for AI/Gasparini/Recap/Senza nome",
     "Mathematical Methods for AI/Gasparini/1 - Recap/Resources",
     "Fundamentals of AI/Project - Semantic Segmentation/Radenovic_Filtering_Distillation_and_Hard_Negatives_for_Vision-Language_Pre-Training_CVPR_2023_paper (1).pdf",
-    "Mathematical Methods for AI/Gasparini/1 - Recap",
-    "Mathematical Methods for AI/Gasparini",
     "Fundamentals of AI/Project - Semantic Segmentation/Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training.md",
-    "Fundamentals of AI/Project - Semantic Segmentation/Cosine Learning Rate Schedule.md",
-    "Fundamentals of AI/Project - Semantic Segmentation/AdamW.md",
-    "Excalidraw/Drawing 2026-05-20 14.55.10.excalidraw.md",
-    "Distributed Architecture/Temp.md",
     "Distributed Architecture/01_Hadoop_and_MapReduce/Design_Patterns/Design_Patterns.canvas",
     "Senza nome.canvas"
   ]
