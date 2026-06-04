@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematical Methods for AI/Gasparini/3 - Boh/2 - Conditional Expectations.md",
+                "file": "Mathematical Methods for AI/Mathematical Methods for AI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2 - Conditional Expectations"
+              "title": "Mathematical Methods for AI"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.51103591918945,
-    "collapsed": true
+    "width": 270.51103591918945
   },
   "right": {
     "id": "101c0b53c52faf0d",
@@ -197,24 +196,28 @@
   },
   "active": "397508cfc5d49f5d",
   "lastOpenFiles": [
-    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/2 - Conditional Expectations-1780521176468.webp",
-    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/2 - Conditional Expectations-1780521086585.webp",
-    "Mathematical Methods for AI/Gasparini/3 - Boh/3 - Boh.md",
-    "Mathematical Methods for AI/Gasparini/3 - Boh/2 - Conditional Expectations.md",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/2 - Linear Models.md",
-    "Mathematical Methods for AI/Gasparini/3 - Boh/1 - Stochastic Simulation.md",
-    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/1 - Stochastic Simulation-1780520306461.webp",
-    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/1 - Stochastic Simulation-1780520153110.webp",
-    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/1 - Stochastic Simulation-1780519922256.webp",
-    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/1 - Stochastic Simulation-1780519722441.webp",
-    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/7 - JAGS from R.pdf",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/6 - MCMC (GIBBS) For Bayes.md",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/7 - MCMC (GIBBS) For Bayes-1780587367224.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/7 - MCMC (GIBBS) For Bayes-1780587344857.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/7 - MCMC (GIBBS) For Bayes-1780587259507.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/7 - MCMC (GIBBS) For Bayes-1780587193151.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/5 - Simulation in Bayesian Statistics.md",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/5 - Simulation in Bayesian Statistics-1780585314284.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/5 - Simulation in Bayesian Statistics-1780585233387.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/5 - Simulation in Bayesian Statistics-1780585161739.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/5 - Simulation in Bayesian Statistics-1780585101790.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/5 - Simulation in Bayesian Statistics-1780585053363.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources/5 - Simulation in Bayesian Statistics-1780584969623.webp",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/4 - Conjugacy.md",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/3 - Bayesian Statistics.md",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/9 - Classification - LDA, QDA, KNN.md",
+    "Mathematical Methods for AI/Gasparini/2 - Linear Models/2 - Linear Models.md",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/2 - Conditional Expectations.md",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/1 - Stochastic Simulation.md",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/3 - Boh.md",
+    "Mathematical Methods for AI/Gasparini/3 - Boh/Resources",
     "Mathematical Methods for AI/Gasparini/3 - Boh",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/9 - Classification - LDA, QDA, KNN-1780519086527.webp",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/9 - Classification - LDA, QDA, KNN-1780519058865.webp",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/9 - Classification - LDA, QDA, KNN-1780518944616.webp",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/9 - Classification - LDA, QDA, KNN-1780518596372.webp",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/Resources/9 - Classification - LDA, QDA, KNN-1780518385566.webp",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/8 - Logistic Regression.md",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/7 - Confidence vs Prediction Intervals.md",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/6 - Various Linear Models.md",
@@ -236,13 +239,8 @@
     "Mathematical Methods for AI/Gasparini/Gasparini.md",
     "Distributed Architecture/Distributed Architecture.md",
     "Mathematical Methods for AI/Gasparini/1 - Recap/3 - Bivariate Categorical Analysis.md",
-    "Mathematical Methods for AI/Gasparini/1 - Recap/1 - From Bernoulli Trials to Binomial and Multinomial Distributions.md",
-    "Mathematical Methods for AI/Gasparini/1 - Recap/1 - From Bernoulli Trials to Binomial and Multinomial Distributions.md",
-    "Mathematical Methods for AI/Gasparini/1 - Recap/2 -  Inference, Goodness-of-Fit, and Sampling Models.md",
     "Mathematical Methods for AI/Gasparini/Recap/Senza nome",
     "Mathematical Methods for AI/Gasparini/1 - Recap/Resources",
-    "Fundamentals of AI/Project - Semantic Segmentation/Radenovic_Filtering_Distillation_and_Hard_Negatives_for_Vision-Language_Pre-Training_CVPR_2023_paper (1).pdf",
-    "Fundamentals of AI/Project - Semantic Segmentation/Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training.md",
     "Distributed Architecture/01_Hadoop_and_MapReduce/Design_Patterns/Design_Patterns.canvas",
     "Senza nome.canvas"
   ]

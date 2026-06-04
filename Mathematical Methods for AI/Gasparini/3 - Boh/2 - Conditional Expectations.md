@@ -50,9 +50,7 @@ So:
 $$E(Y|X=x) = \mu_Y + \rho\frac{\sigma_Y}{\sigma_X}(x - \mu_X)$$
 So if I know $X = 3.7$, then $$E(Y|X=3.7) = \mu_Y + \rho\dfrac{\sigma_Y}{\sigma_X}(3.7 - \mu_X)$$
 Instead,
-
 $$E(Y|X) = \mu_Y + \rho\frac{\sigma_Y}{\sigma_X}(X - \mu_X)$$
-
 is a **random variable**. 
 
 ---
@@ -107,13 +105,13 @@ $$= E(\mu_Y) + \rho\frac{\sigma_Y}{\sigma_X}\big(E(X) - \mu_X\big) = \mu_Y = E(Y
 
 $$E(a|X) = a \qquad \text{if } a \text{ constant}$$
 
-$$\boxed{E(aX + bY|Z) = a, E(X|Z) + b, E(Y|Z)} \tag{**}$$ _(if $a, b$ constants and $X, Y, Z$ are r.v.'s)_
+$$\boxed{E(aX + bY|Z) = a E(X|Z) + b E(Y|Z)} \tag{**}$$ _(if $a, b$ constants and $X, Y, Z$ are r.v.'s)_
 
-$$E(X \cdot Y | X) = X, E(Y|X)$$
+$$E(X \cdot Y | X) = X E(Y|X)$$
 
 Or more generally, if $g(\cdot)$ is a function that only depends on $X$:
 
-$$\boxed{E(g(X)\cdot Y,|,X) = g(X),E(Y|X)} \tag{***}$$
+$$\boxed{E(g(X)\cdot Y|X) = g(X)E(Y|X)} \tag{***}$$
 
 ---
 
@@ -121,25 +119,21 @@ $$\boxed{E(g(X)\cdot Y,|,X) = g(X),E(Y|X)} \tag{***}$$
 
 Finally, we can define **conditional variance** as another r.v.:
 
-$$\boxed{\text{Var}(Y|X) = E!\left((Y - E(Y|X))^2 ,\big|, X\right)}$$
-
+$$\boxed{\text{Var}(Y|X) = E!\left((Y - E(Y|X))^2 \big| X\right)}$$
 Let's compute its expected value:
-
-$$E(\text{Var}(Y|X)) \overset{\text{def}}{=} E!\left(E!\left((Y - E(Y|X))^2,\big|,X\right)\right)$$
+$$E(\text{Var}(Y|X)) \overset{\text{by def}}{=} E\left(E\left((Y - E(Y|X))^2\big|X\right)\right)$$
 
 Expanding the square:
-
-$$= E!\left(E!\left(Y^2 + E(Y|X)^2 - 2Y,E(Y|X),\big|,X\right)\right)$$
+$$= E\left(E\left(Y^2 + E(Y|X)^2 - 2YE(Y|X)\big|X\right)\right)$$
 
 By linearity $(**)$:
-
-$$= E!\left(E(Y^2|X)\right) + E!\left(E!\left(E(Y|X)^2,\big|,X\right)\right) - 2,E!\left(E!\left(Y\cdot E(Y|X),\big|,X\right)\right)$$
+$$= E\left(E(Y^2|X)\right) + E\left(E\left(E(Y|X)^2\big|X\right)\right) - 2E\left(E\left(Y\cdot E(Y|X)\big|X\right)\right)$$
 
 Using properties above:
 
-$$= E(Y^2) + E!\left(E(Y|X)^2\cdot E(1|X)\right) - 2,E!\left(E(Y|X)\cdot E(Y|X)\right)$$
+$$= E(Y^2) + E\left(E(Y|X)^2\cdot E(1|X)\right) - 2E\left(E(Y|X)\cdot E(Y|X)\right)$$
 
-$$= E(Y^2) + E(E(Y|X)^2) - 2,E(E(Y|X)^2)$$
+$$= E(Y^2) + E(E(Y|X)^2) - 2E(E(Y|X)^2)$$
 
 $$= E(Y^2) - E(E(Y|X)^2) \pm E(Y)^2$$
 
@@ -168,18 +162,15 @@ All of these properties of conditional expectations can be used together with **
 ---
 
 ## Example: DAG Factorization
-
-$$\begin{pmatrix} X \ Y \ Z \end{pmatrix} \sim \mathcal{N}_3(\mu, \Sigma)$$
-
+$$\begin{pmatrix} X \\ Y \\ Z \end{pmatrix} \sim \mathcal{N}_3(\mu, \Sigma)$$
 such that:
-
 - $X \sim \mathcal{N}(0,1)$ — the marginal of $X$
 - $Y|X = x \sim \mathcal{N}(x, 1)$ — the conditional of $Y$ given $X=x$ _(or $Y|X \sim \mathcal{N}(X,1)$)_
-- $Z,|,X, Y \sim \mathcal{N}(X+Y, 1)$ — the conditional of $Z$ given $X$ and $Y$
+- $Z|X, Y \sim \mathcal{N}(X+Y, 1)$ — the conditional of $Z$ given $X$ and $Y$
 
 This is equivalent to representing $(X, Y, Z)'$ using a DAG:
 
-$$X \longrightarrow Y \longrightarrow Z \quad \text{(with also } X \to Z\text{)}$$
+![[2 - Conditional Expectations-1780576729414.webp]]
 
 $$f(x,y,z) = \underbrace{f_X(x)}_{\text{given}} \cdot \underbrace{f_{Y|X}(y|x)}_{\text{given}} \cdot \underbrace{f_{Z|X,Y}(z|x,y)}_{\text{given}}$$
 
@@ -189,6 +180,6 @@ $$\mu_X = E(X) = 0 \qquad \text{since } X \sim \mathcal{N}(0,1)$$
 
 $$\mu_Y \overset{*}{=} E(E(Y|X)) = E(X) = 0$$
 
-$$\therefore \quad \text{(you complete)}$$
+$$\therefore \quad \text{some calculus}$$
 
-$$\text{Cov}(X,Y) \overset{\text{def of Cov}}{=} E(XY) - E(X)E(Y) = E!\left(E(XY|X)\right) = E!\left(X,E(Y|X)\right) \ldots$$
+$$\text{Cov}(X,Y) \overset{\text{def of Cov}}{=} E(XY) - E(X)E(Y) = E!\left(E(XY|X)\right) = E!\left(XE(Y|X)\right) \ldots$$
