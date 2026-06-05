@@ -94,5 +94,14 @@
   "Mathematical Methods for AI/Gasparini/3 - Boh/4 - Conjugacy.md": "📄",
   "Mathematical Methods for AI/Gasparini/3 - Boh/5 - Simulation in Bayesian Statistics.md": "📄",
   "Mathematical Methods for AI/Gasparini/3 - Boh/7 - JAGS from R.pdf": "📄",
-  "Mathematical Methods for AI/Gasparini/3 - Boh/6 - MCMC (GIBBS) For Bayes.md": "📄"
+  "Mathematical Methods for AI/Gasparini/3 - Boh/6 - MCMC (GIBBS) For Bayes.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/1 - Curse PCA": "📁",
+  "Mathematical Methods for AI/Vaccarino/1 - Curse PCA/1 - The Curse of Dimensionality.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/1 - Curse PCA/2 - Dimensionality Reduction.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/2 - Statistical Learning": "📁",
+  "Mathematical Methods for AI/Vaccarino/2 - Statistical Learning/1 - Statistical Learning.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/2 - Statistical Learning/2 - Estimating Risk.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/2 - Statistical Learning/3 - Tradeoffs.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/3 - SVM": "📁",
+  "Mathematical Methods for AI/Vaccarino/3 - SVM/1 - Support Vector Machines.md": "📄"
 }
