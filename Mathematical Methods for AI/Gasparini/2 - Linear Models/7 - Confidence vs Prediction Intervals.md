@@ -50,7 +50,7 @@ A **new configuration of predictors** $x_f$ (a new row, not in the training data
 1. What is an estimate of $E(Y_{n+1})$, the **expectation** of the new $y$-value corresponding to $x_f$?
 2. What is a reasonable **prediction** of $Y_{n+1}$, the new $y$-value corresponding to $x_f$? _(prediction problem — well known in Machine Learning)_
 
-These are **two separate, but related, problems.**
+> [!note] These are **two separate, but related, problems.**
 
 ---
 
@@ -90,8 +90,8 @@ $$\underbrace{\frac{x_f\hat{\beta} - x_f\beta}{\sqrt{x_f\cancel{\sigma^2}(X'X)^{
 
 And finally, a $t$-like $(1-\alpha)$-level **confidence interval** for $x_f\beta = E(Y_{n+1})$:
 
-$$\boxed{x_f\hat{\beta} \pm; t_{\alpha/2}(n-p)\sqrt{ \underbrace{\frac{E'E}{n-p}}_{\sigma^2}x_f(X'X)^{-1}x_f'}}$$
-> [!important] This formula represents the **confidence interval for the expectation of $Y_{n+1}$ corresponding to $x_f$
+> [!theorem] Confidence Interval for $E(Y_{n+1})$
+> $$\boxed{x_f\hat{\beta} \pm; t_{\alpha/2}(n-p)\sqrt{ \underbrace{\frac{E'E}{n-p}}_{\sigma^2}x_f(X'X)^{-1}x_f'}}$$
 
 
 Example in simple linear regression: $x_f\hat{\beta} = \hat{\beta}_0 + \hat{\beta}_1 x_f$
@@ -135,6 +135,8 @@ $$\frac{Y_{n+1} - \hat{Y}_{n+1}}{\sqrt{\underbrace{\frac{E'E}{n-p}}_{\sigma^2}\B
 
 And we finally obtain a $(1-\alpha)$-level **prediction interval**:
 
-$$\boxed{\hat{Y}_{n+1} = x_f\hat{\beta} \pm t_{\alpha/2}(n-p)\sqrt{\frac{E'E}{n-p}\Big(1 + x_f(X'X)^{-1}x_f'\Big)}}$$
+> [!theorem] Prediction Interval for $Y_{n+1}$
+> $$\boxed{\hat{Y}_{n+1} = x_f\hat{\beta} \pm t_{\alpha/2}(n-p)\sqrt{\frac{E'E}{n-p}\Big(1 + x_f(X'X)^{-1}x_f'\Big)}}$$
+
 > [!important] The uncertainty quantification for a **single value** $Y_{n+1}$ is **higher** than the uncertainty quantification for its **mean** $E(Y_{n+1})$.
 

@@ -1,10 +1,9 @@
-There 3 ways to do supervised learning
-
-1. **Logistic regression**, as seen yesterday (GLM) \[classify as population 1 if $p >$ threshold, often threshold $= \frac{1}{2}$\]
-2. **Model-based (statistical):** linear and quadratic Fisher discrimination
-3. **Model-free (computational/algorithmic):** KNN
-
-We start with two populations, as in logistic regression, then we generalize to more than 2.
+> [!summary] Three Approaches to Supervised Classification
+> 1. **Logistic regression**, as seen yesterday (GLM) \[classify as population 1 if $p >$ threshold, often threshold $= \frac{1}{2}$\]
+> 2. **Model-based (statistical):** linear and quadratic Fisher discrimination
+> 3. **Model-free (computational/algorithmic):** KNN
+>
+> We start with two populations, as in logistic regression, then we generalize to more than 2.
 
 ---
 ## 2) Fisher's Discriminant Analysis
@@ -12,15 +11,14 @@ We start with two populations, as in logistic regression, then we generalize to 
 ![[9 - Classification - LDA, QDA, KNN-1780518385566.webp]]
 Fisher's discriminant analysis **reverses the logic of logistic regression** and looks at the distribution of the features $X = (X_1, \ldots, X_p)'$ and assumes they are **quantitative**, and in particular **multivariate normal**.
 
-Two normal distributions, one for the $+$ population and one for the $-$ population:
-
-$$X_+ \sim \mathcal{N}(\mu_+, \Sigma_+) \quad \text{features from the + population}$$
-
-$$X_- \sim \mathcal{N}(\mu_-, \Sigma_-) \quad \text{features from the - population}$$
-
-**Fisher's idea:** look at the likelihood ratio
-$$\frac{f_+(x)}{f_-(x)}$$
-and assign to $+$ population if the likelihood ratio is greater than a threshold (e.g. $\frac{1}{2}$).
+> [!definition] Fisher's Discriminant Analysis Setup
+> Two normal distributions, one for the $+$ population and one for the $-$ population:
+>
+> $$X_+ \sim \mathcal{N}(\mu_+, \Sigma_+) \quad \text{features from the + population}$$
+>
+> $$X_- \sim \mathcal{N}(\mu_-, \Sigma_-) \quad \text{features from the - population}$$
+>
+> **Fisher's idea:** look at the likelihood ratio $\dfrac{f_+(x)}{f_-(x)}$ and assign to $+$ population if the likelihood ratio is greater than a threshold (e.g. $\frac{1}{2}$).
 
 ---
 
@@ -44,7 +42,8 @@ $$-\frac{1}{2}(x-\mu_+)'\Sigma_+^{-1}(x-\mu_+) + \frac{1}{2}(x-\mu_-)'\Sigma_-^{
 
 Or equivalently, multiplying by $-\frac{1}{2}$:
 
-$$\boxed{(x-\mu_+)'\Sigma_+^{-1}(x-\mu_+) - (x-\mu_-)'\Sigma_-^{-1}(x-\mu_-) < \text{threshold}^{***}} \tag{†}$$
+> [!theorem] General Classification Rule
+> $$\boxed{(x-\mu_+)'\Sigma_+^{-1}(x-\mu_+) - (x-\mu_-)'\Sigma_-^{-1}(x-\mu_-) < \text{threshold}^{***}} \tag{†}$$
 
 which is a simpler expression.
 
@@ -81,17 +80,14 @@ _e.g.:
 $$(x - \mu_+)'\Sigma_+^{-1}(x-\mu_+) - (x-\mu_-)\Sigma_-^{-1}(x-\mu_-) < t \quad \text{(constant threshold)}$$
 
 Expanding:
-$$x'\Sigma_+^{-1}x - 2\mu_+'\Sigma_+^{-1}x + \mu_+'\Sigma_+^{-1}\mu_+ - x'\Sigma_-^{-1}x + 2\mu_-'\Sigma_-^{-1}x - \mu_-'\Sigma_-^{-1}\mu_- < t$$
 
-➡ **Fisher's Quadratic Discrimination Rule**
+> [!theorem] Fisher's Quadratic Discrimination Rule (QDA)
+> $$x'\Sigma_+^{-1}x - 2\mu_+'\Sigma_+^{-1}x + \mu_+'\Sigma_+^{-1}\mu_+ - x'\Sigma_-^{-1}x + 2\mu_-'\Sigma_-^{-1}x - \mu_-'\Sigma_-^{-1}\mu_- < t$$
 
 If $\Sigma_+ = \Sigma_- = \Sigma$ (**homoscedasticity**, i.e. same covariance matrices), the rule simplifies to:
 
-$$-2\mu_+'\Sigma^{-1}x + 2\mu_-'\Sigma^{-1}x < t$$
-
-$$\boxed{-2(\mu_+' - \mu_-')\Sigma^{-1}x < t}$$
-
-➡ **Fisher's Linear Discrimination Rule**
+> [!theorem] Fisher's Linear Discrimination Rule (LDA)
+> $$\boxed{-2(\mu_+' - \mu_-')\Sigma^{-1}x < t}$$
 
 ---
 
@@ -102,7 +98,7 @@ $$\boxed{-2(\mu_+' - \mu_-')\Sigma^{-1}x < t}$$
 
 In this case, you assign to $+$ population if $x$ is **too large OR too small**.
 
-In general, you do not know $\mu_+, \mu_-, \Sigma_+, \Sigma_-$, so you have to **estimate** them based on your labeled data. If $\hat{\Sigma}_+ \approx \hat{\Sigma}_-$ approximately, you go for **Fisher's linear**.
+> [!tip] In practice, you do not know $\mu_+, \mu_-, \Sigma_+, \Sigma_-$, so you have to **estimate** them based on your labeled data. If $\hat{\Sigma}_+ \approx \hat{\Sigma}_-$ approximately, you go for **Fisher's linear** (LDA).
 
 For more than 2 classes, the decision is still based on **linear or quadratic boundaries**.
 ![[9 - Classification - LDA, QDA, KNN-1780519058865.webp]]
@@ -112,11 +108,12 @@ _(Diagrams from ISLR2: 3 classes, $p = 2$ features $X_1$ and $X_2$)_
 
 ## 3) KNN — K-Nearest Neighbors
 
-KNN is a totally different approach that does **not** rely on distributional assumptions.
-
-- $K$ = a fixed number
-- $N$ = nearest
-- $N$ = neighbors
+> [!definition] K-Nearest Neighbors
+> KNN is a totally different approach that does **not** rely on distributional assumptions.
+>
+> - $K$ = a fixed number
+> - $N$ = nearest
+> - $N$ = neighbors
 ![[9 - Classification - LDA, QDA, KNN-1780519086527.webp]]
 _(Diagram from ISLR2, page 40: 2 populations, 2 features, 6×2 labeled data)_
 

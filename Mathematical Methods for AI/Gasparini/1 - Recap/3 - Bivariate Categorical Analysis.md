@@ -42,13 +42,14 @@ The primary objective in bivariate categorical analysis is determining whether a
 
 ### The Null Hypothesis ($H_0$)
 
-If the two variables are completely independent, the joint cell probability $p_{ij}$ must equal the product of their respective marginal probabilities:
-
-$$H_0: p_{ij} = p_{i\cdot} \cdot p_{\cdot j}$$
-
-Where the theoretical row and column marginal probabilities are defined as:
-
-$$p_{i\cdot} = \sum_{j} p_{ij} \quad \text{and} \quad p_{\cdot j} = \sum_{i} p_{ij}$$
+> [!definition] Independence Hypothesis
+> If the two variables are completely independent, the joint cell probability $p_{ij}$ must equal the product of their respective marginal probabilities:
+> 
+> $$H_0: p_{ij} = p_{i\cdot} \cdot p_{\cdot j}$$
+> 
+> Where the theoretical row and column marginal probabilities are defined as:
+> 
+> $$p_{i\cdot} = \sum_{j} p_{ij} \quad \text{and} \quad p_{\cdot j} = \sum_{i} p_{ij}$$
 
 ### Calculating Expected Frequencies ($E_{ij}$)
 
@@ -64,7 +65,8 @@ By substituting these sample estimates back into the expected count formula, the
 
 $$E_{ij} = n \cdot \left(\frac{N_{i\cdot}}{n}\right) \cdot \left(\frac{N_{\cdot j}}{n}\right) = \frac{N_{i\cdot} \cdot N_{\cdot j}}{n}$$
 
->  **Rule of Thumb:** The expected count for any cell is simply its matching **(Row Total $\times$ Column Total) / Grand Total**.
+> [!tip] Rule of Thumb
+> The expected count for any cell is simply its matching **(Row Total $\times$ Column Total) / Grand Total**.
 
 ## 3. Evaluation Criteria and Decision Rules
 
@@ -76,17 +78,18 @@ $$\chi^2 = \sum_{i} \sum_{j} \frac{(N_{ij} - E_{ij})^2}{E_{ij}}$$
 
 ### Sampling Distribution and Degrees of Freedom
 
-Assuming the null hypothesis ($H_0$) of independence holds true, as the sample size $n$ grows, this test statistic asymptotically follows a Chi-Square distribution:
-
-$$\chi^2 \sim \chi^2_{\nu}$$
-
-The **degrees of freedom ($\nu$)** are strictly determined by the physical dimensions of the contingency table:
-
-$$\nu = (\#\text{rows} - 1) \times (\#\text{columns} - 1)$$
-
-For our specific $3 \times 2$ table:
-
-$$\nu = (3 - 1) \times (2 - 1) = 2 \times 1 = 2 \text{ degrees of freedom}$$
+> [!theorem] Asymptotic Distribution of the Contingency $\chi^2$
+> Assuming the null hypothesis ($H_0$) of independence holds true, as the sample size $n$ grows, this test statistic asymptotically follows a Chi-Square distribution:
+> 
+> $$\chi^2 \sim \chi^2_{\nu}$$
+> 
+> The **degrees of freedom ($\nu$)** are strictly determined by the physical dimensions of the contingency table:
+> 
+> $$\nu = (\#\text{rows} - 1) \times (\#\text{columns} - 1)$$
+> 
+> For our specific $3 \times 2$ table:
+> 
+> $$\nu = (3 - 1) \times (2 - 1) = 2 \times 1 = 2 \text{ degrees of freedom}$$
 
 ### Decision Rule
 
@@ -95,4 +98,5 @@ $$\nu = (3 - 1) \times (2 - 1) = 2 \times 1 = 2 \text{ degrees of freedom}$$
 - **Small $\chi^2$ values:** Indicate that the observed data fits the independence model well $\implies$ Fail to reject $H_0$.
     
 
-> **Statistical Decision:** We reject the null hypothesis $H_0$ if our calculated $\chi^2$ value is exceptionally large. In practical software output, this corresponds to a **p-value** that falls below our chosen significance threshold (typically $p < 0.05$). Falling below this threshold indicates that the two categorical variables are statistically dependent.
+> [!important] Statistical Decision Rule
+> We reject the null hypothesis $H_0$ if our calculated $\chi^2$ value is exceptionally large. In practical software output, this corresponds to a **p-value** that falls below our chosen significance threshold (typically $p < 0.05$). Falling below this threshold indicates that the two categorical variables are statistically dependent.

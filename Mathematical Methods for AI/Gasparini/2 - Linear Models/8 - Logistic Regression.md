@@ -1,16 +1,17 @@
 ## Generalized Linear Models (GLMs)
 
-**So far:**
-
-$$Y = X\beta + \varepsilon \qquad = \text{"signal"} + \text{"error"}$$
-
-where:
-- $\varepsilon$ is **normally distributed** 
-- **predictors** enter via $X$.
-
-We want to **generalize** to $Y$ not necessarily normally distributed — e.g. Bernoulli, Poisson, Weibull, or other distributions.
-
-To link all these cases together, look at $E(Y) = X\beta$.
+> [!info] Motivation for GLMs
+> **So far:**
+>
+> $$Y = X\beta + \varepsilon \qquad = \text{"signal"} + \text{"error"}$$
+>
+> where:
+> - $\varepsilon$ is **normally distributed**
+> - **predictors** enter via $X$.
+>
+> We want to **generalize** to $Y$ not necessarily normally distributed — e.g. Bernoulli, Poisson, Weibull, or other distributions.
+>
+> To link all these cases together, look at $E(Y) = X\beta$.
 
 ---
 ### What if $Y \sim \text{Bernoulli}(p)$?
@@ -23,9 +24,10 @@ $$E(Y) = p = X\beta \quad \text{(e.g. } \beta_0 + \beta_1 x \text{ with a single
 
 So the idea is to use a **link function** $g(\cdot)$ (≈ '70) and write:
 
-$$g(E(Y)) = X\beta$$
-
-The linear combination ($X$) of predictors is **kept**.
+> [!definition] Generalized Linear Model
+> $$g(E(Y)) = X\beta$$
+>
+> The linear combination ($X$) of predictors is **kept**.
 
 ---
 
@@ -35,19 +37,19 @@ In the binary case $$g(p) = X\beta$$What is a good choice for $g$?
 
 If $p = 0.7$, i.e. $p = P(Y=1) = P(\text{"success"})$:
 
-> e.g. "Brasil will win this year's World Cup with probability 0.7, or 70%"
-
-In betting language: _"Brasil is given to win 7 to 3"_ — this is talking in **odds**.
+> [!example] "Brasil will win this year's World Cup with probability 0.7, or 70%"
+> In betting language: _"Brasil is given to win 7 to 3"_ — this is talking in **odds**.
 
 Formally, the **odds** is a function $o(p)$:
 
-$$o(p) = \frac{p}{1-p}$$
+> [!definition] Odds and Log-Odds
+> $$o(p) = \frac{p}{1-p}$$
 ![[8 - Logistic Regression-1780325307850.webp]]
 
 $o(p)$ ranges from $0$ to $+\infty$.
 To obtain a $g(\cdot)$ ranging from $-\infty$ to $+\infty$, we take the logarithm:
 
-$$\log o(p) = \log \frac{p}{1-p} = \log p - \log(1-p) = \text{logodds}(p)$$
+> $$\log o(p) = \log \frac{p}{1-p} = \log p - \log(1-p) = \text{logodds}(p)$$
 ![[8 - Logistic Regression-1780325388338.webp]]
 
 ---
@@ -68,9 +70,12 @@ $$e^\ell - p e^\ell = p$$
 
 $$e^\ell = p(1 + e^\ell)$$
 
-$$\boxed{p = \frac{e^\ell}{1 + e^\ell}} \qquad \text{the logistic function}$$
+> [!theorem] The Logistic Function (Inverse of Logit)
+> $$\boxed{p = \frac{e^\ell}{1 + e^\ell}} \qquad \text{the logistic function}$$
+
 ![[8 - Logistic Regression-1780325497174.webp]]
-Other choices of link function are possible, e.g. the CDF of $\mathcal{N}(0,1)$ (**probit**).
+
+> [!note] Other choices of link function are possible, e.g. the CDF of $\mathcal{N}(0,1)$ (**probit**).
 
 ---
 ## Data Structure in Practice
@@ -113,11 +118,12 @@ since $y_1, \ldots, y_n$ are independent $\text{Bernoulli}!\left(\dfrac{e^{\ell_
 Maximizing the likelihood does **not** have an explicit analytical solution, but we can use **numerical methods** to obtain $\hat{\beta}$.
 Also, in mathematical statistics we prove that, approximately:
 
-$$\hat{\beta} \sim \mathcal{N}_p (\beta, VarCov(\hat \beta))$$
-where:
-- $\mathcal{N}_p$ is the **normal approximation** to the sampling distribution of $\hat{\beta}$
-- $\hat \beta$ are approximately unbiased
-- $VarCov(\hat \beta)$ is estimated based on data
+> [!theorem] Asymptotic Sampling Distribution of $\hat{\beta}$ (GLM)
+> $$\hat{\beta} \sim \mathcal{N}_p (\beta, VarCov(\hat \beta))$$
+> where:
+> - $\mathcal{N}_p$ is the **normal approximation** to the sampling distribution of $\hat{\beta}$
+> - $\hat \beta$ are approximately unbiased
+> - $VarCov(\hat \beta)$ is estimated based on data
 
 
 ---

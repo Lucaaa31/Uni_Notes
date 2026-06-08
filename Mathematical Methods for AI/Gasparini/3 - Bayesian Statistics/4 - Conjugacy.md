@@ -1,5 +1,7 @@
 
->[!important] **Conjugacy**: when the posterior is in the same class as the prior.
+> [!definition] Conjugacy
+> **Conjugacy**: when the posterior is in the same class as the prior.
+
 ## Example: Normal Sample with Known Variance
 
 _(recap from last class)_
@@ -10,7 +12,7 @@ _(recap from last class)_
 
 **Posterior:** $\mu \mid x_1, \ldots, x_n \sim \mathcal{N}(\mu_n, \sigma_n^2)$
 
-> Conjugacy — it simplifies calculations (no deep meaning).
+> [!note] Conjugacy — it simplifies calculations (no deep meaning).
 
 ---
 
@@ -76,7 +78,7 @@ It is easy to prove that:
 $$\tau \mid x_1,\ldots,x_n \sim \text{Gamma}(a_n, b_n)$$ $$\mu \mid \tau, x_1,\ldots,x_n \sim \text{Normal}\left(\mu_n,, \frac{1}{\tau_n}\right)$$
 _(where $a_n, b_n, \mu_n, \tau_n$ are to be computed)_
 
->[!important] **Conjugacy is preserved**, since the structure of the posterior is the same as the prior, i.e. inverse-gamma–normal.
+> [!important] **Conjugacy is preserved**, since the structure of the posterior is the same as the prior, i.e. inverse-gamma–normal.
 
 The advantage is that we can **interpret the posterior** as we interpreted the prior. 
 
@@ -102,13 +104,13 @@ The posterior is discrete on $p_1, \ldots, p_K$ with probabilities $\pi(p_1 \mid
 
 Trivially, the posterior is conjugate.
 
-**Notice:** the likelihood of data $x_1, \ldots, x_n$ is $p_k^{\sum x_i}(1-p_k)^{n-\sum x_i}$.
-
-For example, the likelihood of data $(0, 1, 0, 0, 1, 1)$ with $n=6$ is:
-
-$$\mathcal{P}(X_1=0, X_2=1, \ldots, X_6=1) = p_k^0 p_k^1 p_k^0 p_k^0 p_k^1 p_k^1$$
-
-**Notice:** the posterior would be the same given the **sufficient statistic** $\sum X_i$ (number of successes). 
+> [!note] The likelihood of data $x_1, \ldots, x_n$ is $p_k^{\sum x_i}(1-p_k)^{n-\sum x_i}$.
+> 
+> For example, the likelihood of data $(0, 1, 0, 0, 1, 1)$ with $n=6$ is:
+> 
+> $$\mathcal{P}(X_1=0, X_2=1, \ldots, X_6=1) = p_k^0 p_k^1 p_k^0 p_k^0 p_k^1 p_k^1$$
+> 
+> **Notice:** the posterior would be the same given the **sufficient statistic** $\sum X_i$ (number of successes). 
 
 ---
 
@@ -121,28 +123,29 @@ What's a good candidate for $\pi(p)$ on $[0,1]$?
 
 E.g. a uniform: $p \sim U(0,1)$, giving some sense of non-informativeness.
 
-> [!important] **Caveat:** Uniform on $p$ does **not** mean uniform on $\log\frac{p}{1-p}$, for example. So people using $\log\frac{p}{1-p}$ would not have this interpretation. → **Non-invariance of non-informativeness** of non-informative priors with respect to transformations of the parameter.
+> [!warning] **Caveat:** Uniform on $p$ does **not** mean uniform on $\log\frac{p}{1-p}$, for example. So people using $\log\frac{p}{1-p}$ would not have this interpretation. → **Non-invariance of non-informativeness** of non-informative priors with respect to transformations of the parameter.
 
 We use a prior on $p$ which **includes the uniform as a special case**:
 
-$$p \sim \text{Beta}(a, b)$$
-
-with density
-
-$$\pi(p) = \frac{p^{a-1}(1-p)^{b-1}}{B(a,b)}$$
-
-where $B(a,b) = \displaystyle\int_0^1 t^{a-1}(1-t)^{b-1} dt$ is **Euler's beta function**.
-
-$B(a,b)$ can be computed for some values of $a, b$, but for most values we have to computer it numerically:
-- $B(1,1) = 1$
-- $B(2,1) = \frac{1}{2}$
-- $B(2.5, 0.3) = ?$ → need a computer!
-$$
-\text{beta density} = \pi(p) = \frac{p^{a - 1} (1 - p)^{b - 1}}{\text{Beta function}}
-$$
-
-It is easy to prove:
-$$E(p) = \frac{a}{a+b} \qquad \text{Var}(p) = \frac{ab}{(a+b)^2(a+b+1)}$$
+> [!definition] Beta Distribution
+> $$p \sim \text{Beta}(a, b)$$
+> 
+> with density
+> 
+> $$\pi(p) = \frac{p^{a-1}(1-p)^{b-1}}{B(a,b)}$$
+> 
+> where $B(a,b) = \displaystyle\int_0^1 t^{a-1}(1-t)^{b-1} dt$ is **Euler's beta function**.
+> 
+> $B(a,b)$ can be computed for some values of $a, b$, but for most values we have to computer it numerically:
+> - $B(1,1) = 1$
+> - $B(2,1) = \frac{1}{2}$
+> - $B(2.5, 0.3) = ?$ → need a computer!
+> $$
+> \text{beta density} = \pi(p) = \frac{p^{a - 1} (1 - p)^{b - 1}}{\text{Beta function}}
+> $$
+> 
+> It is easy to prove:
+> $$E(p) = \frac{a}{a+b} \qquad \text{Var}(p) = \frac{ab}{(a+b)^2(a+b+1)}$$
 
 #### Shapes of the Beta density
 ![[4 - Conjugacy-1780582312986.webp|353]]
@@ -152,19 +155,20 @@ Often one of these shapes will express your prior uncertainty about $p$.
 
 ### Beta–Bernoulli Conjugacy
 
-If: $$X_1, \ldots, X_n \overset{\text{c.i.i.d.}}{\sim} \text{Bernoulli}(p) \qquad p \sim \text{Beta}(a, b)$$
-
-then:
-
-$$\pi(p \mid x_1,\ldots,x_n) \propto p^{a-1}(1-p)^{b-1} \cdot p^{\sum x_i}(1-p)^{n-\sum x_i}$$
-
-$$= p^{(a + \sum x_i) - 1}(1-p)^{(b + n - \sum x_i) - 1} = p^{a_n - 1}(1-p)^{b_n - 1}$$
-
-which tells us:
-
-$$\boxed{p \mid x_1,\ldots,x_n \sim \text{Beta}(a_n, b_n)} \qquad \text{(conjugacy)}$$
-
-where $a_n = a + \sum x_i$ and $b_n = b + n - \sum x_i$.
+> [!theorem] Beta–Bernoulli Conjugacy
+> If: $$X_1, \ldots, X_n \overset{\text{c.i.i.d.}}{\sim} \text{Bernoulli}(p) \qquad p \sim \text{Beta}(a, b)$$
+> 
+> then:
+> 
+> $$\pi(p \mid x_1,\ldots,x_n) \propto p^{a-1}(1-p)^{b-1} \cdot p^{\sum x_i}(1-p)^{n-\sum x_i}$$
+> 
+> $$= p^{(a + \sum x_i) - 1}(1-p)^{(b + n - \sum x_i) - 1} = p^{a_n - 1}(1-p)^{b_n - 1}$$
+> 
+> which tells us:
+> 
+> $$\boxed{p \mid x_1,\ldots,x_n \sim \text{Beta}(a_n, b_n)} \qquad \text{(conjugacy)}$$
+> 
+> where $a_n = a + \sum x_i$ and $b_n = b + n - \sum x_i$.
 
 ---
 
@@ -174,7 +178,7 @@ $$E(p \mid x_1,\ldots,x_n) = \frac{a_n}{a_n + b_n} = \frac{a + \sum x_i}{a + \su
 
 $$= \frac{a+b}{a+b+n} \cdot \underbrace{\frac{a}{a+b}}_{\substack{\text{prior mean} \ E(p)}} + \frac{n}{a+b+n} \cdot \underbrace{\frac{\sum x_i}{n}}_{\substack{\text{sample mean} \ \text{(MLE of } p)}}$$
 
-> As in the normal case, the **Bayes estimate is a weighted average** of the prior estimate and the sample estimate, with prior weight $\frac{a+b}{a+b+n} \to 0$ as $n \to \infty$ — the prior is forgotten as data grow.
+> [!important] As in the normal case, the **Bayes estimate is a weighted average** of the prior estimate and the sample estimate, with prior weight $\frac{a+b}{a+b+n} \to 0$ as $n \to \infty$ — the prior is forgotten as data grow.
 
 ---
 
@@ -184,5 +188,6 @@ The same phenomenon (prior forgotten) happens if formally $a = b = 0$, but unfor
 
 $$\pi(p) = \frac{p^{0-1}(1-p)^{0-1}}{B(0,0)} \quad \text{is not a density}$$
 
-You can only think of this as a **limit** $a \to 0, b \to 0$, giving $\pi(p) \propto \frac{1}{p(1-p)}$, which diverges at $0$ and $1$ — a U-shaped improper prior.
+> [!note] You can only think of this as a **limit** $a \to 0, b \to 0$, giving $\pi(p) \propto \frac{1}{p(1-p)}$, which diverges at $0$ and $1$ — a U-shaped improper prior.
+
 ![[4 - Conjugacy-1780582495087.webp|462]]

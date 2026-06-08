@@ -11,10 +11,14 @@
             "id": "397508cfc5d49f5d",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista grafo"
+              "type": "markdown",
+              "state": {
+                "file": "Mathematical Methods for AI/Gasparini/1 - Recap/2 -  Inference, Goodness-of-Fit, and Sampling Models.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2 -  Inference, Goodness-of-Fit, and Sampling Models"
             }
           }
         ]
@@ -192,6 +196,15 @@
   },
   "active": "397508cfc5d49f5d",
   "lastOpenFiles": [
+    "Mathematical Methods for AI/Gasparini/1 - Recap/1 - From Bernoulli Trials to Binomial and Multinomial Distributions.md",
+    "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/3 - Bayesian Statistics.md",
+    "Mathematical Methods for AI/Gasparini/2 - Linear Models/1 - Linear Models.md.tmp.38197.55ccc8fed12a",
+    "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/1 - Stochastic Simulation.md",
+    "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/2 - Conditional Expectations.md",
+    "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/4 - Conjugacy.md",
+    "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/5 - Simulation in Bayesian Statistics.md",
+    "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/7 - JAGS from R.pdf",
+    "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/6 - MCMC (GIBBS) For Bayes.md",
     "Mathematical Methods for AI/Vaccarino/Vaccarino.md",
     "Mathematical Methods for AI/Gasparini/Gasparini.md",
     "Mathematical Methods for AI/Vaccarino/5 - FML/5 - FML.md",
@@ -227,17 +240,8 @@
     "Mathematical Methods for AI/Vaccarino/3 - SVM",
     "Mathematical Methods for AI/Vaccarino/2 - Statistical Learning/3 - Tradeoffs.md",
     "Mathematical Methods for AI/Vaccarino/2 - Statistical Learning/1 - Statistical Learning.md",
-    "Mathematical Methods for AI/Vaccarino/2 - Statistical Learning/2 - Estimating Risk.md",
     "Mathematical Methods for AI/Vaccarino/2 - Statistical Learning/Resources",
-    "Mathematical Methods for AI/Vaccarino/1 - Curse PCA/2 - Dimensionality Reduction.md",
-    "Mathematical Methods for AI/Vaccarino/1 - Curse PCA/1 - Curse PCA.md",
     "Mathematical Methods for AI/Vaccarino/2 - Statistical Learning",
-    "Mathematical Methods for AI/Vaccarino/1 - Curse PCA/1 - The Curse of Dimensionality.md",
-    "Mathematical Methods for AI/Vaccarino/1 - Curse PCA/Resources",
-    "Mathematical Methods for AI/Mathematical Methods for AI.md",
-    "Mathematical Methods for AI/Vaccarino/1 - Curse PCA",
-    "Mathematical Methods for AI/Gasparini/3 - Boh/6 - MCMC (GIBBS) For Bayes.md",
-    "Mathematical Methods for AI/Gasparini/3 - Boh/5 - Simulation in Bayesian Statistics.md",
     "Distributed Architecture/01_Hadoop_and_MapReduce/Design_Patterns/Design_Patterns.canvas",
     "Senza nome.canvas"
   ]

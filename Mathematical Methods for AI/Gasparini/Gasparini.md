@@ -10,6 +10,6 @@
 	- [[7 - Confidence vs Prediction Intervals]]
 	- [[8 - Logistic Regression]]
 	- [[9 - Classification - LDA, QDA, KNN]]
-- **[[3 - Boh]]**
+- **[[3 - Bayesian Statistics]]**
 
 %% End Waypoint %%

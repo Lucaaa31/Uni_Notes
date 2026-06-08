@@ -52,11 +52,12 @@ The previous equation $$ Y_{ij} \sim N\left( \alpha_i + \beta_i (x_{ij} - \bar{x
 
 $$ \alpha_i \overset{ciid}{\sim} N\left( \alpha_c,\ \tfrac{1}{\tau_\alpha} \right) \qquad \beta_i \overset{ciid}{\sim} N\left( \beta_c,\ \tfrac{1}{\tau_\beta} \right) $$
 
-- $\alpha_i$ — **random intercept**
-- $\beta_i$ — **random slope**
-- $\alpha_c$ — **overall mean intercept**, $\beta_c$ — **overall mean slope** (due to similarities among rats).
-
-Random effects $\alpha_i$ and $\beta_i$ are called **random effects** (each rat has its own intercept and slope).
+> [!definition] Random Effects
+> - $\alpha_i$ — **random intercept**
+> - $\beta_i$ — **random slope**
+> - $\alpha_c$ — **overall mean intercept**, $\beta_c$ — **overall mean slope** (due to similarities among rats).
+> 
+> Random effects $\alpha_i$ and $\beta_i$ are called **random effects** (each rat has its own intercept and slope).
 
 ---
 
@@ -66,7 +67,7 @@ Random effects $\alpha_i$ and $\beta_i$ are called **random effects** (each rat 
 
 In addition, we want to know about $$ \sigma = \frac{1}{\sqrt{\tau_c}} $$ for **uncertainty quantification**.
 
-- $\sigma$ is the spread of each rat's measurements around its own private regression line — assumed **constant and unknown**.
+> [!note] $\sigma$ is the spread of each rat's measurements around its own private regression line — assumed **constant and unknown**.
 
 ---
 ## Bayesian updating

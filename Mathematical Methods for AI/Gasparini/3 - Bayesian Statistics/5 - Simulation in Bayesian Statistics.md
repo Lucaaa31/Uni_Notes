@@ -79,7 +79,7 @@ $$ X_1, \dots, X_n \overset{iid}{\sim} N(0, 1), \qquad \bar{X}_i = \frac{1}{i} \
 - The running mean $\bar{X}_i$ funnels in toward $0$ as $i$ grows; its spread shrinks like $\tfrac{1}{i}$.
 - The (red) density of $\bar{X}_i$ concentrates around $\mu = 0$.
 
-> [!quote] Law of Large Numbers $$\bar{X}_i \xrightarrow[i \to \infty]{} 0 = \mu$$
+> [!theorem] Law of Large Numbers $$\bar{X}_i \xrightarrow[i \to \infty]{} 0 = \mu$$
 
 ---
 
@@ -132,7 +132,7 @@ $$ \propto \underbrace{\exp \left\{-\tfrac{\tau_0}{2}(\mu - \mu_0)^2\right\}}_{\
 
 $$ = \exp\left\{-\tfrac{\tau_0}{2}(\mu - \mu_0)^2 - \tfrac{\tau}{2}\sum (x_i - \mu)^2\right\}\ \tau^{a + \frac{n}{2} - 1}\ e^{-\lambda \tau} $$
 
-> [!fail] No conjugacy It is **not possible to factorize** this; therefore $\mu$ and $\tau$ are **not independent a posteriori**.
+> [!warning] No conjugacy It is **not possible to factorize** this; therefore $\mu$ and $\tau$ are **not independent a posteriori**.
 > 
 > This posterior on $(\mu, \tau)$ is difficult to deal with.
 
@@ -148,7 +148,7 @@ $$ \pi(\tau \mid x_1, \dots, x_n, \boxed{\mu}) \propto \tau^{\overbrace{a + \fra
 
 $$ \sim \text{Gamma}(a^\ast, b^\ast) $$
 
-> [!success] This gives us the possibility to **sample** $\pi(\mu, \tau \mid x_1, \dots, x_n)$ **without using its analytical expression**, but using the **full conditionals (1) and (2)**.
+> [!important] This gives us the possibility to **sample** $\pi(\mu, \tau \mid x_1, \dots, x_n)$ **without using its analytical expression**, but using the **full conditionals (1) and (2)**.
 > 
 > This is exactly an application of **Gibbs sampling**.
 > 

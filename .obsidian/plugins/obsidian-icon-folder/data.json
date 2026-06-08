@@ -114,5 +114,12 @@
   "Mathematical Methods for AI/Vaccarino/5 - FML/1 - Introduction to Machine Learning.md": "📄",
   "Mathematical Methods for AI/Vaccarino/5 - FML/2 - Learning with Finite Hypothesis Sets.md": "📄",
   "Mathematical Methods for AI/Vaccarino/5 - FML/3 - Learning with Infinite Hypothesis Sets 2.md": "📄",
-  "Mathematical Methods for AI/Vaccarino/5 - FML/4 - Choosing the Right ML Algorithm.md": "📄"
+  "Mathematical Methods for AI/Vaccarino/5 - FML/4 - Choosing the Right ML Algorithm.md": "📄",
+  "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics": "📁",
+  "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/1 - Stochastic Simulation.md": "📄",
+  "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/2 - Conditional Expectations.md": "📄",
+  "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/4 - Conjugacy.md": "📄",
+  "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/5 - Simulation in Bayesian Statistics.md": "📄",
+  "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/6 - MCMC (GIBBS) For Bayes.md": "📄",
+  "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/7 - JAGS from R.pdf": "📄"
 }

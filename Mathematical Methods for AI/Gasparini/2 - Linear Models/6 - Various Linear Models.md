@@ -26,7 +26,7 @@
 #### Linear Model with Interaction
 ![[8 - Various Linear Models-1780319038193.webp]]
 
-> The interaction $bx$ is a **nonlinear function of $x$**; nonetheless the model is **linear IN THE COEFFICIENTS**.
+> [!important] The interaction $bx$ is a **nonlinear function of $x$**; nonetheless the model is **linear IN THE COEFFICIENTS**.
 
 Matrix form:
 
@@ -44,18 +44,20 @@ Other simple transformations of the predictors can be contemplated, like:
 
 $$\log(x), \quad \sqrt{x}, \quad \ldots$$
 
->  **Neural networks** are a development of these ideas.
+> [!info] **Neural networks** are a development of these ideas.
 
 ---
 ## Advantages of the Linear Model
-In a simple linear model, you pay the price of introducing probability distributions for $Y$, but you gain:
 
-- Interpretability
-- Uncertainty quantification
-- Confidence intervals
-- Tests
-- Prediction intervals
-- All other **Bayesian tools** (covered in Part 2 of this course)
+> [!summary] Advantages of the Linear Model
+> In a simple linear model, you pay the price of introducing probability distributions for $Y$, but you gain:
+>
+> - Interpretability
+> - Uncertainty quantification
+> - Confidence intervals
+> - Tests
+> - Prediction intervals
+> - All other **Bayesian tools** (covered in Part 2 of this course)
 
 ---
 ## Qualitative Predictors (Factors)
@@ -75,7 +77,7 @@ Observations: It, It, Fr, It, Fr, Ru, Ru, …
 
 $$X = \begin{pmatrix} \text{IT} & \text{FR} & \text{RU} & \cdots & \text{SS} \\ 1 & 0 & 0 & \cdots & 0 \\ 1 & 0 & 0 & \cdots & 0 \\ 0 & 1 & 0 & \cdots & 0 \\ \vdots & & & \ddots & \\ 0 & 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \vdots & \vdots & \vdots \end{pmatrix}$$
 
-> Use one-hot encoding to build the $X$ matrix → $Y = X\beta + \varepsilon$
+> [!tip] Use one-hot encoding to build the $X$ matrix → $Y = X\beta + \varepsilon$
 
 ### Special Case: 2 Levels
 
@@ -89,8 +91,9 @@ _(top rows = "Not Italian", bottom rows = "Italian")_
 
 ### General Rule
 
+> [!definition] One-Hot Encoding Rule for Factors
 > For **one factor** with $I$ levels, we need:
-> 
+>
 > - the **intercept column** (1s)
 > - **$I - 1$ binary columns** (one-hot encoding)
 

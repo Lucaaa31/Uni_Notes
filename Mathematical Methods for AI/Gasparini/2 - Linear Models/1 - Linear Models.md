@@ -1,5 +1,6 @@
-1. First, simplest model for supervised learning
-2. Important: use the multivariate normal distribution
+> [!info] Motivation
+> 1. First, simplest model for supervised learning
+> 2. Important: use the multivariate normal distribution
 
 $$Y = f(x_1, \ldots, x_{p-1}) + \varepsilon$$
 
@@ -27,18 +28,20 @@ Almost always, the first column $\begin{pmatrix} x_{11} \\ \vdots \\ x_{n1} \end
 
 ## Compact Matrix Notation
 
-$$\underset{n \times 1}{Y} = \underset{n \times p}{X} \quad  \underset{p \times 1}{\beta} + \underset{n \times 1}{\varepsilon}$$
-
-- $\beta_{p \times 1}$ = p-vector of **unknown coefficients** containing the effects of the predictors
-- $Y_{n \times 1}$ = vector of responses, random variables
-- $X_{n \times p}$ = known matrix of input values of predictors, often under the control of the experimenter
-- $\varepsilon_{n \times 1}$ = vector of random variables representing **errors**
+> [!definition] Linear Model (Matrix Form)
+> $$\underset{n \times 1}{Y} = \underset{n \times p}{X} \quad  \underset{p \times 1}{\beta} + \underset{n \times 1}{\varepsilon}$$
+>
+> - $\beta_{p \times 1}$ = p-vector of **unknown coefficients** containing the effects of the predictors
+> - $Y_{n \times 1}$ = vector of responses, random variables
+> - $X_{n \times p}$ = known matrix of input values of predictors, often under the control of the experimenter
+> - $\varepsilon_{n \times 1}$ = vector of random variables representing **errors**
 
 ---
 
 ## Example — Two-Sample Problem
 
-$$\begin{pmatrix} Y_1 \\ \vdots \\ Y_{n_1} \\ Y_{n_1+1} \\ \vdots \\ Y_n \end{pmatrix} = \underset{n \times 2}{X} \begin{pmatrix} \beta_1^* \\ \beta_2^* \end{pmatrix} + \begin{pmatrix} \varepsilon_1 \\ \varepsilon_2 \\ \vdots \\ \varepsilon_n \end{pmatrix}$$
+> [!example] Two-Sample Problem
+> $$\begin{pmatrix} Y_1 \\ \vdots \\ Y_{n_1} \\ Y_{n_1+1} \\ \vdots \\ Y_n \end{pmatrix} = \underset{n \times 2}{X} \begin{pmatrix} \beta_1^* \\ \beta_2^* \end{pmatrix} + \begin{pmatrix} \varepsilon_1 \\ \varepsilon_2 \\ \vdots \\ \varepsilon_n \end{pmatrix}$$
 
 $$Y_i = \begin{cases} \beta_1^* + \varepsilon_i & i = 1, \ldots, n_1 \\ \beta_2^* + \varepsilon_i & i = n_1+1, \ldots, n \end{cases}$$
 
@@ -59,32 +62,34 @@ $$\begin{pmatrix} Y_1 \\ Y_2 \\ \vdots \\ Y_n \end{pmatrix} = \begin{pmatrix} 1 
 
 ## Example 1 — Biomedical
 
-$Y$ = difference of blood pressure before–after a certain pill is taken.
-
-- First group: standard pill
-- Second group: experimental pill
-
-$Y_1, \ldots, Y_{n_1}$: responses obtained with standard pill in $n_1$ patients  
-$Y_{n_1+1}, \ldots, Y_n$: responses obtained with experimental pill in $n - n_1$ patients
-
-Suppose $\varepsilon_1, \ldots, \varepsilon_n$ are random errors, so we take them i.i.d. $\mathcal{N}(0, \sigma^2)$:
-
-$$Y_1, \ldots, Y_{n_1} \text{ i.i.d. } \mathcal{N}(\beta_0, \sigma^2)$$ $$Y_{n_1+1}, \ldots, Y_n \text{ i.i.d. } \mathcal{N}(\beta_0 + \beta_1, \sigma^2)$$
-
-$\beta_1$ = mean difference in blood pressure in experimental group **minus** mean difference in blood pressure in standard group = **effect of experimental therapy compared to standard therapy**.
+> [!example] Biomedical: Blood Pressure
+> $Y$ = difference of blood pressure before–after a certain pill is taken.
+>
+> - First group: standard pill
+> - Second group: experimental pill
+>
+> $Y_1, \ldots, Y_{n_1}$: responses obtained with standard pill in $n_1$ patients  
+> $Y_{n_1+1}, \ldots, Y_n$: responses obtained with experimental pill in $n - n_1$ patients
+>
+> Suppose $\varepsilon_1, \ldots, \varepsilon_n$ are random errors, so we take them i.i.d. $\mathcal{N}(0, \sigma^2)$:
+>
+> $$Y_1, \ldots, Y_{n_1} \text{ i.i.d. } \mathcal{N}(\beta_0, \sigma^2)$$ $$Y_{n_1+1}, \ldots, Y_n \text{ i.i.d. } \mathcal{N}(\beta_0 + \beta_1, \sigma^2)$$
+>
+> $\beta_1$ = mean difference in blood pressure in experimental group **minus** mean difference in blood pressure in standard group = **effect of experimental therapy compared to standard therapy**.
 
 ---
 
 ## Example 2 — Investment
 
-$Y$ = ROI (return on investment). First and second groups are returns observed under two different investment strategies.
-
-- $Y_1, \ldots, Y_{n_1}$: ROI's observed in the past with strategy A
-- $Y_{n_1+1}, \ldots, Y_n$: ROI's observed in the past with strategy B
-
-$$\varepsilon_1, \ldots, \varepsilon_n \text{ i.i.d. } \mathcal{N}(0, \sigma^2)$$ $$Y_1, \ldots, Y_{n_1} \text{ i.i.d. } \mathcal{N}(\beta_0, \sigma^2)$$ $$Y_{n_1+1}, \ldots, Y_n \text{ i.i.d. } \mathcal{N}(\beta_0 + \beta_1, \sigma^2)$$
-
-$\beta_1$ = mean difference in ROI between B and A.
+> [!example] Investment: ROI
+> $Y$ = ROI (return on investment). First and second groups are returns observed under two different investment strategies.
+>
+> - $Y_1, \ldots, Y_{n_1}$: ROI's observed in the past with strategy A
+> - $Y_{n_1+1}, \ldots, Y_n$: ROI's observed in the past with strategy B
+>
+> $$\varepsilon_1, \ldots, \varepsilon_n \text{ i.i.d. } \mathcal{N}(0, \sigma^2)$$ $$Y_1, \ldots, Y_{n_1} \text{ i.i.d. } \mathcal{N}(\beta_0, \sigma^2)$$ $$Y_{n_1+1}, \ldots, Y_n \text{ i.i.d. } \mathcal{N}(\beta_0 + \beta_1, \sigma^2)$$
+>
+> $\beta_1$ = mean difference in ROI between B and A.
 
 ---
 
@@ -143,21 +148,22 @@ and $\hat{\sigma}^2$.
 
 ## Recap — Linear Model with Normal Errors
 
-$$\underset{n \times 1}{Y} = \underset{n \times p}{X} \quad \underset{p \times 1}{\beta} + \underset{n \times 1}{\varepsilon}$$
-
-$\varepsilon_1, \ldots, \varepsilon_n$ i.i.d. $\mathcal{N}(0, \sigma^2)$, so that:
-
-$$\varepsilon \sim \mathcal{N}_n!\left(\begin{pmatrix} 0 \\ \vdots \\ 0 \end{pmatrix}, \begin{pmatrix} \sigma^2 & 0 & \cdots & 0 \\ 0 & \sigma^2 & & 0 \\ \vdots & & \ddots & \vdots \\ 0 & \cdots & 0 & \sigma^2 \end{pmatrix}\right) = \mathcal{N}_n\left(\mathbf{0}_{n \times 1}, \sigma^2 I_{n \times n}\right)$$
-
-where $I_{n \times n}$ is the identity matrix.
-
-Therefore, since linear transformations of normals are normal:
-
-$$Y \sim \mathcal{N}_n(X\beta,; \sigma^2 I)$$
-
-$$E(Y) = E(X\beta + \varepsilon) = X\beta + E(\varepsilon) = X\beta$$
-
-$$\mathrm{VarCov}(Y) = \mathrm{VarCov}(X\beta + \varepsilon) = \mathrm{VarCov}(\varepsilon) = \sigma^2 I$$
+> [!summary] Linear Model with Normal Errors
+> $$\underset{n \times 1}{Y} = \underset{n \times p}{X} \quad \underset{p \times 1}{\beta} + \underset{n \times 1}{\varepsilon}$$
+>
+> $\varepsilon_1, \ldots, \varepsilon_n$ i.i.d. $\mathcal{N}(0, \sigma^2)$, so that:
+>
+> $$\varepsilon \sim \mathcal{N}_n!\left(\begin{pmatrix} 0 \\ \vdots \\ 0 \end{pmatrix}, \begin{pmatrix} \sigma^2 & 0 & \cdots & 0 \\ 0 & \sigma^2 & & 0 \\ \vdots & & \ddots & \vdots \\ 0 & \cdots & 0 & \sigma^2 \end{pmatrix}\right) = \mathcal{N}_n\left(\mathbf{0}_{n \times 1}, \sigma^2 I_{n \times n}\right)$$
+>
+> where $I_{n \times n}$ is the identity matrix.
+>
+> Therefore, since linear transformations of normals are normal:
+>
+> $$Y \sim \mathcal{N}_n(X\beta,; \sigma^2 I)$$
+>
+> $$E(Y) = E(X\beta + \varepsilon) = X\beta + E(\varepsilon) = X\beta$$
+>
+> $$\mathrm{VarCov}(Y) = \mathrm{VarCov}(X\beta + \varepsilon) = \mathrm{VarCov}(\varepsilon) = \sigma^2 I$$
 
 ---
 
@@ -196,7 +202,7 @@ We do it in two steps: first for fixed $\sigma^2$, then for variable $\sigma^2$.
 
 $$\min_{\beta}(y - X\beta)'(y - X\beta) = \min_{\beta},\sum_{i=1}^{n} \left(y_i - \sum_{j=0}^{p-1} x_{ij}\beta_j\right)^{!2}$$
 
-> This is the famous **least squares problem**.
+> [!important] This is the famous **least squares problem**.
 
 ---
 
@@ -221,4 +227,5 @@ $$\frac{\partial}{\partial \beta} \left(y'y - 2,y'X\beta + \beta'X'X\beta\right)
 
 We get the **normal equations**:
 
-$$\boxed{X'X,\beta = X'y}$$
+> [!theorem] Normal Equations
+> $$\boxed{X'X,\beta = X'y}$$

@@ -23,7 +23,7 @@ In the language of random variables, each single component $X_i$ is a **discrete
 
 $$f(x) = \begin{cases} \frac{1}{6} & \text{if } x = 1 \\ \frac{5}{6} & \text{if } x = 0 \\ 0 & \text{otherwise} \end{cases}$$
 
->  **Core Corollaries:**
+> [!note] Core Corollaries
 > 
 > - $\mathrm{X}$ represents the formal _name_ of the random variable.
 >     
@@ -79,7 +79,8 @@ Using our earlier calculation:
 
 $$f(1, 0, 0, \dots, 0) = \frac{1}{6} \left(\frac{5}{6}\right)^9$$
 
-> **N.B.:** Due to the commutative property of multiplication, every individual sequence that contains exactly one $1$ and nine $0$s (regardless of position) shares this exact same joint density value.
+> [!note]
+> Due to the commutative property of multiplication, every individual sequence that contains exactly one $1$ and nine $0$s (regardless of position) shares this exact same joint density value.
 
 ## 3. The Binomial Distribution
 
@@ -105,11 +106,12 @@ $$f_Y(y) = \binom{10}{y} \left(\frac{1}{6}\right)^y \left(1 - \frac{1}{6}\right)
 - **$\left(\frac{1}{6}\right)^y \left(\frac{5}{6}\right)^{10-y}$:** The standalone probability of any single, specific sequence containing exactly $y$ successes and $(10-y)$ failures.
     
 
-When an aggregate variable behaves this way, $Y$ is called a **Binomial random variable** defined by two key parameters:
-
-- $n = 10$ (the total number of independent trials)
-    
-- $p = \frac{1}{6}$ (the stable probability of success on a single trial)
+> [!definition] Binomial Random Variable
+> When an aggregate variable behaves this way, $Y$ is called a **Binomial random variable** defined by two key parameters:
+> 
+> - $n = 10$ (the total number of independent trials)
+>     
+> - $p = \frac{1}{6}$ (the stable probability of success on a single trial)
     
 
 ## 4. Categorical Coding and the Multinomial Distribution
@@ -128,7 +130,8 @@ To process this categorical variable numerically, we apply **one-hot encoding** 
 
 $$X = \begin{cases} (1, 0, 0) & \text{if } C = m \\ (0, 1, 0) & \text{if } C = e \\ (0, 0, 1) & \text{if } C = o \end{cases}$$
 
->  **Vector Simplification Note:** Because the three states must add up to $1$, the final state is completely redundant. If the vector is not $m$ or $e$, it must be $o$. Therefore, handwritten notes often simplify this into a $2$-dimensional vector where the third state is implied when both tracking slots are $0$:
+> [!note] Vector Simplification
+> Because the three states must add up to $1$, the final state is completely redundant. If the vector is not $m$ or $e$, it must be $o$. Therefore, handwritten notes often simplify this into a $2$-dimensional vector where the third state is implied when both tracking slots are $0$:
 > 
 > - $P(X = (1, 0)) = \frac{1}{6}$
 >     
@@ -158,11 +161,12 @@ Where $\frac{10!}{3! 2! 5!}$ calculates the total number of unique ordering perm
 
 ### Generalization to the Multinomial Distribution
 
-If we generalize this framework to $n$ independent trials that result in $D$ possible alternatives, each with a stable probability $p_d$ such that $\sum_{d=1}^{D} p_d = 1$, the collection of category counts $(Y_1, Y_2, \dots, Y_D)$ forms a **multinomial random vector**. Its joint probability mass function is formally defined as:
-
-$$P(Y_1 = y_1, Y_2 = y_2, \dots, Y_D = y_D) = \frac{n!}{\prod_{d=1}^{D} y_d!} \prod_{d=1}^{D} p_d^{y_d}$$
-
-_(Note: One component remains mathematically redundant because $Y_D = n - \sum_{d=1}^{D-1} Y_d$.)_
+> [!definition] Multinomial Distribution
+> If we generalize this framework to $n$ independent trials that result in $D$ possible alternatives, each with a stable probability $p_d$ such that $\sum_{d=1}^{D} p_d = 1$, the collection of category counts $(Y_1, Y_2, \dots, Y_D)$ forms a **multinomial random vector**. Its joint probability mass function is formally defined as:
+> 
+> $$P(Y_1 = y_1, Y_2 = y_2, \dots, Y_D = y_D) = \frac{n!}{\prod_{d=1}^{D} y_d!} \prod_{d=1}^{D} p_d^{y_d}$$
+> 
+> _(Note: One component remains mathematically redundant because $Y_D = n - \sum_{d=1}^{D-1} Y_d$.)_
 
 ## 5. Summary: Probability vs. Statistics
 
@@ -174,8 +178,9 @@ This observation is concrete data. If you were to repeat the experiment out of c
 
 $$\mathbb{P}(\text{"second outcome same as first"}) = \mathbb{P}(Z_1 = 0, Z_2 = 3) = \frac{5!}{0!3!2!} \left(\frac{1}{6}\right)^0 \left(\frac{2}{6}\right)^3 \left(\frac{3}{6}\right)^2$$
 
-This highlights a vital distinction in data science:
-
-- **Probability Problem:** We already know the exact structural mechanics of our data generator (a fair, six-sided die). We use this framework to predict the likelihood of future data.
-    
-- **Statistical Problem:** We observe experimental data counts first, and must work backwards to infer the unknown properties of the system that generated them.
+> [!summary] Probability vs. Statistics
+> This highlights a vital distinction in data science:
+> 
+> - **Probability Problem:** We already know the exact structural mechanics of our data generator (a fair, six-sided die). We use this framework to predict the likelihood of future data.
+>     
+> - **Statistical Problem:** We observe experimental data counts first, and must work backwards to infer the unknown properties of the system that generated them.

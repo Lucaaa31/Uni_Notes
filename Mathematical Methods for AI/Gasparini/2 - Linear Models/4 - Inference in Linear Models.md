@@ -1,28 +1,29 @@
 ## Recall
 
-$$Y_{n \times 1} = X_{n \times p} \beta_{p \times 1} + \varepsilon_{n \times 1}$$
-
-$$\varepsilon \sim \mathcal{N}_n(0, \sigma^2 I)$$
-
-The MLE of $\beta$ are:
-
-$$\hat{\beta} \sim \mathcal{N}_p\left(\beta,\ \sigma^2 (X'X)^{-1}\right) \tag{1}$$
-
-Moreover:
-
-$$\hat{Y} = X\hat{\beta} \quad \text{(the fitted values)}$$
-
-$$E = Y - \hat{Y} \quad \text{(residuals)}$$
-
-$$\hat{\sigma}^2 = \frac{E'E}{n-p} = \frac{\sum(Y_i - \hat{Y}_i)^2}{n-p} \quad \text{preferred estimator of } \sigma^2, \text{ called RMS (Residual Mean Square)}$$
-
-$$\hat{\sigma} = \sqrt{\hat{\sigma}^2} = \underbrace{\text{Residual Std Error}}_{\text{in R}} = \sqrt{\text{RMS}}$$
-
-Then it can be proved that:
-
-$$\frac{(n-p),\hat{\sigma}^2}{\sigma^2} = \frac{E'E}{\sigma^2} \sim \chi^2(n-p) \quad \text{(a chi-square distribution with } n-p \text{ degrees of freedom)} \tag{2}$$
-
-independently of $\hat{\beta}$.
+> [!summary] Key Results for Inference
+> $$Y_{n \times 1} = X_{n \times p} \beta_{p \times 1} + \varepsilon_{n \times 1}$$
+>
+> $$\varepsilon \sim \mathcal{N}_n(0, \sigma^2 I)$$
+>
+> The MLE of $\beta$ are:
+>
+> $$\hat{\beta} \sim \mathcal{N}_p\left(\beta,\ \sigma^2 (X'X)^{-1}\right) \tag{1}$$
+>
+> Moreover:
+>
+> $$\hat{Y} = X\hat{\beta} \quad \text{(the fitted values)}$$
+>
+> $$E = Y - \hat{Y} \quad \text{(residuals)}$$
+>
+> $$\hat{\sigma}^2 = \frac{E'E}{n-p} = \frac{\sum(Y_i - \hat{Y}_i)^2}{n-p} \quad \text{preferred estimator of } \sigma^2, \text{ called RMS (Residual Mean Square)}$$
+>
+> $$\hat{\sigma} = \sqrt{\hat{\sigma}^2} = \underbrace{\text{Residual Std Error}}_{\text{in R}} = \sqrt{\text{RMS}}$$
+>
+> Then it can be proved that:
+>
+> $$\frac{(n-p),\hat{\sigma}^2}{\sigma^2} = \frac{E'E}{\sigma^2} \sim \chi^2(n-p) \quad \text{(a chi-square distribution with } n-p \text{ degrees of freedom)} \tag{2}$$
+>
+> independently of $\hat{\beta}$.
 
 We will use these distributional results to make inference about $\beta$ and $\sigma^2$: confidence intervals (c.i.) and tests.
 
@@ -38,7 +39,7 @@ So we can construct c.i. and tests in the way we learned before. E.g.:
 
 $$P\left(\hat{\beta}_i - z_{\alpha/2}\sqrt{\sigma^2(X'X)^{-1}_{i+1,i+1}} \leq; \beta_i \leq \hat{\beta}_i + z_{\alpha/2}\sqrt{\sigma^2(X'X)^{-1}_{i+1,i+1}}\right) = 1-\alpha$$
 
-> **Is this a confidence interval of level $1-\alpha$?** **No**, — because we do not know $\sigma^2$.
+> [!warning] Is this a confidence interval of level $1-\alpha$? **No**, — because we do not know $\sigma^2$.
 > If we estimate it, we have to use $t_{\alpha/2}(n-p)$ instead of $z_{\alpha/2}$, and obtain:
 > $$P\left(\hat{\beta}_i - t_{\alpha/2}(n-p)\sqrt{\hat{\sigma}^2(X'X)^{-1}_{i+1,i+1}} ;\leq; \beta_i ;\leq; \hat{\beta}_i + t_{\alpha/2}(n-p)\sqrt{\hat{\sigma}^2(X'X)^{-1}_{i+1,i+1}}\right) = 1-\alpha$$
 >This is a proper (computable from the data) $1-\alpha$ level c.i. for $\beta_i$. Written in shorthand notation:
@@ -160,13 +161,15 @@ We also have $\hat{Y}_{(0)} = X_{(0)}\hat{\beta}_{(0)}$, the fitted values of th
 
 ### The F-Test
 The following rule is intuitive:
-> "Reject the small model if $|\hat{Y} - \hat{Y}_0|^2$ is too large."
+> [!tip] Reject the small model if $|\hat{Y} - \hat{Y}_0|^2$ is too large.
 Sparing the mathematics, this is an **F-test**, since we reject the small model if:
-$$\frac{|\hat{Y} - \hat{Y}_{(0)}|^2}{(p - q),\hat{\sigma}^2} > F_\alpha(p-q,; n-p)$$
 
-where:
-- $q$ = dimension of the small subspace
-- $F_\alpha(p-q, n-p)$ is a cut-off point of the F distribution.
+> [!theorem] F-Test for Nested Hypotheses
+> $$\frac{|\hat{Y} - \hat{Y}_{(0)}|^2}{(p - q),\hat{\sigma}^2} > F_\alpha(p-q,; n-p)$$
+>
+> where:
+> - $q$ = dimension of the small subspace
+> - $F_\alpha(p-q, n-p)$ is a cut-off point of the F distribution.
 
 In practice, the p-value is given by `anova(small, large)`.
 
