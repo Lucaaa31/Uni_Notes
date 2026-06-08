@@ -103,5 +103,16 @@
   "Mathematical Methods for AI/Vaccarino/2 - Statistical Learning/2 - Estimating Risk.md": "📄",
   "Mathematical Methods for AI/Vaccarino/2 - Statistical Learning/3 - Tradeoffs.md": "📄",
   "Mathematical Methods for AI/Vaccarino/3 - SVM": "📁",
-  "Mathematical Methods for AI/Vaccarino/3 - SVM/1 - Support Vector Machines.md": "📄"
+  "Mathematical Methods for AI/Vaccarino/3 - SVM/1 - Support Vector Machines.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/3 - SVM/2 - Kernel Methods.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/4 - Decision Trees": "📁",
+  "Mathematical Methods for AI/Vaccarino/4 - Decision Trees/1 - Decision Trees.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/4 - Decision Trees/2 - Tree-Based Methods.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/4 - Decision Trees/3 - Ensemble Methods.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/4 - Decision Trees/4 - Boosting.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/5 - FML": "📁",
+  "Mathematical Methods for AI/Vaccarino/5 - FML/1 - Introduction to Machine Learning.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/5 - FML/2 - Learning with Finite Hypothesis Sets.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/5 - FML/3 - Learning with Infinite Hypothesis Sets 2.md": "📄",
+  "Mathematical Methods for AI/Vaccarino/5 - FML/4 - Choosing the Right ML Algorithm.md": "📄"
 }
