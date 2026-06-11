@@ -166,7 +166,7 @@ Where $\frac{10!}{3! 2! 5!}$ calculates the total number of unique ordering perm
 > 
 > $$P(Y_1 = y_1, Y_2 = y_2, \dots, Y_D = y_D) = \frac{n!}{\prod_{d=1}^{D} y_d!} \prod_{d=1}^{D} p_d^{y_d}$$
 > 
-> _(Note: One component remains mathematically redundant because $Y_D = n - \sum_{d=1}^{D-1} Y_d$.)_
+> (Note: One component remains mathematically redundant because $$ Y_D = n - \sum_{d=1}^{D-1} Y_d $$ )
 
 ## 5. Summary: Probability vs. Statistics
 
@@ -181,6 +181,6 @@ $$\mathbb{P}(\text{"second outcome same as first"}) = \mathbb{P}(Z_1 = 0, Z_2 = 
 > [!summary] Probability vs. Statistics
 > This highlights a vital distinction in data science:
 > 
-> - **Probability Problem:** We already know the exact structural mechanics of our data generator (a fair, six-sided die). We use this framework to predict the likelihood of future data.
+> - **Probability Problem:** We already know the exact structural mechanics of our data generator (a fair, six-sided dice). We use this framework to predict the likelihood of future data.
 >     
 > - **Statistical Problem:** We observe experimental data counts first, and must work backwards to infer the unknown properties of the system that generated them.

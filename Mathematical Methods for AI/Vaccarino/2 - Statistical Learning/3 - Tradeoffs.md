@@ -27,7 +27,6 @@ We can decompose the generalization risk into **three components**:
 $$\ell(g_\tau^{\mathcal{G}}) = \underbrace{\ell^*}_{\text{irreducible risk}} + \underbrace{\ell(g^{\mathcal{G}}) - \ell^*}_{\text{approximation error}} + \underbrace{\ell(g_\tau^{\mathcal{G}}) - \ell(g^{\mathcal{G}})}_{\text{statistical error}} \tag{1}$$
 
 where:
-
 - $\ell^* := \ell(g^*)$ is the **irreducible risk**
 - $g^{\mathcal{G}} := \arg\min_{g \in \mathcal{G}} \ell(g)$ is the **best learner within class $\mathcal{G}$**
 

@@ -21,7 +21,7 @@
 >
 > Then it can be proved that:
 >
-> $$\frac{(n-p),\hat{\sigma}^2}{\sigma^2} = \frac{E'E}{\sigma^2} \sim \chi^2(n-p) \quad \text{(a chi-square distribution with } n-p \text{ degrees of freedom)} \tag{2}$$
+> $$\frac{(n-p)\,\hat{\sigma}^2}{\sigma^2} = \frac{E'E}{\sigma^2} \sim \chi^2(n-p) \quad \text{(a chi-square distribution with } n-p \text{ degrees of freedom)} \tag{2}$$
 >
 > independently of $\hat{\beta}$.
 
@@ -29,21 +29,21 @@ We will use these distributional results to make inference about $\beta$ and $\s
 
 ---
 
-## Confidence Intervals for a Single $\beta_i$
+## Confidence Intervals for a single $\beta_i$
 
 Because of (1), each of them is:
 
-$$\hat{\beta}_i \sim \mathcal{N}\left(\beta_i,\ \sigma^2 (X'X)^{-1}_{i+1,,i+1}\right) \tag{3}$$
+$$\hat{\beta}_i \sim \mathcal{N}\left(\beta_i,\ \sigma^2 (X'X)^{-1}_{i+1,i+1}\right) \tag{3}$$
 
 So we can construct c.i. and tests in the way we learned before. E.g.:
 
-$$P\left(\hat{\beta}_i - z_{\alpha/2}\sqrt{\sigma^2(X'X)^{-1}_{i+1,i+1}} \leq; \beta_i \leq \hat{\beta}_i + z_{\alpha/2}\sqrt{\sigma^2(X'X)^{-1}_{i+1,i+1}}\right) = 1-\alpha$$
+$$P\left(\hat{\beta}_i - z_{\alpha/2}\sqrt{\sigma^2(X'X)^{-1}_{i+1,i+1}} \leq \beta_i \leq \hat{\beta}_i + z_{\alpha/2}\sqrt{\sigma^2(X'X)^{-1}_{i+1,i+1}}\right) = 1-\alpha$$
 
 > [!warning] Is this a confidence interval of level $1-\alpha$? **No**, — because we do not know $\sigma^2$.
 > If we estimate it, we have to use $t_{\alpha/2}(n-p)$ instead of $z_{\alpha/2}$, and obtain:
-> $$P\left(\hat{\beta}_i - t_{\alpha/2}(n-p)\sqrt{\hat{\sigma}^2(X'X)^{-1}_{i+1,i+1}} ;\leq; \beta_i ;\leq; \hat{\beta}_i + t_{\alpha/2}(n-p)\sqrt{\hat{\sigma}^2(X'X)^{-1}_{i+1,i+1}}\right) = 1-\alpha$$
+> $$P\left(\hat{\beta}_i - t_{\alpha/2}(n-p)\sqrt{\hat{\sigma}^2(X'X)^{-1}_{i+1,i+1}} \leq \beta_i \leq \hat{\beta}_i + t_{\alpha/2}(n-p)\sqrt{\hat{\sigma}^2(X'X)^{-1}_{i+1,i+1}}\right) = 1-\alpha$$
 >This is a proper (computable from the data) $1-\alpha$ level c.i. for $\beta_i$. Written in shorthand notation:
-$$\hat{\beta}_i ;\pm; t_{\alpha/2}(n-p),\sqrt{\hat{\sigma}^2(X'X)^{-1}_{i+1,i+1}}$$
+$$\hat{\beta}_i \pm t_{\alpha/2}(n-p)\,\sqrt{\hat{\sigma}^2(X'X)^{-1}_{i+1,i+1}}$$
 This is the c.i. we obtained in R (`confint()`) and Python yesterday.
 
 ---
@@ -51,9 +51,7 @@ This is the c.i. we obtained in R (`confint()`) and Python yesterday.
 ## Standard Error and Hypothesis Testing
 
 $$\sqrt{\hat{\sigma}^2(X'X)^{-1}_{i+1,i+1}}$$
-
 is the (estimated) **standard error** of $\hat{\beta}_i$, readable in the output row corresponding to $\hat{\beta}_i$.
-
 Similarly, based on (3), we can construct a test of the null hypothesis:
 
 $$H_0: \beta_i = 0$$
@@ -62,10 +60,9 @@ $$H_0: \beta_i = 0$$
 
 ### Example: Insulate, Simple Additive Model
 $$\begin{pmatrix} \text{cons}_1 \\ \vdots \\ \text{cons}_{56} \end{pmatrix}
-
+=
 \begin{pmatrix} 1 & 1 & \text{temp}_1 \\ 1 & \vdots & \vdots \\ \vdots & 0 & \vdots \\ 1 & 0 & \text{temp}_{56} \end{pmatrix} \begin{pmatrix} \beta_0 \\ \beta_1 \\ \beta_2 \end{pmatrix}
-
-- \varepsilon$$
++ \varepsilon$$
 
 If $\beta_2 = 0$, then `temp` is a useless predictor, since:
 
@@ -99,16 +96,12 @@ In other cases:
 
 ---
 ## Graph Interpretation (Directed Acyclic Graph)
-# METTI FOTO
-An intuitive **Directed Acyclic Graph (DAG)**:
-
-- Node $Y$ ← first column in $X$ matrix (intercept, node `1`)
-- $x_1, x_2, \ldots, x_i, \ldots, x_{p-1}$ ← second to $p$-th columns in $X$ matrix
+![[4 - Inference in Linear Models-1781027689115.webp]]
 
 Testing each $\beta_i$ (asking whether $\beta_i = 0$) is equivalent to discussing the **relevance of the arrow** from $x_i$ to $Y$.
 We may also test a **whole subgroup of predictors** (more than one arrow). The extreme example is the **null model**, when all $x$'s disappear:
 
-$$H_0: \beta_1 = \beta_2 = \cdots = \beta_{p-1}$$
+$$H_0: \beta_1 = \beta_2 = \cdots = \beta_{p-1} = 0$$
 
 is testing whether the null model is appropriate.
 
@@ -165,7 +158,7 @@ The following rule is intuitive:
 Sparing the mathematics, this is an **F-test**, since we reject the small model if:
 
 > [!theorem] F-Test for Nested Hypotheses
-> $$\frac{|\hat{Y} - \hat{Y}_{(0)}|^2}{(p - q),\hat{\sigma}^2} > F_\alpha(p-q,; n-p)$$
+> $$\frac{|\hat{Y} - \hat{Y}_{(0)}|^2}{(p - q)\,\hat{\sigma}^2} > F_\alpha(p-q,\; n-p)$$
 >
 > where:
 > - $q$ = dimension of the small subspace
@@ -193,8 +186,8 @@ $$E(\text{cons}_i) = \beta_0 + \beta_1 I_i + \beta_2 \text{temp}_i + \beta_3 (I_
 In this case, the interaction term is the product of $I_i \times \text{temp}_i$.
 $$
 \begin{cases}
-\beta_0 + \beta_1 + \beta_2\text{tempi} + \beta_3 + \beta_3\text{tempi} = (\beta_0 + \beta_1) + (\beta_2 + \beta_3) \text{tempi} & \text{if } I_i = 1 \\ 
-\beta_0 + \beta_2\text{tempi} & \text{if } I_i = 0
+\beta_0 + \beta_1 + \beta_2\text{temp}_i + \beta_3\text{temp}_i = (\beta_0 + \beta_1) + (\beta_2 + \beta_3) \text{temp}_i & \text{if } I_i = 1 \\ 
+\beta_0 + \beta_2\text{temp}_i & \text{if } I_i = 0
 \end{cases}
 $$
 

@@ -1,12 +1,98 @@
 {
-  "Mathematical Methods for AI/Vaccarino/5 - FML/3 - Learning with Infinite Hypothesis Sets 2.md": {
-    "8c6408ab7ac45cf185780b68538b1d36": {
+  "Mathematical Methods for AI/Gasparini/2 - Linear Models/1 - Linear Models.md": {
+    "0b13de59ea7e4bb63654ebc89966a885": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Mathematical Methods for AI/Summary/4 - Curse PCA/1 - The Curse of Dimensionality.md": {
+    "4ef75e84fbdf16183fb731e34c63058a": {
       "position": "center",
       "width": "",
       "height": "",
       "wrap": false
     },
-    "976a626bdd591bf63a73da6daab3545d": {
+    "00f56e1f73bf1b7818e0873a34924bb1": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "3650b3371a85a883f7668e8a988a4ace": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Mathematical Methods for AI/Summary/5 - Statistic Learning/2 - Estimating Risk.md": {
+    "c0374a659662fee330391880f0bffbac": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Mathematical Methods for AI/Summary/6 - SVM/1 - Support Vector Machine.md": {
+    "bc16b879d24a55eee5fa3642372b68a0": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "b52ea163b8d3b95a6c1eb7244aa2552f": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "eb294571972bdc62df07f60bf2a84258": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Mathematical Methods for AI/Summary/6 - SVM/2 - Kernel Methods.md": {
+    "2d35cf6d3c60a483c0a03114c57c7afe": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "f479a36b7bd26c844949d17d32c3096f": {
+      "position": "right",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Mathematical Methods for AI/Summary/7 - Decision Trees/1 - Decision Trees, Impurity Metrics & Greedy Optimization.md": {
+    "a86206777f8943d548b30e1b32da8a57": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "4877c7b44849e9f305fcea821aaa8975": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Mathematical Methods for AI/Summary/8 - FML/1 - Introduction to Machine Learning.md": {
+    "4a3c9426d75dff59cafddf45d1a92c97": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Mathematical Methods for AI/Summary/8 - FML/4 - Choosing the Right ML Algorithm.md": {
+    "c350874db9e80332e94010ea47838a93": {
       "position": "center",
       "width": "",
       "height": "",

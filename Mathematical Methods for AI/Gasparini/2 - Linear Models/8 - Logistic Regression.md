@@ -33,7 +33,7 @@ So the idea is to use a **link function** $g(\cdot)$ (≈ '70) and write:
 
 ## The Logit Link Function
 
-In the binary case $$g(p) = X\beta$$What is a good choice for $g$?
+In the binary case: $$g(p) = X\beta$$What is a good choice for $g$?
 
 If $p = 0.7$, i.e. $p = P(Y=1) = P(\text{"success"})$:
 
@@ -45,11 +45,10 @@ Formally, the **odds** is a function $o(p)$:
 > [!definition] Odds and Log-Odds
 > $$o(p) = \frac{p}{1-p}$$
 ![[8 - Logistic Regression-1780325307850.webp]]
-
+>
 $o(p)$ ranges from $0$ to $+\infty$.
 To obtain a $g(\cdot)$ ranging from $-\infty$ to $+\infty$, we take the logarithm:
-
-> $$\log o(p) = \log \frac{p}{1-p} = \log p - \log(1-p) = \text{logodds}(p)$$
+$$\log o(p) = \log \frac{p}{1-p} = \log p - \log(1-p) = \text{logodds}(p)$$
 ![[8 - Logistic Regression-1780325388338.webp]]
 
 ---
@@ -60,7 +59,7 @@ Now we can write:
 $$\text{logodds}(p) = X\beta$$
 and see how predictors affect the mean response $p$ through the link function:
 $$g(p) = \text{logodds}(p) = \text{logit}(p) = \log \frac{p}{1-p}$$
-> [!important] A **Generalized Linear Model** for binary (Bernoulli) $Y$ and link function **logit** is called **LOGISTIC REGRESSION**.
+> [!important] A **Generalized Linear Model** for binary (Bernoulli) $Y$ and link function **logit** is called **logistic regression**.
 ### Inverse Transformation: The Logistic Function
 
 Starting from $$\ell = \log \dfrac{p}{1-p}$$
@@ -72,7 +71,7 @@ $$e^\ell = p(1 + e^\ell)$$
 
 > [!theorem] The Logistic Function (Inverse of Logit)
 > $$\boxed{p = \frac{e^\ell}{1 + e^\ell}} \qquad \text{the logistic function}$$
-
+>
 ![[8 - Logistic Regression-1780325497174.webp]]
 
 > [!note] Other choices of link function are possible, e.g. the CDF of $\mathcal{N}(0,1)$ (**probit**).
@@ -89,7 +88,6 @@ In practice, the database will look like:
 | 0                            | $\vdots$ | $\vdots$ | $\vdots$ |                                              |
 | 0                            | $x_n$    | $z_n$    | $w_n$    |                                              |
 
-
 **Example:**
 - $y = \text{political vote} = \begin{cases}1 & \text{right} \\ 0 & \text{left}\end{cases}$  
 - $x = \text{income (quantitative)}$ 
@@ -99,20 +97,16 @@ In practice, the database will look like:
 ---
 
 ## Estimation via Maximum Likelihood
-
 As for linear models, we estimate $\beta$'s (the effects of the predictors on the binary response) using **maximum likelihood**.
 
 **Likelihood** = density of $y_1, \ldots, y_n$:
-
 $$L = \prod_{y_i = 1} \frac{e^{\ell_i}}{1+e^{\ell_i}} \cdot \prod_{y_i = 0} \left(1 - \frac{e^{\ell_i}}{1+e^{\ell_i}}\right)$$
-
 where $\dfrac{e^{\ell_i}}{1+e^{\ell_i}}$ is $p$ for the $i$-th observation.
 
 This can be written compactly as:
 
 $$L = \prod_{i=1}^{n} \left(\frac{e^{\ell_i}}{1+e^{\ell_i}}\right)^{y_i} \left(1 - \frac{e^{\ell_i}}{1+e^{\ell_i}}\right)^{1-y_i}$$
-
-since $y_1, \ldots, y_n$ are independent $\text{Bernoulli}!\left(\dfrac{e^{\ell_i}}{1+e^{\ell_i}}\right)$.
+since $y_1, \ldots, y_n$ are independent $\text{Bernoulli}\left(\dfrac{e^{\ell_i}}{1+e^{\ell_i}}\right)$.
 
 ### Numerical Optimization
 Maximizing the likelihood does **not** have an explicit analytical solution, but we can use **numerical methods** to obtain $\hat{\beta}$.

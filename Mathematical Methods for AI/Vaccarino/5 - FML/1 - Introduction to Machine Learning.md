@@ -213,7 +213,7 @@ $$h = \arg\min_{h \in \mathcal{H}} \widehat{R}(h) + \lambda |h|^2$$
 ### Hoeffding's Inequality
 
 > [!theorem] Hoeffding's Inequality 
-> Let $X_1, \dots, X_m$ be independent random variables with the same expectation $\mu$ and $X_i \in [a, b]$ ($a < b$). Then for any $\epsilon > 0$: $$\Pr\left[\mu - \frac{1}{m}\sum_{i=1}^m X_i > \epsilon\right] \leq \exp\left(-\frac{2m\epsilon^2}{(b-a)^2}\right)$$ $$\Pr\left[\frac{1}{m}\sum_{i=1}^m X_i - \mu > \epsilon\right] \leq \exp\left(-\frac{2m\epsilon^2}{(b-a)^2}\right).$$
+> Let $X_1, \dots, X_m$ be independent random variables with the same expectation $\mu$ and $X_i \in [a, b]$ ($a < b$). Then for any $\epsilon > 0$: $$\Pr\left[\mu - \frac{1}{m}\sum_{i=1}^m X_i > \epsilon\right] \leq \exp\left(-\frac{2m\epsilon^2}{(b-a)^2}\right)$$ 
 
 ### McDiarmid's Inequality
 

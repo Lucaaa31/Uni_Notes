@@ -1,5 +1,38 @@
 %% Begin Waypoint %%
 - **[[Gasparini]]**
+- **[[Summary]]**
+	- **1 - Recap**
+		- [[1 - Discrete Distribution]]
+		- [[2 - Inference, Goodness-of-Fit and Tests]]
+		- [[3 - Bivariate Categorical Analysis]]
+	- **2 - Linear Models**
+		- [[1 - Linear Models]]
+		- [[2 -  Generalized Linear Models & Classification Frameworks]]
+	- **3 - Bayesian Statistics**
+		- [[1 - Stochastic Simulation & Random Variate Generation]]
+		- [[2 - Multivariate Stochastic Simulation & MCMC Algorithms]]
+		- [[3 - Conditional Expectations & Total Variance Theorems]]
+		- [[4 - Conjugacy]]
+	- **4 - Curse PCA**
+		- [[1 - The Curse of Dimensionality]]
+		- [[2 - Dimensionality Reduction Frameworks]]
+	- **5 - Statistic Learning**
+		- [[1 - Foundations of Statistical Learning & Risk Optimization]]
+		- [[2 - Estimating Risk]]
+		- [[3 - Tradeoffs]]
+	- **6 - SVM**
+		- [[1 - Support Vector Machine]]
+		- [[2 - Kernel Methods]]
+	- **7 - Decision Trees**
+		- [[1 - Decision Trees, Impurity Metrics & Greedy Optimization]]
+		- [[2 - Tree-Based Methods]]
+		- [[3 - Ensemble Methods]]
+		- [[4 - Boosting]]
+	- **8 - FML**
+		- [[1 - Introduction to Machine Learning]]
+		- [[2 - Learning with Finite Hypothesis Sets]]
+		- [[3 - Learning with Infinite Hypothesis Sets]]
+		- [[4 - Choosing the Right ML Algorithm]]
 - **[[Vaccarino]]**
 
 %% End Waypoint %%

@@ -1,6 +1,6 @@
 ## Interaction
 
-> [!important] A linear model is said to have **interactions** if the (true) **differential effects** of one predictor given a level of another predictor **depends on such level**.
+> [!definition] A linear model is said to have **interactions** if the (true) **differential effects** of one predictor given a level of another predictor **depends on such level**.
 
 ![[7 - Confidence vs Prediction Intervals-1780320322620.webp]]
 
@@ -91,7 +91,7 @@ $$\underbrace{\frac{x_f\hat{\beta} - x_f\beta}{\sqrt{x_f\cancel{\sigma^2}(X'X)^{
 And finally, a $t$-like $(1-\alpha)$-level **confidence interval** for $x_f\beta = E(Y_{n+1})$:
 
 > [!theorem] Confidence Interval for $E(Y_{n+1})$
-> $$\boxed{x_f\hat{\beta} \pm; t_{\alpha/2}(n-p)\sqrt{ \underbrace{\frac{E'E}{n-p}}_{\sigma^2}x_f(X'X)^{-1}x_f'}}$$
+> $$\boxed{x_f\hat{\beta} \pm t_{\alpha/2}(n-p)\sqrt{ \underbrace{\frac{E'E}{n-p}}_{\sigma^2}x_f(X'X)^{-1}x_f'}}$$
 
 
 Example in simple linear regression: $x_f\hat{\beta} = \hat{\beta}_0 + \hat{\beta}_1 x_f$

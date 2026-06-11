@@ -95,7 +95,6 @@ $$\langle f, g \rangle = \sum_{i,j} a_i b_j K(x_i, y_j)$$
 **Reproducing Property:** $$\forall, f \in H_0, \forall x \in \mathcal{X}: \quad f(x) = \langle f, \Phi(x) \rangle$$
 
 **Key steps to show $\langle \cdot, \cdot \rangle$ is an inner product:**
-
 1. **Bilinear & symmetric** ✓ (by construction)
 2. **Positive semi-definite** ✓ (since $K$ is PDS)
 3. **Definite** — uses Cauchy-Schwarz for PDS kernels: $$K(x,x) K(y,y) - K(x,y)^2 \geq 0 \implies [f(x)]^2 \leq \langle f, f \rangle \cdot K(x,x)$$

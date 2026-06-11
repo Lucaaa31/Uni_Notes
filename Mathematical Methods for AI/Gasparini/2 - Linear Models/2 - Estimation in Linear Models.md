@@ -1,8 +1,8 @@
 ## Linear Model
 
-$$Y_{n \times 1} = X_{n \times p} , \beta_{p \times 1} + \varepsilon_{n \times 1}$$
+$$Y_{n \times 1} = X_{n \times p}  \beta_{p \times 1} + \varepsilon_{n \times 1}$$
 
-$$\varepsilon_{n \times 1} \sim \mathcal{N}_n\left(\mathbf{0}_{n \times 1},; \sigma^2 I_{n \times n}\right)$$
+$$\varepsilon_{n \times 1} \sim \mathcal{N}_n\left(\mathbf{0}_{n \times 1}, \sigma^2 I_{n \times n}\right)$$
 
 Given observations $Y_1 = y_1, \ldots, Y_n = y_n$ _(observations = realizations, instances of $Y_1, \ldots, Y_n$)_, we compute the **MLE (maximum likelihood estimate)** of $\beta$ and $\sigma^2$ by maximizing the likelihood function, to get:
 $$X'X\beta = X' \underset{n \times 1}{y} $$
@@ -15,13 +15,13 @@ $$(X'X)(X'X)\hat{\beta} = (X'X)^{-1}X'y$$
 > $$\boxed{\hat{\beta} = (X'X)^{-1}X'y} \quad \leftarrow \text{least square estimate of } \beta$$
 Remember we also have $\sigma^2$.
 Once we have maximized the likelihood in $\beta$, we are left with maximizing:
-$$\max_{\sigma^2} \mathcal{L}(\hat{\beta}, \sigma^2;, y_1 \ldots y_n)$$
+$$\max_{\sigma^2} \mathcal{L}(\hat{\beta}, \sigma^2; y_1 \ldots y_n)$$
 equivalent to maximizing the log likelihood:
-$$\log \mathcal{L}(\hat{\beta}, \sigma^2;, y_1 \ldots y_n) = -\frac{n}{2}\log(2\pi\sigma^2) - \frac{1}{2\sigma^2}(y - X\hat{\beta})'(y - X\hat{\beta})$$
+$$\log \mathcal{L}(\hat{\beta}, \sigma^2; y_1 \ldots y_n) = -\frac{n}{2}\log(2\pi\sigma^2) - \frac{1}{2\sigma^2}(y - X\hat{\beta})'(y - X\hat{\beta})$$
 We differentiate with respect to $\sigma^2$ and set the derivative to $0$:
 $$-\frac{n}{2} \cdot \frac{1}{2\pi\sigma^2} + \frac{1}{2\sigma^4}(y - X\hat{\beta})'(y - X\hat{\beta}) = 0 \qquad \text{assume } \sigma^2 \neq 0$$
 We get:
-$$\hat{\sigma}^2 = \frac{(y - X\hat{\beta})'(y - X\hat{\beta})}{n} = \frac{\sum\left(y_i - \sum_{p=0}^{j-1} x_{i,j}\hat{\beta}_p\right)^2}{n} = \frac{1}{n} \cdot \text{(sum of squared differences between observed and fitted values)}$$
+$$\hat{\sigma}^2 = \frac{(y - X\hat{\beta})'(y - X\hat{\beta})}{n} = \frac{\sum\left(y_i - \sum_{p=0}^{j-1} x_{i,j}\hat{\beta}_p\right)^2}{n} = \frac{1}{n}  \text{(sum of squared differences between observed and fitted values)}$$
 
 > [!definition] Residuals and Fitted Values
 > - $\hat{\beta}$ — estimates of $\beta$
@@ -58,18 +58,14 @@ $$\hat{\sigma}^2 = \frac{(y - X\hat{\beta})'(y - X\hat{\beta})}{n} = \frac{\sum\
 ## Example: Simple Linear Regression
 
 $$\begin{pmatrix}Y_1 \\ \vdots \\ Y_n\end{pmatrix} = \underbrace{\begin{pmatrix}1 & x_1 \\ 1 & x_2 \\ \vdots & \vdots \\ 1 & x_n\end{pmatrix}}_{X}\begin{pmatrix}\beta_0 \\ \beta_1\end{pmatrix} + \begin{pmatrix}\varepsilon_1 \\ \varepsilon_2 \\ \vdots \\ \varepsilon_n\end{pmatrix}$$
-
 $$\begin{pmatrix}\hat{\beta}_0 \ \hat{\beta}_1\end{pmatrix} = (X'X)^{-1}X'y$$
-
-$$= \left(\begin{pmatrix}1 & \cdots & 1 \ x_1 & \cdots & x_n\end{pmatrix}\begin{pmatrix}1 & x_1 \\ \vdots & \vdots \\ 1 & x_n\end{pmatrix}\right)^{-1}\begin{pmatrix}1 & \cdots & 1 \ x_1 & \cdots & x_n\end{pmatrix}\begin{pmatrix}y_1 \\ \vdots \\ y_n\end{pmatrix}$$
+$$= \left(\begin{pmatrix}1 & \cdots & 1 \\ x_1 & \cdots & x_n\end{pmatrix}\begin{pmatrix}1 & x_1 \\ \vdots & \vdots \\ 1 & x_n\end{pmatrix}\right)^{-1}\begin{pmatrix}1 & \cdots & 1 \\ x_1 & \cdots & x_n\end{pmatrix}\begin{pmatrix}y_1 \\ \vdots \\ y_n\end{pmatrix}$$
 
 $$= \begin{pmatrix}n & \sum x_i \\ \sum x_i & \sum x_i^2\end{pmatrix}^{-1}\begin{pmatrix}\sum y_i \\ \sum x_i y_i\end{pmatrix}$$
 
-$$= \frac{1}{n\sum x_i^2 - (\sum x_i)^2}\begin{pmatrix}\sum x_i^2 & -\sum x_i \\ -\sum x_i & n\end{pmatrix}\begin{pmatrix}\sum y_i \ \sum x_i y_i\end{pmatrix} \quad \leftarrow \text{exercise}$$
+$$= \frac{1}{n\sum x_i^2 - (\sum x_i)^2}\begin{pmatrix}\sum x_i^2 & -\sum x_i \\ -\sum x_i & n\end{pmatrix}\begin{pmatrix}\sum y_i \ \sum x_i y_i\end{pmatrix} \quad $$
 
 $$= \cdots = \begin{cases} \hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} \\ \hat{\beta}_1 = \dfrac{\sum(x_i - \bar{x})y_i}{\sum(x_i - \bar{x})^2} = \dfrac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sum(x_i - \bar{x})^2} \end{cases}$$
-
-> [!note] $n\sum(x_i - \bar{x})^2$ $= \sum(x_i^2 - 2x_i\bar{x} + \bar{x}^2)$ $= \sum x_i^2 - 2\bar{x}\sum x_i + n\bar{x}^2$ $= \sum x_i^2 - 2\bar{x}(n\bar{x}) + n\bar{x}^2$ $= n\sum x_i^2 - (\sum x_i)^2$
 
 As for $\hat{\sigma}^2$:
 $$\hat{\sigma}^2 = \frac{\sum\left(y_i - (\hat{\beta}_0 + \hat{\beta}_1 x_i)\right)^2}{n}$$
@@ -86,9 +82,9 @@ $$y = \hat{\beta}_0 + \hat{\beta}_1 \bar{x} = \bar{y} - \hat{\beta}_1\bar{x} + \
 ## Estimate vs. Estimator
 
 > [!definition] Estimate vs. Estimator
-> The quantity $\hat{\beta} = (X'X)^{-1}X'y$ corresponding to a specific observed vector $y$ is called an **ESTIMATE** of $\beta$ (a number resulting from an algorithm).
+> The quantity $\hat{\beta} = (X'X)^{-1}X'y$ corresponding to a specific observed vector $y$ is called an **estimate** of $\beta$ (a number resulting from an algorithm).
 >
-> $\hat{\beta} = (X'X)^{-1}X'Y$ is the corresponding random variable, called the **ESTIMATOR** of $\beta$.
+> $\hat{\beta} = (X'X)^{-1}X'Y$ is the corresponding random variable, called the **estimator** of $\beta$.
 
 We can derive the **sampling distribution** of the $\hat{\beta}$ estimator.
 Since $Y \sim \mathcal{N}(X\beta,, \sigma^2 I)$, $\hat{\beta}$ is a linear transformation of it, therefore:
@@ -120,7 +116,6 @@ e.g. $\text{Var}(\hat{\beta}_0) = \sigma^2 (X'X)^{-1}_{11}$
 ## Sampling Distribution of $\hat{\sigma}^2$
 
 It can be proved that if we take the random vector of residuals:
-
 $$E = Y - \hat{Y} = Y - X\hat{\beta}$$ $$= Y - (X'X)^{-1}X'Y$$ $$= \left(I - (X'X)^{-1}X'\right)Y$$
 
 (where $e$ is the particular realization of $E$), then the sampling distribution of:

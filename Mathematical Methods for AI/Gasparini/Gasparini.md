@@ -3,7 +3,7 @@
 - **[[2 - Linear Models]]**
 	- **Resources**
 
-	- [[1 - Linear Models]]
+	- [[Mathematical Methods for AI/Gasparini/2 - Linear Models/1 - Linear Models]]
 	- [[2 - Estimation in Linear Models]]
 	- [[4 - Inference in Linear Models]]
 	- [[6 - Various Linear Models]]

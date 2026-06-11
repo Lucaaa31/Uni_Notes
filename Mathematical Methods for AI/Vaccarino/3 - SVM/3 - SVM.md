@@ -2,6 +2,6 @@
 - **Resources**
 
 - [[1 - Support Vector Machines]]
-- [[2 - Kernel Methods]]
+- [[Mathematical Methods for AI/Vaccarino/3 - SVM/2 - Kernel Methods]]
 
 %% End Waypoint %%

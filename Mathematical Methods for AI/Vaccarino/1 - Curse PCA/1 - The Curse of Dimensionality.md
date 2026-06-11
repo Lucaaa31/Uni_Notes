@@ -6,7 +6,7 @@
 ### The Neighborhood Problem
 Supervised classification and regression often rely on **local averages**:
 - **Classification:** Given $n$ labeled points, classify a new point $x$ by majority vote in its neighborhood.
-![[The Curse of Dimensionality-1780666756023.webp]]
+![[The Curse of Dimensionality-1780666756023.webp|344]]
 - **Regression:** Observe $n$ i.i.d. pairs $(x^i, y^i)$ from the model:
 
 $$y^i = f(x^i) + \epsilon_i$$

@@ -6,7 +6,7 @@
 > We start with two populations, as in logistic regression, then we generalize to more than 2.
 
 ---
-## 2) Fisher's Discriminant Analysis
+## 2) Fisher's Quadratic Discriminant Analysis
 
 ![[9 - Classification - LDA, QDA, KNN-1780518385566.webp]]
 Fisher's discriminant analysis **reverses the logic of logistic regression** and looks at the distribution of the features $X = (X_1, \ldots, X_p)'$ and assumes they are **quantitative**, and in particular **multivariate normal**.

@@ -121,7 +121,8 @@ Both flatten out after roughly degree 2, indicating little gain from higher-orde
 > - This ignores that **Step 1 has already seen the labels** of the (full) data and used them. Feature selection is **a form of training** and must be inside the validation loop.
 > - You can simulate realistic data where class labels are **independent of the outcome**, so the **true test error = 50%**, yet the CV error that ignores Step 1 comes out as **zero**.
 
-> [!example] Try it yourself Simulate independent labels/features, run the "wrong" procedure, and watch the CV error collapse to ~0 despite chance-level true performance.
+> [!example] Try it yourself 
+> Simulate independent labels/features, run the "wrong" procedure, and watch the CV error collapse to ~0 despite chance-level true performance.
 
 ### The Wrong Way vs. The Right Way ✅
 

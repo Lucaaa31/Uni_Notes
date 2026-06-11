@@ -139,7 +139,8 @@ Plugging in $(1)$, the first loading vector solves: $$ \underset{\phi_{11}, \dot
 - Score vectors have length $n = 50$; loading vectors have length $p = 4$.
 - PCA performed after **standardizing** each variable (mean 0, std 1).
 
-> [!info] Biplot A **biplot** displays both the scores (blue state names) and the loadings (orange arrows, with axes on the top and right) on one figure.
+> [!info] Biplot 
+> A **biplot** displays both the scores (blue state names) and the loadings (orange arrows, with axes on the top and right) on one figure.
 > ![[2 - Dimensionality Reduction-1780676051317.webp|406x406]]
 > Example: the loading for **Rape** is $0.54$ on PC1 and $0.17$ on PC2, so the word "Rape" sits at $(0.54, 0.17)$.
 
@@ -238,7 +239,8 @@ $$\lVert\alpha\rVert_0 \overset{\text{def}}{=} |\{i : \alpha_i \ne 0\}| \le s \t
 - Compute $\alpha = U^\top x$ and save only the **non-zero** elements of $\alpha$.
 - Requires order of $s \log(d)$ storage.
 
-> [!question] The key idea Why acquire all $d$ coordinates of $x$ when most will be thrown away? **Can't we directly measure only the part that survives?** — This is the premise of compressed sensing.
+> [!question] The key idea 
+> Why acquire all $d$ coordinates of $x$ when most will be thrown away? **Can't we directly measure only the part that survives?** — This is the premise of compressed sensing.
 
 ### The three "surprising" results
 

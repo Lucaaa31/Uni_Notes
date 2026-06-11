@@ -1,5 +1,3 @@
-
-
 It involves random variables.
 e.g. $\rightarrow$ `0.231167` = a realization of $U(0,1)$ = an instance, a simulation.
 

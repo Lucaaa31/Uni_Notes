@@ -49,7 +49,7 @@ To quantify our skepticism towards $H_0$ objectively, we use a **Goodness-of-Fit
 
 In 1900, Karl Pearson proposed the $\chi^2$ statistic:
 
-> [!important] Pearson's $\chi^2$ Statistic
+> [!definition] Pearson's $\chi^2$ Statistic
 > $$\chi^2 = \sum_{i=1}^{D} \frac{(N_i - n p_i)^2}{n p_i}$$
 > 
 > Where:
@@ -75,9 +75,10 @@ In 1900, Karl Pearson proposed the $\chi^2$ statistic:
 > - If $H_0$ is true, $\chi^2$ should be close to the degrees of freedom ($D - 1 = 2$).
 >     
 > - If $\chi^2$ is significantly larger, we reject $H_0$.
-    
-
-The decision is guided by the **p-value** (the area to the right of the observed $\chi^2$ value). The lower the p-value, the more extreme the observed distance, and the less plausible $H_0$ becomes.
+> 
+> ![[2 -  Inference, Goodness-of-Fit, and Sampling Models-1780945827743.webp]]
+> 
+The decision is guided by the **p-value** (the area to the right of the observed  value). The lower the p-value, the more extreme the observed distance, and the less plausible  becomes.
 
 ### Example Calculation
 
@@ -91,7 +92,8 @@ $$\mathbb{P}(\chi^2(2) > 5.2) \approx 0.074$$
 
 ## 3. Sampling Without Replacement: The Multivariate Hypergeometric Distribution
 
-Sampling _with_ replacement allows us to treat trials as independent and use multinomial probabilities. If we instead sample **without replacement** from a finite population, independence is lost.
+Sampling _with_ replacement allows us to treat trials as independent and use multinomial probabilities. 
+If we instead sample **without replacement** from a finite population, independence is lost.
 
 Let:
 
@@ -129,19 +131,23 @@ $$\mathbf{Y} \sim \text{Multinomial}\left(n = 57, \mathbf{p} = \left(\frac{1}{3}
 ## 5. Mathematical Framework: Multinoulli and Multinomial Random Vectors
 
 A multivariate discrete random vector collects the counts of different categories across multiple observations:
+$$(N_1, \dots, N_D) \sim \text{Multinomial}(n, p_1, \dots, p_D)$$
+Where:
 
-$$\mathbf{Y} \sim \text{Multinomial}(n, p_1, \dots, p_D)$$
-
-Where $n$ is the sample size, $D$ is the number of classes (levels of a factor), and $N_i$ represents the count of observations in class $i$.
+- $D =$ # of classes of categorical variable (also called factor)
+    
+- $n =$ # of observations (sample size)
+    
+- $N_i =$ # of observations in class $i$
 
 ### Mapping Binary to Multi-Class Trackers
 
 The relationship between single-trial indicators and multi-trial aggregations scales as follows:
 
-|**Number of Classes (D)**|**Single-Trial Variable Type**|**Multi-Trial Aggregated Counts**|
-|---|---|---|
-|**$D = 2$**|Bernoulli (binary)|Binomial|
-|**$D > 2$**|Multinoulli|Multinomial|
+| **Number of Classes (D)** | **Single-Trial Variable Type** | **Multi-Trial Aggregated Counts** |
+| ------------------------- | ------------------------------ | --------------------------------- |
+| **$D = 2$**               | Bernoulli (binary)             | Binomial                          |
+| **$D > 2$**               | Multinoulli                    | Multinomial                       |
 
 ### One-Hot Encoding (Multinoulli Vector)
 
@@ -157,7 +163,6 @@ To process categorical data mathematically, classes are converted into numerical
 A single trial results in a **Multinoulli random vector** $\mathbf{X} \sim \text{Multinoulli}(p_1, p_2, p_3)$, which is a special case of the Multinomial distribution where $n = 1$.
 
 Therefore, a categorical variable can be viewed in two ways:
-
 1. A one-dimensional categorical variable (factor) with $D$ levels and probabilities $p_1, \dots, p_D$.
     
 2. A multi-dimensional **Multinoulli** random vector under one-hot encoding.

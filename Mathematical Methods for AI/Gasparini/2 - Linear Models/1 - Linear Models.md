@@ -117,7 +117,7 @@ where $x_1, \ldots, x_n$ is a **quantitative predictor**.
 ### Graphical Representation
 
 Observe $Y_1 = y_1, \ldots, Y_n = y_n$ (realizations, or instances of the random variables $Y_1, \ldots, Y_n$). Then we can plot $(x_1, y_1), \ldots, (x_n, y_n)$ in a **scatterplot**.
-![[1 - Linear Models-1780243907071.webp|642]]
+![[1 - Linear Models-1780243907071.webp|396]]
 
 - **After sampling**: observed data points with fitted line $\hat{\beta}_0 + \hat{\beta}_1 x$
 - **Before sampling**: underlying model — $Y_1, \ldots, Y_n$ i.i.d. $\mathcal{N}(\beta_0 + \beta_1 x_i, \sigma^2)$ — shown as normal distributions centered on the regression line at each $x_i$
@@ -151,15 +151,15 @@ and $\hat{\sigma}^2$.
 > [!summary] Linear Model with Normal Errors
 > $$\underset{n \times 1}{Y} = \underset{n \times p}{X} \quad \underset{p \times 1}{\beta} + \underset{n \times 1}{\varepsilon}$$
 >
-> $\varepsilon_1, \ldots, \varepsilon_n$ i.i.d. $\mathcal{N}(0, \sigma^2)$, so that:
+> - $\varepsilon_1, \ldots, \varepsilon_n$ i.i.d. $\mathcal{N}(0, \sigma^2)$, so that:
 >
-> $$\varepsilon \sim \mathcal{N}_n!\left(\begin{pmatrix} 0 \\ \vdots \\ 0 \end{pmatrix}, \begin{pmatrix} \sigma^2 & 0 & \cdots & 0 \\ 0 & \sigma^2 & & 0 \\ \vdots & & \ddots & \vdots \\ 0 & \cdots & 0 & \sigma^2 \end{pmatrix}\right) = \mathcal{N}_n\left(\mathbf{0}_{n \times 1}, \sigma^2 I_{n \times n}\right)$$
+> $$\varepsilon \sim \mathcal{N}_n\left(\begin{pmatrix} 0 \\ \vdots \\ 0 \end{pmatrix}, \begin{pmatrix} \sigma^2 & 0 & \cdots & 0 \\ 0 & \sigma^2 & & 0 \\ \vdots & & \ddots & \vdots \\ 0 & \cdots & 0 & \sigma^2 \end{pmatrix}\right) = \mathcal{N}_n\left(\mathbf{0}_{n \times 1}, \sigma^2 I_{n \times n}\right)$$
 >
 > where $I_{n \times n}$ is the identity matrix.
 >
 > Therefore, since linear transformations of normals are normal:
 >
-> $$Y \sim \mathcal{N}_n(X\beta,; \sigma^2 I)$$
+> $$Y \sim \mathcal{N}_n(X\beta, \sigma^2 I)$$
 >
 > $$E(Y) = E(X\beta + \varepsilon) = X\beta + E(\varepsilon) = X\beta$$
 >
@@ -175,9 +175,8 @@ This is a **parametric model**, i.e. a probabilistic structure for observable re
 
 In traditional parametric probabilistic models like this, **Maximum Likelihood** is the preferred method. (Fisher ~1925, but also Gauss ~1800)
 
-The likelihood is the density of the observations $Y_1, \ldots, Y_n$ viewed as a function of the unknown parameters:
-
-$$\mathcal{L}(\beta, \sigma^2;, y_1, \ldots, y_n) = f(y_1, \ldots, y_n;, \beta, \sigma^2)$$
+The likelihood is the density of the observations $Y_1, \ldots, Y_n$ viewed as a function of the unknown parameters
+$$\mathcal{L}(\beta, \sigma^2; y_1, \ldots, y_n) = f(y_1, \ldots, y_n; \beta, \sigma^2)$$
 
 Since $Y_1, \ldots, Y_n$ are independent normal random variables:
 
@@ -223,9 +222,9 @@ This is a smooth function, so we differentiate to find critical points.
 **Matrix derivatives used:** $$\frac{\partial}{\partial x}(a'x) = a' \qquad \frac{\partial}{\partial x}(x'Ax) = 2Ax$$
 Differentiating with respect to $\beta$:
 
-$$\frac{\partial}{\partial \beta} \left(y'y - 2,y'X\beta + \beta'X'X\beta\right) = -2X'y + 2X'X\beta = 0$$
+$$\frac{\partial}{\partial \beta} \left(y'y - 2y'X\beta + \beta'X'X\beta\right) = -2X'y + 2X'X\beta = 0$$
 
 We get the **normal equations**:
 
 > [!theorem] Normal Equations
-> $$\boxed{X'X,\beta = X'y}$$
+> $$\boxed{X'X\beta = X'y}$$
