@@ -44,7 +44,7 @@
 > 
 > The expected value of the conditional expectation of $Y$ given $X$ is equal to the unconditional expected value of $Y$:
 > 
-> $$\boxed{E\big(E(Y \mid X)\big) = E(Y)}$$
+> $$E\big(E(Y \mid X)\big) = E(Y)$$
 > 
 
 ### Operator Algebraic Constraints

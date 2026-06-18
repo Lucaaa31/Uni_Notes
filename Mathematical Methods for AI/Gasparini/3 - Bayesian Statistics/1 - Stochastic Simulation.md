@@ -75,7 +75,8 @@ This is a consequence of the following theorem.
 > Equivalently, since $u$ and $1-u$ have the same distribution:
 >    2*) compute $x = -\dfrac{\log(u)}{\lambda}$
 
-> [!tip] $2^*$ is an **efficiency gain**. Similar ad-hoc tricks are well known in the literature (since the 1940s) for specific distributions.
+> [!tip] $2^*$ is an **efficiency gain**. 
+> Similar ad-hoc tricks are well known in the literature (since the 1940s) for specific distributions.
 
 ---
 

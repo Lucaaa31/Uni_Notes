@@ -7,12 +7,13 @@
 		- [[3 - Bivariate Categorical Analysis]]
 	- **2 - Linear Models**
 		- [[1 - Linear Models]]
-		- [[2 -  Generalized Linear Models & Classification Frameworks]]
+		- [[2 - Generalized Linear Models & Classification Frameworks]]
 	- **3 - Bayesian Statistics**
 		- [[1 - Stochastic Simulation & Random Variate Generation]]
 		- [[2 - Multivariate Stochastic Simulation & MCMC Algorithms]]
 		- [[3 - Conditional Expectations & Total Variance Theorems]]
-		- [[4 - Conjugacy]]
+		- [[4 - Bayesian Statistics]]
+		- [[5 - Conjugacy]]
 	- **4 - Curse PCA**
 		- [[1 - The Curse of Dimensionality]]
 		- [[2 - Dimensionality Reduction Frameworks]]

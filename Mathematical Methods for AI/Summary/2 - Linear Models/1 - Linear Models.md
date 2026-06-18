@@ -1,5 +1,3 @@
-Ecco i tuoi appunti completi con l'aggiunta di una breve introduzione contestuale in inglese prima di ogni blocco di definizione, utile a dare fluidità e a spiegare lo scopo logico di ciascun passaggio statistico.
-
 ### Linear Model Framework
 
 > **Context:** Before estimating any parameters, we must formally define the structural layout of the multivariate linear regression model using matrix notation. This maps our observed data to a system of linear equations that includes a stochastic error component.

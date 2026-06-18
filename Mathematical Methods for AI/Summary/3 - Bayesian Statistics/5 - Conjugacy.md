@@ -47,8 +47,7 @@ $$\text{Posterior} \propto \text{Verosimiglianza} \times \text{Prior}$$
 
 ### Restoring Joint Structure
 
-> **Context:** To restore 
-in multi-parameter normal problems, we must account for the structural dependency between the parameters. By conditioning the prior distribution of the mean on the variance or precision parameter, we form a joint Normal-Gamma framework that remains conjugate.
+> **Context:** To restore in multi-parameter normal problems, we must account for the structural dependency between the parameters. By conditioning the prior distribution of the mean on the variance or precision parameter, we form a joint Normal-Gamma framework that remains conjugate.
 
 ```
     (μ) ← (τ)
@@ -108,7 +107,7 @@ in multi-parameter normal problems, we must account for the structural dependenc
 > 
 > Given a sequence of independent Bernoulli observations and a Beta prior distribution on the success parameter $p$:
 > 
-> X_1, \ldots, X_n \overset{\mathrm{i.i.d.}}{\sim} \mathrm{Bernoulli}(p) \qquad p \sim \mathrm{Beta}(a, b)$$
+> $$X_1, \ldots, X_n \overset{\mathrm{i.i.d.}}{\sim} \mathrm{Bernoulli}(p) \qquad p \sim \mathrm{Beta}(a, b)$$
 > 
 > The analytical posterior distribution is derived as follows:
 > 

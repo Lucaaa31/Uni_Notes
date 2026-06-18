@@ -42,7 +42,7 @@
 > 
 > - If a joint density can be represented as a factorization along a simplified sparse DAG, variables only need to be conditioned on their immediate **parents** ($\pi_i$) rather than the entire historical sequence:
 >     
->     $$\boxed{f(x_1, \ldots, x_n) = \prod_{i=1}^{n} f(x_i \mid \pi_i)}$$
+>     $$f(x_1, \ldots, x_n) = \prod_{i=1}^{n} f(x_i \mid \pi_i)$$
 >     
 
 ### Non-Unique Structural Mappings
