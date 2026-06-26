@@ -8,7 +8,8 @@ The lecture opens by recalling the GDPR framework already covered: what the GDPR
 
 The GDPR protects **natural persons** with regard to the processing of personal data and the rules relating to the free movement of personal data. Names of companies or enterprises are **not** protected, unless those names are connected to specific natural persons representing the company.
 
-_Example: the Politecnico email addresses._ If I write an email to `rettore@polito.it`, there is no GDPR issue, because I am not processing the data of a natural person — the address refers to a role/institution. On the contrary, if I write to `stefano.corgnati@polito.it`, I am processing the family name of a natural person (the director), and therefore I must respect the GDPR rules.
+_Example: the Politecnico email addresses._ 
+If I write an email to `rettore@polito.it`, there is no GDPR issue, because I am not processing the data of a natural person — the address refers to a role/institution. On the contrary, if I write to `stefano.corgnati@polito.it`, I am processing the family name of a natural person (the director), and therefore I must respect the GDPR rules.
 
 ### Definition (Article 4.1)
 
@@ -20,23 +21,34 @@ Personal data means **any information relating to an identified or identifiable 
 
 This is presented as the most important issue for the exam. For **any** processing activity it is necessary to identify a valid ground — the **lawful basis** — to justify the collection, use, or any other form of processing. Without a ground, personal data cannot be processed. In practice, if a company processes data on the basis of one listed ground, it usually does not also rely on a different ground for the same activity.
 
-> **Exam warning:** do not confuse the **principles** of the GDPR (and the rights of the data subject) with the **justification grounds**. A principle is the basis on which the GDPR allows processing; the grounds are the legal bases that make a specific processing lawful. Confusing the two means failing the exam.
+> **Exam warning:** do not confuse the **principles** of the GDPR (and the rights of the data subject) with the **justification grounds**:
+> -  **Principle:** all the rules that say "how" the data have to be treated (all have to be respected)
+> - **Lawful Grounds:** it says "why" I can treat the data (only 1 needed) 
 
-The **six lawful bases** under **Article 6** are: **contract, legal obligation, legitimate interest, consent, vital interest, and task carried out in the public interest / exercise of official authority.**
+The **six lawful bases** under **Article 6** are: 
+- **contract**
+- **legal obligation**
+- **legitimate interest**
+- **consent**
+- **vital interest**
+- **task carried out in the public interest / exercise of official authority.**
 
 ### 3.1 Contract
 
 Personal data may be processed when this is necessary to comply with a **contractual obligation**. This is very common in company activity: companies process personal data in order to perform contracts.
 
-_Example: online sales._ A company selling goods on a website must process the client's data in order to deliver the goods purchased; without processing that data, the contractual obligation cannot be performed.
+_Example: online sales._ 
+A company selling goods on a website must process the client's data in order to deliver the goods purchased; without processing that data, the contractual obligation cannot be performed.
 
 Contract can also be a lawful basis for handling **pre-contractual requests** from potential clients.
 
-_Example: a home-repair quote._ When a potential client asks a company for an estimate to paint a house, no contract has yet been executed. Yet to issue the estimate the company needs at least the subject's name, family name, and email in order to send the quote. Here contract is the lawful basis.
+_Example: a home-repair quote._ 
+When a potential client asks a company for an estimate to paint a house, no contract has yet been executed. Yet to issue the estimate the company needs at least the subject's name, family name, and email in order to send the quote. Here contract is the lawful basis.
 
 **Strict interpretation.** Contractual necessity must be interpreted **strictly, not broadly**: it must be demonstrated that the processing is necessary to perform/execute the contract or to address the pre-contractual request. Outside that situation, the basis cannot be stretched to other uses.
 
-_Example: data not necessary for the quote._ If, for the painting estimate, I collect the client's name and email (necessary) but also the client's **date of birth**, that extra data is not necessary to send the estimate. The contract basis cannot be spread to cover it.
+_Example: data not necessary for the quote._ 
+If, for the painting estimate, I collect the client's name and email (necessary) but also the client's **date of birth**, that extra data is not necessary to send the estimate. The contract basis cannot be spread to cover it.
 
 ### 3.2 Legal Obligation
 
@@ -74,7 +86,8 @@ All of this serves the **transparency principle**, one of the main principles of
 
 The information must be **intelligible, easily accessible, and in clear and plain language** (Article 7.2), and it is essential to consider the audience.
 
-_Example: the* informativa privacy.* In Italian practice, people sign an_ informativa privacy *many times. It should not be written in difficult legal wording but in clear, plain language, and it must remain **easily accessible** — e.g. after an online sale, the signed information must always be findable on the website, so the user can always retrieve what they signed (or, where the information was given to perform a contract, can still access it).
+_Example: the* informativa privacy.* 
+In Italian practice, people sign an_ informativa privacy *many times. It should not be written in difficult legal wording but in clear, plain language, and it must remain **easily accessible** — e.g. after an online sale, the signed information must always be findable on the website, so the user can always retrieve what they signed (or, where the information was given to perform a contract, can still access it).
 
 ### 4.4 Unambiguous Consent
 
@@ -90,13 +103,16 @@ The data subject has the **right to withdraw consent at any time**, and withdraw
 
 Withdrawal does **not** affect the lawfulness of processing carried out **before** withdrawal: up to the moment of withdrawal the processing is lawful; it becomes unlawful only if the controller continues processing **after** the withdrawal is exercised.
 
-_Example: the real-estate agency._ I gave consent for a real-estate agency to use my number to arrange apartment-viewing appointments, but I no longer agree and do not want them to keep processing my data — I can withdraw the consent.
+_Example: the real-estate agency._ 
+I gave consent for a real-estate agency to use my number to arrange apartment-viewing appointments, but I no longer agree and do not want them to keep processing my data — I can withdraw the consent.
 
-_Example: withdrawal must use equally easy means._ If I gave consent by ticking a box on a website, I must be able to withdraw equally easily (e.g. on a website); forcing me to phone a call center to withdraw is **not** as easy as giving consent, and is not GDPR-compliant.
+_Example: withdrawal must use equally easy means._ 
+If I gave consent by ticking a box on a website, I must be able to withdraw equally easily (e.g. on a website); forcing me to phone a call center to withdraw is **not** as easy as giving consent, and is not GDPR-compliant.
 
 After withdrawal, data processed on the basis of consent must be **deleted immediately**, because the consent is no longer valid — **unless** another lawful basis applies from that moment on.
 
-_Example: bank and anti-money laundering._ A subject gave consent for a bank to use financial data, then withdraws it. If processing has meanwhile become mandatory under anti-money-laundering legislation, the bank no longer processes on the basis of consent but on the basis of **legal obligation**.
+_Example: bank and anti-money laundering._ 
+A subject gave consent for a bank to use financial data, then withdraws it. If processing has meanwhile become mandatory under anti-money-laundering legislation, the bank no longer processes on the basis of consent but on the basis of **legal obligation**.
 
 ### 4.6 Records / Proof of Consent
 
@@ -108,9 +124,11 @@ Controllers and processors should keep **records (evidence)** of consent — bot
 
 Beyond contract, legitimate interest, and consent, personal data may be processed when necessary to protect the **vital interest** of the data subject or of another natural person, or when processing is necessary for the **performance of a task carried out in the public interest or in the exercise of official authority** vested in the controller (**Article 6.1(d) and 6.1(e)**).
 
-_Example: the ambulance._ An ambulance protecting the vital interest of a person with a disease may process all the data needed, including health data, to protect that vital interest (likewise for protecting safety).
+_Example: the ambulance._ 
+An ambulance protecting the vital interest of a person with a disease may process all the data needed, including health data, to protect that vital interest (likewise for protecting safety).
 
-_Example: the police._ Activities carried out by the police are an example of processing necessary for the performance of a task in the public interest or exercise of official authority.
+_Example: the police._ 
+Activities carried out by the police are an example of processing necessary for the performance of a task in the public interest or exercise of official authority.
 
 Importantly, when processing is needed to protect a **vital interest** or to perform duties in the **public interest**, the special restrictions of **Article 9 on sensitive data do not apply** — a public authority or other subject may, in these cases, process even **sensitive data** without the specific permission otherwise required.
 

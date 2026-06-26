@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c0f61b0e83699b5f",
+            "id": "b26a334698c3f673",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Ethics & Data Protection/5 - Data Ethics/2 - Demographic disparities.md",
-                "mode": "source",
+                "file": "Data Ethics & Data Protection/5 - Data Ethics/1 - Automatic Decision Making.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2 - Demographic disparities"
+              "title": "1 - Automatic Decision Making"
             }
           }
         ]
@@ -53,12 +53,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "adm ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "alphabetical"
+                "sortOrder": "byCreatedTime"
               },
               "icon": "lucide-search",
               "title": "Ricerca"
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Distributed Architecture/01_Hadoop_and_MapReduce/01_Big_Data_Architectures/02 - Hadoop and MapReduce.md",
+                "file": "Mathematical Methods for AI/Vaccarino/5 - FML/3 - Learning with Infinite Hypothesis Sets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a 02 - Hadoop and MapReduce"
+              "title": "Riferimenti a 3 - Learning with Infinite Hypothesis Sets"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Senza nome.md",
+                "file": "Data Ethics & Data Protection/5 - Data Ethics/1 - Automatic Decision Making.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da Senza nome"
+              "title": "Collegamenti in uscita da 1 - Automatic Decision Making"
             }
           },
           {
@@ -194,20 +194,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c0f61b0e83699b5f",
+  "active": "4f78b7798fea66ec",
   "lastOpenFiles": [
+    "Data Ethics & Data Protection/5 - Data Ethics/4 - Algorithmic Fairness.md",
+    "Data Ethics & Data Protection/5 - Data Ethics/5 - Fairness Qualitative Assessment.md",
+    "Data Ethics & Data Protection/5 - Data Ethics/3 - Source of Bias.md",
+    "Data Ethics & Data Protection/5 - Data Ethics/2 - Demographic disparities.md",
     "Data Ethics & Data Protection/5 - Data Ethics/1 - Automatic Decision Making.md",
-    "Data Ethics & Data Protection/5 - Data Ethics/5 - Data Ethics.md",
-    "Data Ethics & Data Protection/4 - GDPR/4 - GDPR.md",
-    "Data Ethics & Data Protection/4 - GDPR/7 -  Data Protection Law 2.md",
     "Data Ethics & Data Protection/4 - GDPR/6 - Data Protection Law.md",
     "Data Ethics & Data Protection/4 - GDPR/5 - Principles of Processing and Data Subject Rights.md",
+    "Data Ethics & Data Protection/4 - GDPR/4 - GDPR.md",
+    "Data Ethics & Data Protection/4 - GDPR/1 - General Data Protection Regulation.md",
     "Data Ethics & Data Protection/4 - GDPR/4 - Data Controller, Data Processor and Joint Controllership under the GDPR.md",
+    "Fundamentals of AI/Project - Semantic Segmentation/Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training.md",
+    "Mathematical Methods for AI/Summary/6 - SVM/1 - Support Vector Machine.md",
+    "Data Ethics & Data Protection/4 - GDPR/7 -  Data Protection Law 2.md",
+    "Data Ethics & Data Protection/5 - Data Ethics/5 - Data Ethics.md",
+    "Data Ethics & Data Protection/2 - Data Ethics Preview/1 - The Evolution of Data Ethics and Regulation.md",
+    "Data Ethics & Data Protection/1 - Law & Technology/3 - Regulation, Liability, and Data Ethics.md",
+    "Data Ethics & Data Protection/1 - Law & Technology/2 - The Legal System.md",
+    "Data Ethics & Data Protection/1 - Law & Technology/1 - Foundations of the Legal System & Technology Regulation.md",
+    "Data Ethics & Data Protection/2 - Data Ethics Preview/2 - From Data Protection to the AI Act.md",
     "Data Ethics & Data Protection/4 - GDPR/3 - Data Subjects and Lawful Bases for Processing.md",
-    "Data Ethics & Data Protection/5 - Data Ethics/5 - Fairness Qualitative Assessment.md",
+    "Data Ethics & Data Protection/4 - GDPR/2 - Personal Data, Processing and Territorial Scope.md",
+    "Data Ethics & Data Protection/3 - Datafication and Dataprotection/1 - The Roots and Evolution of Data Protection.md",
+    "Data Ethics & Data Protection/2 - Data Ethics Preview/2 - Data Ethics Preview.md",
+    "Data Ethics & Data Protection/3 - Datafication and Dataprotection/2 - Data Protection Regulation - Main Principles.md",
+    "Mathematical Methods for AI/Vaccarino/5 - FML/3 - Learning with Infinite Hypothesis Sets.md",
     "Senza nome.md",
     "Data Ethics & Data Protection/5 - Data Ethics/Resources/5 - Fairness Qualitative Assessment-1781944311441.webp",
-    "Data Ethics & Data Protection/5 - Data Ethics/4 - Algorithmic Fairness.md",
     "Data Ethics & Data Protection/5 - Data Ethics/Resources/4 - Algorithmic Fairness-1781907452561.webp",
     "Data Ethics & Data Protection/5 - Data Ethics/Resources/4 - Algorithmic Fairness-1781907197958.webp",
     "Data Ethics & Data Protection/5 - Data Ethics/Resources/4 - Algorithmic Fairness-1781906074085.webp",
@@ -217,27 +232,12 @@
     "Data Ethics & Data Protection/5 - Data Ethics/Resources/4 - Algorithmic Fairness-1781904992205.webp",
     "Data Ethics & Data Protection/5 - Data Ethics/Resources/4 - Algorithmic Fairness-1781904965601.webp",
     "Data Ethics & Data Protection/5 - Data Ethics/Resources/4 - Algorithmic Fairness-1781904844544.webp",
-    "Data Ethics & Data Protection/5 - Data Ethics/3 - Source of Bias.md",
-    "Data Ethics & Data Protection/5 - Data Ethics/2 - Demographic disparities.md",
-    "Data Ethics & Data Protection/5 - Data Ethics/Resources/Senza nome.md",
     "Data Ethics & Data Protection/5 - Data Ethics/Resources",
-    "Data Ethics & Data Protection/1 - Law & Technology/2 - The Legal System.md",
-    "Data Ethics & Data Protection/2 - Data Ethics/1 - The Evolution of Data Ethics and Regulation.md",
-    "Data Ethics & Data Protection/2 - Data Ethics/2 - From Data Protection to the AI Act.md",
-    "Data Ethics & Data Protection/4 - GDPR/1 - General Data Protection Regulation.md",
-    "Data Ethics & Data Protection/4 - GDPR/2 - Personal Data, Processing and Territorial Scope.md",
     "Data Ethics & Data Protection/5 - Data Ethics",
-    "Data Ethics & Data Protection/3 - Datafication and Dataprotection/3 - AI Regulation.md",
     "Data Ethics & Data Protection/4 - GDPR",
-    "Data Ethics & Data Protection/3 - Datafication and Dataprotection/3 - RAW DATA PROTECTION LAW AND RISK MANAGEMENT.md",
-    "Data Ethics & Data Protection/3 - Datafication and Dataprotection/2 - Data Protection Regulation - Main Principles.md",
-    "Data Ethics & Data Protection/3 - Datafication and Dataprotection/1 - The Roots and Evolution of Data Protection.md",
-    "Data Ethics & Data Protection/3 - Datafication and Dataprotection/3 - Datafication and Dataprotection.md",
-    "Data Ethics & Data Protection/2 - Data Ethics/2 - The Evolution of Data Ethics and Regulation.md",
-    "Data Ethics & Data Protection/1 - Law & Technology/3 - Regulation, Liability, and Data Ethics.md",
     "Data Ethics & Data Protection/dsd",
     "Data Ethics & Data Protection/3 - Datafication and Dataprotection",
-    "Data Ethics & Data Protection/2 - Data Ethics",
+    "Data Ethics & Data Protection/2 - Data Ethics Preview",
     "Data Ethics & Data Protection/1 - Law & Technology",
     "Data Ethics & Data Protection",
     "Mathematical Methods for AI/Gasparini/2 - Linear Models/3 - Linear Models in R.pdf",

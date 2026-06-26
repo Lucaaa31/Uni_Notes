@@ -48,7 +48,17 @@ The learning algorithm receives sample $S$ and selects a hypothesis $h \in H$ ap
 >  A concept class $C$ is **PAC-learnable** if there exists a learning algorithm $L$ such that:
 > 
 > - for all $c \in C$, all $\varepsilon > 0$, $\delta > 0$, and all distributions $D$, $$\Pr_{S \sim D^m}[R(h_S) \leq \varepsilon] \geq 1 - \delta.$$
-> - for samples $S$ of size $m = \text{poly}(1/\varepsilon, 1/\delta)$ (fixed polynomial), 
+> - for samples $S$ of size $m = \text{poly}(\frac{1}{\varepsilon}, \frac{1}{\delta})$ (fixed polynomial)
+>
+> Let's suppose we have to train our model to identify dogs:
+> - $c$ is all the rule of the concept class (e.g. C =Dog, c1="has 4 legs", c2...)
+> - $D$ distribution in the real world (i.e. how frequent you found them)
+> - $S$ the sample (the photo of the dog)
+> - $h_S$ hypothesis made by the model (it did it by watching the photos)
+> - $\varepsilon$ max error tollerated
+> - $\delta$ probability to catch a bad sample and fail the training
+
+
 
 ### Remarks
 - The concept class $C$ is **known** to the algorithm.
@@ -62,7 +72,7 @@ The learning algorithm receives sample $S$ and selects a hypothesis $h \in H$ ap
 Accounting for representation cost:
 - Cost for $x \in X$ is $O(n)$.
 - Cost for $c \in C$ is $O(\text{size}(c))$.
-- Running time extends to: $$O\big(\text{poly}(1/\varepsilon, 1/\delta)\big) \to O\big(\text{poly}(1/\varepsilon, 1/\delta, n, \text{size}(c))\big).$$
+- Running time extends to: $$O\big(\text{poly}(\frac{1}{\varepsilon}, \frac{1}{\delta})\big) \to O\big(\text{poly}(\frac{1}{\varepsilon}, \frac{1}{\delta}, n, \text{size}(c))\big).$$
 ---
 
 ## Example — Axis-Aligned Rectangle Learning

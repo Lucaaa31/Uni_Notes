@@ -15,17 +15,15 @@ There are situations in which appointing a DPO is **mandatory** and others in wh
 1. **The controller is a public authority.** When processing is carried out by a fully public authority, the appointment is mandatory. _Example: A public university (as opposed to a private one) is a public authority. The professor uses the distinction between public and private universities — including the level of fees, lower in public ones — to illustrate that, being a public body, the public university is obliged to appoint a DPO._
     
 2. **Regular and systematic monitoring on a large scale.** When the core activities of the controller or processor consist of operations that, by their nature, scope and purposes, require regular and systematic monitoring of data subjects on a large scale. _Example: Sky TV. When you watch Sky programmes, the platform builds a profile of your behaviour and collects a large amount of data about you. This profiling amounts to monitoring/control of your behaviour, so Sky TV is required to appoint a DPO. Other examples given: monitoring of purchasing behaviour and profiling in general._
-    
 3. **Large-scale processing of special categories of data or data on criminal convictions and offences.** This concerns data relating to criminal convictions, offences and related proceedings. _Example: An Italian court (Procura/tribunale) must appoint a DPO because it processes large amounts of data concerning criminal convictions, generating a particular risk for the data subjects._
-    
 4. **Where Member State or national law so provides.**
-    
 
 ### Voluntary appointment
 
 Where the controller does not fall within the mandatory list, it may still appoint a DPO **voluntarily**, because it feels safer having a contact point with the authority and someone to advise on whether its processing is compliant.
 
-_Example: Call centres._ The professor uses the call centre to show why mandatory appointment is justified by **risk of infringement**. Call centres carry out **marketing** activities (offering services and products) and make a high volume of calls. They may only call people who have **given consent** for marketing. In Italy, however, call centres frequently call people **without consent**, generating a very high risk of unlawful processing. Because of this risk, the GDPR pushes such controllers to appoint a DPO who can advise on lawful processing — though the professor notes that in Italy, even appointed DPOs often fail to prevent these unlawful calls.
+_Example: Call centres._ 
+The professor uses the call centre to show why mandatory appointment is justified by **risk of infringement**. Call centres carry out **marketing** activities (offering services and products) and make a high volume of calls. They may only call people who have **given consent** for marketing. In Italy, however, call centres frequently call people **without consent**, generating a very high risk of unlawful processing. Because of this risk, the GDPR pushes such controllers to appoint a DPO who can advise on lawful processing — though the professor notes that in Italy, even appointed DPOs often fail to prevent these unlawful calls.
 
 ### Who can be appointed and how
 
@@ -37,7 +35,8 @@ _Example on qualification: A lawyer who is an expert in data protection law can 
 
 ### Requirements of the DPO
 
-**Independence.** The DPO must perform its duties independently. The analogy used is that of a **judge**, who must be impartial towards the disputing parties. The DPO's role under the GDPR is to **report all data breaches to the data protection authority**; if the DPO were not independent, it would tend to protect the controller and fail to report. The controller must therefore **refrain from giving instructions** to the DPO, and the appointing contract must protect the DPO's independence. _Example: The professor recounts a video conference (the day before) in which a DPO of a call-center client said he deliberately tried "not to listen, not to see, not to read anything" about the client's many data breaches. The professor considers this a total infringement of the independence principle: the DPO should have reported those breaches to the authority, not shielded the client._
+**Independence.** The DPO must perform its duties independently. The analogy used is that of a **judge**, who must be impartial towards the disputing parties. The DPO's role under the GDPR is to **report all data breaches to the data protection authority**; if the DPO were not independent, it would tend to protect the controller and fail to report. The controller must therefore **refrain from giving instructions** to the DPO, and the appointing contract must protect the DPO's independence. 
+_Example: The professor recounts a video conference (the day before) in which a DPO of a call-center client said he deliberately tried "not to listen, not to see, not to read anything" about the client's many data breaches. The professor considers this a total infringement of the independence principle: the DPO should have reported those breaches to the authority, not shielded the client._
 
 **Professional skills / expertise.** The DPO must have expert knowledge of data protection law and practice, and the professional ability to perform the relevant tasks.
 
@@ -45,11 +44,16 @@ _Example on qualification: A lawyer who is an expert in data protection law can 
 
 **No conflict of interest.** The DPO must not hold a position in the company whose interests conflict with the DPO role. _Example: The head of the IT department, who monitors users and controls access rights to the IT infrastructure, cannot also be DPO. In a breach, the head of IT would be among the first responsible, so they cannot also be the person monitoring whether IT processing is GDPR-compliant._
 
-**Secrecy / confidentiality.** All the DPO's activities must be kept confidential. Disclosure of breach information to third parties could itself damage the controller. The DPO may disclose only in two situations: (a) directly **reporting to the highest management** of the controller, and (b) **reporting breaches to the data protection authority**, which is its main duty.
+**Secrecy / confidentiality.** All the DPO's activities must be kept confidential. Disclosure of breach information to third parties could itself damage the controller. The DPO may disclose only in two situations: 
+- (a) directly **reporting to the highest management** of the controller, and 
+- (b) **reporting breaches to the data protection authority**, which is its main duty.
 
 ### Multiple DPOs / shared DPO
 
-A controller may appoint **more than one DPO**, and conversely **several companies may appoint a single DPO**. _Example: In Turin, the Comune di Torino appointed a single DPO who also acts as DPO for all the companies in which the municipality participates. This depends on the company structure, size and amount of data processed._
+A controller may appoint **more than one DPO**, and conversely **several companies may appoint a single DPO**. 
+
+_Example:_
+In Turin, the Comune di Torino appointed a single DPO who also acts as DPO for all the companies in which the municipality participates. This depends on the company structure, size and amount of data processed.
 
 ### Responsibility
 
@@ -63,7 +67,8 @@ The controller usually makes the **DPO's contact details public** (e.g. stated i
 
 Where the DPO gives advice and the controller decides **not to follow it** (for example, because the controller considers the advice unfounded), the controller may decline to follow it but should **document in writing the reasons** for not following the DPO's indications.
 
-_Example: The Globo / Spanish Data Protection Authority case (€25,000 fine)._ The company (referred to as "global"/Globo) initially **did not formally appoint a DPO**, arguing that a company of its kind did not need one and that an internal person already performed the same role and functions. The Spanish authority rejected this defence and opened proceedings. The company eventually appointed a DPO in **2019**, but the appointment was **not made public until 2020**. The authority sanctioned the company because:
+_Example: The Globo / Spanish Data Protection Authority case (€25,000 fine)._ 
+The company (referred to as "global"/Globo) initially **did not formally appoint a DPO**, arguing that a company of its kind did not need one and that an internal person already performed the same role and functions. The Spanish authority rejected this defence and opened proceedings. The company eventually appointed a DPO in **2019**, but the appointment was **not made public until 2020**. The authority sanctioned the company because:
 
 - before 2019, data subjects could not know whether a DPO existed;
 - the DPO's name was only published in 2020, so externally the situation remained uncertain. The key principle: it **must be clear to data subjects** whether the controller has a DPO and who it is.
@@ -78,13 +83,15 @@ Transferring personal data to countries **outside the EU** can create risks for 
 
 ### Tool 1 — Adequacy decision (Article 45)
 
-An **adequacy decision** is a decision by which the **European Commission** establishes that a third country, a territory or a sector within it, or an international organisation, ensures an **adequate level of protection**. When such a decision exists, transfers to that country **do not require any specific authorisation**.
+An **adequacy decision** is a decision by which the **European Commission** establishes that a third country, a territory or a sector within it, or an international organization, ensures an **adequate level of protection**. When such a decision exists, transfers to that country **do not require any specific authorization**.
 
 In assessing adequacy, the Commission takes into account elements such as: the **rule of law**, respect for **human rights and fundamental freedoms**, relevant **general and sectoral legislation** (including public security, defence, national security and criminal law), and the rules on access by public authorities to personal data. The Commission may **withdraw or change** an adequacy decision if the situation changes.
 
-_Example: Iran vs. other countries._ The professor asks whether students' data could be transferred to universities in Iran. Only if the Commission has issued an adequacy decision finding that Iran ensures an adequate level of protection. Applying the assessment criteria above, the professor doubts an adequacy decision would be issued for Iran, whereas it is more plausible for countries like Canada, Mexico or Japan.
+_Example: Iran vs. other countries._ 
+The professor asks whether students' data could be transferred to universities in Iran. Only if the Commission has issued an adequacy decision finding that Iran ensures an adequate level of protection. Applying the assessment criteria above, the professor doubts an adequacy decision would be issued for Iran, whereas it is more plausible for countries like Canada, Mexico or Japan.
 
-**Even where an adequacy decision exists**, the controller must still **inform the data subject** (under Article 13) that the data will be transferred to the third country. _Example: A polytechnic transferring student data to a Canadian association of foreign engineers — even though Canada has an adequacy decision and the data subject can feel safe, the polytechnic must still inform the student of the transfer._
+**Even where an adequacy decision exists**, the controller must still **inform the data subject** (under Article 13) that the data will be transferred to the third country. 
+_Example: A polytechnic transferring student data to a Canadian association of foreign engineers — even though Canada has an adequacy decision and the data subject can feel safe, the polytechnic must still inform the student of the transfer._
 
 ### Tool 2 — Appropriate safeguards (Article 46)
 
@@ -92,7 +99,8 @@ In the **absence of an adequacy decision**, a controller or processor may transf
 
 Possible safeguards include: a legally binding and enforceable instrument between public authorities; **standard data protection clauses**; an **approved code of conduct**; or a **certification mechanism**. The data subject must be in a position to raise a complaint before an authority for any breach.
 
-_Example: Buying a Suzuki car._ An Italian Suzuki dealer (the hypothetical "Auto Group") transfers the buyer's data to Suzuki in Japan, where there is no adequacy decision. The privacy policy states the data will be transferred to Suzuki in Japan to let the buyer use a connected app (to monitor the car, program infotainment, receive advice on use). The transfer is lawful if the dealer ensures an adequate level of protection through appropriate safeguards. The professor uses students' intuitive "feeling of safety" toward a large, reliable Japanese company to illustrate the point, while stressing that legally what matters is the existence of the safeguards, not the feeling. **Responsibility** for a breach during the transfer lies with the **Italian dealer (the controller)**.
+_Example: Buying a Suzuki car._ 
+An Italian Suzuki dealer (the hypothetical "Auto Group") transfers the buyer's data to Suzuki in Japan, where there is no adequacy decision. The privacy policy states the data will be transferred to Suzuki in Japan to let the buyer use a connected app (to monitor the car, program infotainment, receive advice on use). The transfer is lawful if the dealer ensures an adequate level of protection through appropriate safeguards. The professor uses students' intuitive "feeling of safety" toward a large, reliable Japanese company to illustrate the point, while stressing that legally what matters is the existence of the safeguards, not the feeling. **Responsibility** for a breach during the transfer lies with the **Italian dealer (the controller)**.
 
 ### Tool 3 — Binding Corporate Rules (BCRs) (Article 47)
 
@@ -109,24 +117,19 @@ BCRs are **approved by the competent supervisory authority**. They are internal 
 
 In effect, BCRs **extend the European data protection rules** to non-European companies that belong to a group including European companies.
 
-_Example: Stellantis._ If Stellantis's Italian branch wants to transfer the data of an Italian employee who is being relocated to a US or Brazilian branch, it can do so **without further formality**, even absent an adequacy decision for Brazil, **provided the group has adopted BCRs**. An employee worried about the transfer can check the **European Data Protection Board website**, where a list of groups with approved BCRs is published, and verify whether Stellantis has approved BCRs — giving assurance that the processing is GDPR-compliant.
+_Example: Stellantis._ 
+If Stellantis's Italian branch wants to transfer the data of an Italian employee who is being relocated to a US or Brazilian branch, it can do so **without further formality**, even absent an adequacy decision for Brazil, **provided the group has adopted BCRs**. An employee worried about the transfer can check the **European Data Protection Board website**, where a list of groups with approved BCRs is published, and verify whether Stellantis has approved BCRs — giving assurance that the processing is GDPR-compliant.
 
 ### Derogations (Article 49)
 
 In the **absence of an adequacy decision, appropriate safeguards or BCRs**, a transfer may still take place under one of the following conditions (derogations):
 
 1. **Explicit consent** of the data subject to the proposed transfer, after being informed of the possible risks due to the absence of an adequacy decision and appropriate safeguards. _Example: The professor states that, four years ago, his data was transferred to a school/university in Moscow, Russia, because he explicitly consented, knowing there was no adequacy decision or BCRs._
-    
 2. **Performance of a contract** between the data subject and the controller, or implementation of pre-contractual measures taken at the data subject's request. _Example: To sit a B2-level Russian language exam, the professor concluded a contract with Moscow University; transferring his data was necessary to perform that contract. Another example: delivering a good sold abroad requires transferring data to perform the contract._
-    
 3. **Important reasons of public interest.**
-    
 4. **Establishment, exercise or defence of legal claims.** _Example: Three years ago the professor handled a trademark counterfeiting case involving a Chinese company. To defend his client's rights, the data was transferred to Chinese lawyers so the client could be defended before the Chinese courts. At that time there was no adequacy decision and no BCRs (the transfer being between lawyers)._
-    
 5. **Protection of the vital interests** of the data subject.
-    
 6. Transfer **from a register** open to consultation by the public in general or by a person who can demonstrate a legitimate interest. _Example: An Indian lawyer needing a Turin lawyer specialised in intellectual property can take the name from the public register of lawyers; the transfer of the name to India is lawful because it comes from a public register._
-    
 
 ### Case — Garante Privacy, Turin 2022 (Google Analytics)
 

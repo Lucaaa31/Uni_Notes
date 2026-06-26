@@ -164,12 +164,9 @@
   "Data Ethics & Data Protection/1 - Law & Technology/1 - Foundations of the Legal System & Technology Regulation.md": "📄",
   "Data Ethics & Data Protection/1 - Law & Technology/2 - The Legal System.md": "📄",
   "Data Ethics & Data Protection/1 - Law & Technology/3 - Regulation, Liability, and Data Ethics.md": "📄",
-  "Data Ethics & Data Protection/2 - Data Ethics/1 - The Evolution of Data Ethics and Regulation.md": "📄",
-  "Data Ethics & Data Protection/2 - Data Ethics": "📁",
   "Data Ethics & Data Protection/3 - Datafication and Dataprotection": "📁",
   "Data Ethics & Data Protection/3 - Datafication and Dataprotection/1 - The Roots and Evolution of Data Protection.md": "📄",
   "Data Ethics & Data Protection/3 - Datafication and Dataprotection/2 - Data Protection Regulation - Main Principles.md": "📄",
-  "Data Ethics & Data Protection/2 - Data Ethics/2 - From Data Protection to the AI Act.md": "📄",
   "Data Ethics & Data Protection/3 - Datafication and Dataprotection/3 - AI Regulation.md": "📄",
   "Data Ethics & Data Protection/4 - GDPR/1 - General Data Protection Regulation.md": "📄",
   "Data Ethics & Data Protection/4 - GDPR/2 - Personal Data, Processing and Territorial Scope.md": "📄",
@@ -184,5 +181,8 @@
   "Data Ethics & Data Protection/4 - GDPR/4 - Data Controller, Data Processor and Joint Controllership under the GDPR.md": "📄",
   "Data Ethics & Data Protection/4 - GDPR/5 - Principles of Processing and Data Subject Rights.md": "📄",
   "Data Ethics & Data Protection/4 - GDPR/6 - Data Protection Law.md": "📄",
-  "Data Ethics & Data Protection/4 - GDPR/7 -  Data Protection Law 2.md": "📄"
+  "Data Ethics & Data Protection/4 - GDPR/7 -  Data Protection Law 2.md": "📄",
+  "Data Ethics & Data Protection/2 - Data Ethics Preview": "📁",
+  "Data Ethics & Data Protection/2 - Data Ethics Preview/1 - The Evolution of Data Ethics and Regulation.md": "📄",
+  "Data Ethics & Data Protection/2 - Data Ethics Preview/2 - From Data Protection to the AI Act.md": "📄"
 }

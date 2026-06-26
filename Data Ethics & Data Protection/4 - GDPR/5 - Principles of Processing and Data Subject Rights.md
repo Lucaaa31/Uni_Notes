@@ -12,7 +12,8 @@ A **third party** is any party different from the controller, processor, data su
 
 The key characteristic is that the third party is an **abstract / undetermined** subject. In an information notice (e.g., under Article 13) one can write that "data may be transferred to third parties" under specific conditions, without identifying who those third parties are. The third party exists, in this abstract sense, only at the moment a data subject or a legitimate transfer makes it possible to transfer the data to it.
 
-_Example: processing of employees' personal data._ The information notice may state that "personal data can be transferred to third parties," such as, for instance, an external company that handles payroll. The moment data is actually transferred to that company, the third party becomes a **processor**, and at that point it becomes necessary to execute a data processing agreement. So the "third party" is an abstract category that, once activated by a concrete transfer, turns into a defined role (typically a processor).
+_Example: processing of employees' personal data._ 
+The information notice may state that "personal data can be transferred to third parties," such as, for instance, an external company that handles payroll. The moment data is actually transferred to that company, the third party becomes a **processor**, and at that point it becomes necessary to execute a data processing agreement. So the "third party" is an abstract category that, once activated by a concrete transfer, turns into a defined role (typically a processor).
 
 ---
 
@@ -50,7 +51,8 @@ Data must be collected for **specified, explicit and legitimate purposes**, and 
 
 The GDPR carves out an exception: further processing for **archiving in the public interest, scientific or historical research, or statistical purposes** is not deemed incompatible with the initial purposes.
 
-_Example: the list of students._ A professor who collects a list of students for a given course cannot keep reusing that list for unrelated aims. If the purpose was managing that course, the data is tied to that purpose and cannot be diverted to something else. (This same example returns under accountability, where the professor admits he may still be storing old student lists and would have to delete them to be compliant.)
+_Example: the list of students._ 
+A professor who collects a list of students for a given course cannot keep reusing that list for unrelated aims. If the purpose was managing that course, the data is tied to that purpose and cannot be diverted to something else. (This same example returns under accountability, where the professor admits he may still be storing old student lists and would have to delete them to be compliant.)
 
 ---
 
@@ -58,7 +60,8 @@ _Example: the list of students._ A professor who collects a list of students for
 
 Personal data must be **adequate, relevant and limited to what is necessary** in relation to the purposes for which it is processed. Only the data strictly needed for the declared purpose should be collected — nothing more.
 
-_Example: delivery address of clients._ A business should collect and store the home/delivery address of its clients **only** in cases where it actually has to deliver goods to their home. If there is no delivery, collecting the address is not justified. This same example reappears under accountability: to prove compliance with minimization, you must be able to show you collected addresses only where delivery was required.
+_Example: delivery address of clients._ 
+A business should collect and store the home/delivery address of its clients **only** in cases where it actually has to deliver goods to their home. If there is no delivery, collecting the address is not justified. This same example reappears under accountability: to prove compliance with minimization, you must be able to show you collected addresses only where delivery was required.
 
 ---
 
@@ -82,13 +85,15 @@ Personal data must be processed in a manner ensuring **appropriate security**, i
 
 A key point: even **destruction or deletion** of data can itself be an unlawful act when it occurs during a processing for which the data is needed.
 
-_Example: the lawyer destroying a client's data during a lawsuit._ If a lawyer must process a client's data to prepare the defense in an ongoing lawsuit and erases or deletes that data during this period, the lawyer is committing an unlawful activity. Data cannot be erased while it is needed for processing, because unauthorized destruction or damage is itself a security/integrity violation. This cannot be done without the data subject's permission.
+_Example: the lawyer destroying a client's data during a lawsuit._ 
+If a lawyer must process a client's data to prepare the defense in an ongoing lawsuit and erases or deletes that data during this period, the lawyer is committing an unlawful activity. Data cannot be erased while it is needed for processing, because unauthorized destruction or damage is itself a security/integrity violation. This cannot be done without the data subject's permission.
 
 ### Need-to-know access within an organization
 
 Integrity and confidentiality require that personal data is **not available to everyone** within an organization, but only to those who need to work with it. Access must be tied to the **role and purpose** of the person, and the intensity of security measures should be proportionate to the **potential risk** (a risk-based approach).
 
-_Example: doctor's secretary vs. doctor's trainee._ The professor works through who, in a professional office, may access client data:
+_Example: doctor's secretary vs. doctor's trainee._ 
+The professor works through who, in a professional office, may access client data:
 
 |Subject|Access to client data?|Why|
 |---|---|---|
@@ -146,13 +151,15 @@ What matters for the doctor's accountability is not only signing the contract, b
 - The controller must be assured that the processor has the **capabilities and knowledge** to carry out the activity and to build a system offering **sufficient guarantees** for the protection of the data.
 - If the controller appoints a company lacking those capabilities and problems arise, the **controller is responsible** for having chosen a subject that did not provide sufficient guarantees.
 
-_Example: the professor's own law firm._ The professor appoints an IT company to manage operational/marketing assistance, but only after being satisfied that the company is genuinely able to provide the service and protect the data — otherwise he, as controller, would bear responsibility toward his clients.
+_Example: the professor's own law firm._ 
+The professor appoints an IT company to manage operational/marketing assistance, but only after being satisfied that the company is genuinely able to provide the service and protect the data — otherwise he, as controller, would bear responsibility toward his clients.
 
 ### Why the processor also benefits from a written DPA
 
 The relationship between controller and processor is a **legal relationship grounded in the data processing agreement**. A written DPA matters for the **processor** too:
 
-_Example: verbal vs. written appointment._ If the controller trusts the processor only verbally, the processor cannot later prove **why** it was processing data received from a specific subject. With a signed DPA, the processor can **demonstrate the authorization** and the reason for processing. So the written agreement protects the processor as well as the controller.
+_Example: verbal vs. written appointment._ 
+If the controller trusts the processor only verbally, the processor cannot later prove **why** it was processing data received from a specific subject. With a signed DPA, the processor can **demonstrate the authorization** and the reason for processing. So the written agreement protects the processor as well as the controller.
 
 ---
 
@@ -185,27 +192,32 @@ Article 12 requires the controller to provide information relating to the proces
 
 The right of access lets the data subject obtain confirmation of whether their data is processed and obtain **copies** of that data, including related information.
 
-_Example: the fired employee requesting their file._ The classic access case is the **employee's file**. A former employee, often in order to "disturb" the former employer, exercises the right of access and asks for **copies of all documents** containing their personal data. For an employee who worked 20 years, collecting every document containing personal data is **very burdensome** for the employer — yet it remains a valid request that must be honored.
+_Example: the fired employee requesting their file._ 
+The classic access case is the **employee's file**. A former employee, often in order to "disturb" the former employer, exercises the right of access and asks for **copies of all documents** containing their personal data. For an employee who worked 20 years, collecting every document containing personal data is **very burdensome** for the employer — yet it remains a valid request that must be honored.
 
 ### Form of the copy
 
 If the access request is made by **electronic means**, the data must be provided in a **commonly used electronic form**, unless the data subject requests otherwise. The request must also be **reasonable**:
 
-_Example: paper vs. electronic._ If a former employee demands **paper copies** of all documents, but the employer can collect everything electronically, the demand for paper is **not reasonable** — the employee can be given the information in electronic form.
+_Example: paper vs. electronic._ 
+If a former employee demands **paper copies** of all documents, but the employer can collect everything electronically, the demand for paper is **not reasonable** — the employee can be given the information in electronic form.
 
 ### Protecting the rights of others when providing a copy
 
 When providing a copy, the rights of **other subjects** must be protected.
 
-_Example: an email containing a colleague's name._ A former employee requests access and is entitled to receive an email concerning them. But that email also contains the **names of other colleagues** who requested nothing. The controller must protect the other employees' data while still delivering the email to the requester. The solution is **not** to refuse the email, but to **redact / blank out** the names of the other subjects so their rights are protected while the requester still receives the document concerning them.
+_Example: an email containing a colleague's name._ 
+A former employee requests access and is entitled to receive an email concerning them. But that email also contains the **names of other colleagues** who requested nothing. The controller must protect the other employees' data while still delivering the email to the requester. The solution is **not** to refuse the email, but to **redact / blank out** the names of the other subjects so their rights are protected while the requester still receives the document concerning them.
 
 ### Additional information accompanying the copy (Art. 15.1)
 
 When a copy of the personal data is provided, the data subject must also receive additional information — the same kind already examined for information notices — including the **purposes of processing** (e.g., whether data was collected for marketing/advertising or only to fulfill the contract), and notably the **identity of the recipients** of the data.
 
-_Example (Court of Justice case — postal company)._ A data subject asked a postal/post-office service company for access to the personal data concerning him, and also wanted to know whether his data had been **disclosed**, and to whom. The company gave only a **general response** and did **not** disclose the specific identity of the recipients.
+_Example (Court of Justice case — postal company)._ 
+A data subject asked a postal/post-office service company for access to the personal data concerning him, and also wanted to know whether his data had been **disclosed**, and to whom. The company gave only a **general response** and did **not** disclose the specific identity of the recipients.
 
 The **Court of Justice** held that the right of access includes an **obligation on the controller to provide the actual identity of the recipients**, **unless**:
+
 
 - it is **impossible** to identify the recipients, or
 - the controller demonstrates that the request is **manifestly unfounded or excessive**,
@@ -223,7 +235,8 @@ The data subject must also be informed of:
 - the **source** of the data;
 - whether data is processed through an **automated decision-making system**.
 
-_Why automated decision-making matters._ Processing through an automated system is **riskier** than processing on paper. With paper, dissemination is limited — someone has to physically take and read the sheet. With an automated system, **dissemination, reproduction, and copying are far easier**, so the data subject has the right to know whether their data is processed by automated means.
+_Why automated decision-making matters._ 
+Processing through an automated system is **riskier** than processing on paper. With paper, dissemination is limited — someone has to physically take and read the sheet. With an automated system, **dissemination, reproduction, and copying are far easier**, so the data subject has the right to know whether their data is processed by automated means.
 
 - **Safeguards for transfers to third parties / outside the EU.** The data subject must be told about safeguards regarding transfers of personal data, especially **outside the European Union**. _Why it matters:_ the legislation of other countries may be weaker — e.g., **US legislation is not as strict** as EU law and does not provide the same safeguards — so the data subject must be informed when their data is transferred, for instance, to the United States.
 - **Regulated professions (e.g., medical).** Where the controller communicates data to subjects bound by professional secrecy, such as doctors, the data subject must be informed, because this entails an **additional layer of protection**.

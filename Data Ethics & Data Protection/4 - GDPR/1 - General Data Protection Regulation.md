@@ -2,7 +2,7 @@
 
 The **General Data Protection Regulation (GDPR)** is the regulation concerning the protection of natural persons with regard to the processing of personal data and the free movement of such data. It was **adopted in 2016** and **entered into effect in May 2018**.
 
-The aim is to protect the **fundamental rights and freedoms of individuals** with reference to the protection of personal data. The regulation sets out rules to be respected and fulfilled when personal data is processed. It applies when processing the data of persons established in the **European Union**, or when the processing occurs within EU boundaries.
+The aim is to protect the **fundamental rights and freedoms of individuals** with reference to the protection of personal data. The regulation sets out rules to be respected and fulfilled when personal data is processed. It applies when processing the data of people established in the **European Union**, or when the processing occurs within EU boundaries.
 
 ---
 
@@ -103,7 +103,12 @@ _Example:_ A large company like Meta gains an economic advantage from processing
 
 ### **Key Novelties and Fines**
 
-The key novelties introduced are: extended territorial scope; new principles; new obligations for processors and controllers; new rights for data subjects; new rules on consent given by children; and **fines** of up to **€20 million** or **4% of total worldwide annual turnover** (previously only a few hundred euros under the Italian privacy code).
+The key novelties introduced are: 
+- extended territorial scope
+- new principles
+- new obligations for processors and controllers
+- new rights for data subjects; new rules on consent given by children
+- **fines** of up to **€20 million** or **4% of total worldwide annual turnover** (previously only a few hundred euros under the Italian privacy code).
 
 In Italy, fines are applied by the **Guardia di Finanza**. In practice, enforcement tends to target large companies under investigation; small companies are rarely fined, partly because the authority is stretched by other duties such as tax investigations.
 
@@ -113,7 +118,9 @@ _Example:_ A lawyer processing sensitive data (e.g. a criminal lawyer) must stri
 
 ## 10. **Subject Matter and Objectives (Article 1)**
 
-Article 1 establishes that the regulation lays down rules relating to (1) the **protection of natural persons** with regard to the processing of personal data, and (2) the **free movement** of personal data.
+Article 1 establishes that the regulation lays down rules relating to:
+1. the **protection of natural persons** with regard to the processing of personal data
+2. the **free movement** of personal data.
 
 The GDPR protects the data of **natural (physical) persons**, not legal persons. Data concerning a company (its name, denomination, location) is **not** covered.
 

@@ -73,8 +73,7 @@ A common assumption in modern data science is that **large datasets accurately r
 
 However, datasets rarely include **all relevant variables**. They only capture **what is measured and recorded**.
 
-Example:
-
+_Example:_
 Systems predicting **student performance** might rely only on **grades and academic records**, ignoring factors such as:
 
 - family conditions
@@ -131,8 +130,7 @@ Ethics and law are **closely related but not identical**.
 - **Ethics** reflects the moral values and principles shared within a society.
 - **Law** translates some of these ethical values into **formal rules and regulations**.
 
-Example:
-
+_Example:_
 The legal protection of **privacy** originates from ethical beliefs about **personal autonomy and private life**.
 
 However, laws must **define precise conditions** and often **balance competing interests**.
@@ -155,8 +153,7 @@ Organizations may adopt **ethical guidelines or ethics committees**, but they ca
 
 Even when technology **complies with the law**, ethical concerns may still arise.
 
-Examples include:
-
+_Examples:_
 - **AI in education** → Should children rely heavily on AI tools for learning?
 - **Digital companions** → Could they affect human relationships?
 - **Smart city technologies** → Do they create excessive surveillance?
@@ -187,7 +184,7 @@ Institutions such as the **European Data Protection Supervisor** helped initiate
 
 This debate arose because **existing laws were not designed for modern data practices**.
 
-Example:
+_Example:_
 - Traditional data protection laws → collect **only necessary data for specific purposes**
 - Big data analytics → collect **large datasets first and analyze them later**
 
