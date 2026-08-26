@@ -11,10 +11,14 @@
             "id": "2922d1a92ea59db8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Fundamentals of AI/Theory/06 - Neural Networks.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "06 - Neural Networks"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.51103591918945
+    "width": 270.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "101c0b53c52faf0d",
@@ -192,13 +197,17 @@
   },
   "active": "2922d1a92ea59db8",
   "lastOpenFiles": [
+    "Fundamentals of AI/Theory/05 - Supervised Learning.md",
+    "Fundamentals of AI/Theory/04 - Unsupervised Learning.md",
+    "Fundamentals of AI/Theory/06 - Neural Networks.md",
+    "Data Ethics & Data Protection/Data Ethics & Data Protection.md",
+    "d.md",
     "conflict-files-obsidian-git.md",
     "Data Ethics & Data Protection/4 - GDPR/27 marzo da fare.md",
     "Data Ethics & Data Protection/2 - Data Ethics Preview/2 - From Data Protection to the AI Act.md",
     "Data Ethics & Data Protection/2 - Data Ethics Preview/2 - Data Ethics Preview.md",
     "Data Ethics & Data Protection/2 - Data Ethics Preview/1 - The Evolution of Data Ethics and Regulation.md",
     "Data Ethics & Data Protection/2 - Data Ethics Preview",
-    "d.md",
     "Fundamentals of AI/Theory/Resources/05 - Supervised Learning-1787498274585.webp",
     "Fundamentals of AI/Theory/Resources/05 - Supervised Learning-1787321199693.webp",
     "Fundamentals of AI/Theory/Resources/05 - Supervised Learning-1787320994451.webp",
@@ -211,9 +220,6 @@
     "Fundamentals of AI/Theory/Resources/04 - Unsupervised Learning-1787039329651.webp",
     "Fundamentals of AI/Theory/Theory.md",
     "Fundamentals of AI/Theory/Resources",
-    "Fundamentals of AI/Theory/06 - Neural Networks.md",
-    "Fundamentals of AI/Theory/05 - Supervised Learning.md",
-    "Fundamentals of AI/Theory/04 - Unsupervised Learning.md",
     "Fundamentals of AI/Theory/03 - Learning Theory.md",
     "Fundamentals of AI/Theory/01 - Intro Probability and Statistics.md",
     "Fundamentals of AI/Theory",
@@ -232,7 +238,6 @@
     "Data Ethics & Data Protection/5 - Data Ethics/5 - Data Ethics.md",
     "Data Ethics & Data Protection/5 - Data Ethics/1 - Automatic Decision Making.md",
     "Data Ethics & Data Protection/5 - Data Ethics/3 - Source of Bias.md",
-    "Data Ethics & Data Protection/5 - Data Ethics/2 - Demographic disparities.md",
     "Data Ethics & Data Protection/5 - Data Ethics",
     "Data Ethics & Data Protection/4 - GDPR",
     "Data Ethics & Data Protection/dsd",

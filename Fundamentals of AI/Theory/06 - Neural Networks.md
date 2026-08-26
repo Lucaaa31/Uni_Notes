@@ -51,8 +51,43 @@ This approach guarantees convergence to local minima or saddle points under mild
 
 Gradient Descent is an algorithm used in the training phase to choose the best parameters for a model, minimizing the error between the model's prediction and the ground truth.
 
-**Main Limitations:**
-1. Slow convergence.
-2. It does not scale well with the dataset size. In a standard Gradient Descent algorithm, the loss function is evaluated considering _all_ samples in the dataset for a single update.
+### Main Limitations
+1. **Slow convergence:** Especially in complex loss landscapes with many saddle points.
+2. **Poor scaling with dataset size:** In a standard Batch Gradient Descent algorithm, the total cost function $\mathcal{L}(W)$ is evaluated by considering all samples in the dataset for a single update. Mathematically, the overall gradient is the average of the gradients computed for every single sample $m$:
+$$\nabla_W \mathcal{L}(W) = \frac{1}{m} \sum_{i=1}^m \nabla_W L(x^i, y^i, W)$$
+
+Because evaluating this sum requires parsing the entire dataset (where $m$ is the total number of samples) just to perform one step ($W^{t+1}$), the computational cost per update becomes prohibitive for large datasets.
 
 This scaling problem is directly addressed by the **Stochastic Gradient Descent (SGD)** algorithm.
+
+---
+# Stochastic Gradient Descent Algorithm
+One of the main limitations of the classic Gradient Descent is that performs poorly with large datasets because it has to compute the loss function over the whole training set.
+SGD has been made in order to overcome this problem and nowadays it is one of the most used algorithm for the deep learning models.
+
+We recall that, for computing the loss function with the standard Gradient Descent we have:
+$$
+\mathcal L (W) = \frac{1}{m} \sum_{i=1}^m L(x^i, y^i, W)
+$$where:
+- is the loss of one sample of input $x$, label $y$ and parameters $W$.
+
+Its gradient would then be equal to:
+$$  
+\nabla_W \mathcal L (W) = \frac 1 m \sum_{i=1}^m \nabla_W L(x^i, y^i, W)  
+$$
+
+so we’d have to compute the gradient of the loss of every single sample and then average them out.
+
+SGD proposes an important change:
+> The gradient we use in GD is an expectation that can be approximately estimated using a small set of sample.
+
+The idea is to choose a certain number of samples $m$ from the training set and compute the gradient:
+$$
+g^{(t)} = \frac 1{m} \sum_{i=1}^{m} \nabla_W L(X^i, Y^i, W)
+$$
+The mathematical basis for this is that:
+$$
+g = E[g^{(t)}]
+$$
+Meaning that $g^{(t)}$ is an unbiased estimator for the true gradient over the whole dataset.
+
