@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Ethics & Data Protection/1 - Law & Technology/2 - The Legal System.md",
+                "file": "Data Ethics & Data Protection/4 - GDPR/27 marzo da fare.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2 - The Legal System"
+              "title": "27 marzo da fare"
             }
           }
         ]
@@ -194,8 +194,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c0f61b0e83699b5f",
+  "active": "549141998eab43d1",
   "lastOpenFiles": [
+    "Data Ethics & Data Protection/4 - GDPR/4 - GDPR.md",
+    "Data Ethics & Data Protection/1 - Law & Technology/2 - The Legal System.md",
     "Data Ethics & Data Protection/2 - Data Ethics/1 - The Evolution of Data Ethics and Regulation.md",
     "Data Ethics & Data Protection/2 - Data Ethics/2 - From Data Protection to the AI Act.md",
     "Data Ethics & Data Protection/4 - GDPR/1 - General Data Protection Regulation.md",
@@ -212,7 +214,6 @@
     "Data Ethics & Data Protection/3 - Datafication and Dataprotection/3 - Datafication and Dataprotection.md",
     "Data Ethics & Data Protection/2 - Data Ethics/2 - The Evolution of Data Ethics and Regulation.md",
     "Data Ethics & Data Protection/1 - Law & Technology/3 - Regulation, Liability, and Data Ethics.md",
-    "Data Ethics & Data Protection/1 - Law & Technology/2 - The Legal System.md",
     "Data Ethics & Data Protection/1 - Law & Technology/1 - Foundations of the Legal System & Technology Regulation.md",
     "Data Ethics & Data Protection/dsd/dsd.md",
     "Data Ethics & Data Protection/Data Ethics & Data Protection.md",
