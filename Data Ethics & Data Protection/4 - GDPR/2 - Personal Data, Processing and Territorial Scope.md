@@ -121,7 +121,8 @@ _Example: email addresses_
 - A generic message is **not** personal data.
 - It **becomes** personal data if it contains personal data of a natural person.
 
-_Example: purpose limitation in emails_ Suppose I am the lawyer of Ferrari's counterparty, negotiating a contract with **Mario Rossi**. Writing to `mario.rossi@ferrari.it` to send him the contract draft is allowed, because there is a legal reason connected to the company's activity. But if in the same email I add "I'd also like to invite **you** to a seminar on automotive patents," that part is not allowed: it uses his personal data as a natural person for a purpose unrelated to the negotiation. The very same invitation sent to a generic role address such as `HR@ferrari.it` would instead be fine.
+_Example: purpose limitation in emails_ 
+Suppose I am the lawyer of Ferrari's counterparty, negotiating a contract with **Mario Rossi**. Writing to `mario.rossi@ferrari.it` to send him the contract draft is allowed, because there is a legal reason connected to the company's activity. But if in the same email I add "I'd also like to invite **you** to a seminar on automotive patents," that part is not allowed: it uses his personal data as a natural person for a purpose unrelated to the negotiation. The very same invitation sent to a generic role address such as `HR@ferrari.it` would instead be fine.
 
 ---
 
@@ -163,7 +164,7 @@ The prohibition does **not** apply when one of the listed grounds applies:
 ### Art. 10 — criminal convictions and offences
 
 - Processing of data relating to criminal convictions, offences and related security measures may be carried out **only under the control of an official authority**, or when authorized by law.
-- Example: a policeman investigating a suspect does **not** need the suspect's consent (otherwise no investigation would be possible), **but needs authorization** from the **judicial authority / the court** (the judge), **not** from the data subject.
+- _ Example:_ a policeman investigating a suspect does **not** need the suspect's consent (otherwise no investigation would be possible), **but needs authorization** from the **judicial authority / the court** (the judge), **not** from the data subject.
 
 ---
 
@@ -244,7 +245,8 @@ The GDPR applies to a controller/processor **not established in the EU** when it
 
 _Example_ — A US company that, via a US server, offers services to Italian individuals is subject to the GDPR. Likewise, monitoring the behaviour of subjects located in Germany triggers the GDPR. The most familiar instrument of behavioural monitoring is social media (e.g. **Instagram** or **TikTok**): every video you watch shapes what you are shown next, which is precisely the monitoring of EU citizens' behaviour — so even a non-EU company must respect the GDPR.
 
-_Example: US city-mapping startup_ A US startup with **no EU establishment** offers a city-mapping app for tourists, processing **location data** to show advertising for nearby restaurants, shops, monuments and museums. The app is available to tourists while they visit cities such as New York, San Francisco, Toronto, **London** and **Paris**. The GDPR applies: the startup offers services to (and processes the data of) individuals **who are in the EU**, so the processing of their location data falls within its scope.
+_Example: US city-mapping startup_ 
+A US startup with **no EU establishment** offers a city-mapping app for tourists, processing **location data** to show advertising for nearby restaurants, shops, monuments and museums. The app is available to tourists while they visit cities such as New York, San Francisco, Toronto, **London** and **Paris**. The GDPR applies: the startup offers services to (and processes the data of) individuals **who are in the EU**, so the processing of their location data falls within its scope.
 
 ### Controller / Processor combinations across borders
 

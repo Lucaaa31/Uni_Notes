@@ -1,7 +1,7 @@
 %% Begin Waypoint %%
-- [[04.1 - Spark Programs]]
-- [[04.2 - Spark Official Terminology]]
-- [[04.3 - Examples of Programs]]
-- [[04.4 - Execute Spark Application]]
+- [[01 - Spark Programs]]
+- [[02 - Spark Official Terminology]]
+- [[03 - Examples of Programs]]
+- [[04 - Execute Spark Application]]
 
 %% End Waypoint %%

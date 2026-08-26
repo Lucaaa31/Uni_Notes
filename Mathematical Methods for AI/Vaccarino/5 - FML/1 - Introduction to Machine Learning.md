@@ -150,9 +150,14 @@ In binary classification, for any $x \in \mathcal{X}$: $$\text{noise}(x) = \min\
 
 > [!important] General Equality 
 > For any best-in-class $h \in \mathcal{H}$: $$R(h) - R^\star = \underbrace{[R(h) - R(h^\star)]}_{\text{estimation}} + \underbrace{[R(h^\star) - R^\star]}_{\text{approximation}}.$$
+> Where:
+>- **$R(h)$**: The risk (error) of the chosen model $h$ from the class $\mathcal{H}$.
+>- **$R^\star$**: The Bayes risk, the absolute minimum error theoretically possible for the task.  
+>- **$h^\star$**: The ideal best model inside the class $\mathcal{H}$ ($h^\star = \arg\min_{h \in \mathcal{H}} R(h)$).  
+>- **$\mathcal{H}$**: The hypothesis class (the set of all models the algorithm can choose from).  
+>- **Estimation Error ($R(h) - R(h^\star)$)**: The error due to **limited training data**. It measures how far our selected model $h$ is from the ideal model $h^\star$.  
+>- **Approximation Error ($R(h^\star) - R^\star$)**: The error due to **model restrictions**. It measures what we sacrifice by choosing a class $\mathcal{H}$ that might not contain the perfect absolute model.
 
-- **Approximation** — not a random variable; only depends on $\mathcal{H}$.
-- **Estimation** — the only term we can hope to bound.
 
 ### Empirical Risk Minimization (ERM)
 Select a hypothesis set $\mathcal{H}$, then find the hypothesis minimizing empirical error: $$h = \arg\min_{h \in \mathcal{H}} \widehat{R}(h).$$

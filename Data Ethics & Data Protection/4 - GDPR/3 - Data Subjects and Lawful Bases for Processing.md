@@ -1,287 +1,196 @@
+## 1. Recap of GDPR Background
 
-
-## 1. Introduction and Administrative Remarks
-
-**Core Concepts Review:** The foundational framework of the GDPR includes its implementation background, the differences between directives and regulations, the role of the Court of Justice of the European Union, the territorial scope (establishment vs. targeting criteria), and the classification of personal data (normal vs. sensitive/special categories).
-
-## 2. Who is Protected by the GDPR?
-
-The GDPR protects **natural persons** regarding the processing of personal data and rules relating to the free movement of such data.
-
-* **Exclusion of Legal Entities:** The names of companies or enterprises are not protected by the GDPR. However, protection applies if those names are directly connected to specific natural persons representing the company.
-
-_Example_: If an email is sent to a generic corporate address like `rettore@polito.it`, it does not pose a problem under the GDPR because it does not process data concerning a specific natural person. Conversely, sending an email to a specific address like `stefano.corgnati@polito.it` involves processing the family name of a natural person (the Director), meaning GDPR rules must be strictly respected.
-
-### Definition of a Data Subject (Article 4.1)
-
-According to **Article 4.1 of the GDPR**, personal data means any information relating to an identified or identifiable natural person. An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as:
-
-* Name
-* Identification number
-* Location data
-* Online identifiers
+The lecture opens by recalling the GDPR framework already covered: what the GDPR is, when it was implemented, the difference between a **directive** and a **regulation (GDPR)**, the role of the Court of Justice of the European Union, the scope of the GDPR, what constitutes personal data, the difference between ordinary personal data and **sensitive data (special categories)**, what does and does not constitute data processing, and the territorial criteria for application — including the distinction between the **establishment criterion** and the **targeting criterion** (the GDPR applies to the processing of data of subjects based in the EU even when the enterprise is not based in the EU).
 
 ---
 
-## 3. Lawful Bases for Processing Personal Data (Article 6)
+## 2. Who Is Protected by the GDPR (the Data Subject)
 
-In the business environment, companies execute various processing operations for different purposes. For every single processing activity, it is mandatory to identify a valid legal ground, known as the **lawful basis**, to justify the collection, use, or processing of personal data. Without one of these grounds, data processing is strictly prohibited.
+The GDPR protects **natural persons** with regard to the processing of personal data and the rules relating to the free movement of personal data. Names of companies or enterprises are **not** protected, unless those names are connected to specific natural persons representing the company.
 
-**Crucial Exam Warning:** Do not confuse the **Principles of the GDPR** (e.g., privacy by design) or the **Rights of the Data Subject** with the **Justification Grounds (Lawful Bases)**. Confusing these concepts results in failing the exam.
- 
+_Example: the Politecnico email addresses._ 
+If I write an email to `rettore@polito.it`, there is no GDPR issue, because I am not processing the data of a natural person — the address refers to a role/institution. On the contrary, if I write to `stefano.corgnati@polito.it`, I am processing the family name of a natural person (the director), and therefore I must respect the GDPR rules.
 
-**Article 6 of the GDPR** provides exactly **six lawful bases** for processing personal data:
-1. Contract 
-2. Legal obligation 
-3. Legitimate interest 
-4. Consent 
-5. Vital interest 
-6. Task carried out in the public interest / exercise of official authority 
+### Definition (Article 4.1)
 
-
+Personal data means **any information relating to an identified or identifiable natural person**. An identifiable natural person is one who can be identified **directly or indirectly**, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier, and so on.
 
 ---
 
-## 4. Lawful Basis: Contractual Necessity
+## 3. Lawful Grounds for Processing Personal Data
 
-Processing is lawful when it is strictly necessary to comply with contractual obligations or to address pre-contractual requests from potential clients.
+This is presented as the most important issue for the exam. For **any** processing activity it is necessary to identify a valid ground — the **lawful basis** — to justify the collection, use, or any other form of processing. Without a ground, personal data cannot be processed. In practice, if a company processes data on the basis of one listed ground, it usually does not also rely on a different ground for the same activity.
 
-* **Strict Interpretation:** Contractual necessity must be interpreted strictly. It must be clearly demonstrated that the main object of the contract cannot be performed without processing that specific data. It cannot be used to collect excess data that is irrelevant to the core service.
+> **Exam warning:** do not confuse the **principles** of the GDPR (and the rights of the data subject) with the **justification grounds**:
+> -  **Principle:** all the rules that say "how" the data have to be treated (all have to be respected)
+> - **Lawful Grounds:** it says "why" I can treat the data (only 1 needed) 
 
-_Example 1_: An e-commerce company selling products online must process the client's home address. Without collecting and processing this data, the company cannot physically deliver the goods or perform the contract.
+The **six lawful bases** under **Article 6** are: 
+- **contract**
+- **legal obligation**
+- **legitimate interest**
+- **consent**
+- **vital interest**
+- **task carried out in the public interest / exercise of official authority.**
 
-_Example 2_: A potential client contacts a home repair company for a price quote to paint their house. Although an executed contract does not yet exist, the company can lawfully process the person's name and email under the pre-contractual ground to issue and send the estimate. However, the company cannot request unnecessary data like the client's date of birth, as it is completely irrelevant to sending a quote.
+### 3.1 Contract
 
-_Example 3_: In a pre-contractual stage, a bank opening an account or an insurance company drafting a policy can lawfully check the client's financial position or health status. The bank needs this information to verify the legality of activities and financial capability , while the health insurance company needs to evaluate previous diseases to calculate protection levels. This allows the processing of sensitive data under contractual necessity because the core object cannot be evaluated without it.
+Personal data may be processed when this is necessary to comply with a **contractual obligation**. This is very common in company activity: companies process personal data in order to perform contracts.
 
-_Example 4_: A customer orders a laptop from an electronics store because it is out of stock. The customer provides a home delivery address. This address processing is entirely lawful under contractual necessity because it is required to fulfill the delivery. (Note: If the laptop had been available directly in the shop, requesting the address would be unnecessary and unlawful under this basis ). If the seller later uses that delivery address to send promotional materials, the processing becomes illegal under the contract basis, because the address was collected exclusively for product delivery.
+_Example: online sales._ 
+A company selling goods on a website must process the client's data in order to deliver the goods purchased; without processing that data, the contractual obligation cannot be performed.
 
----
+Contract can also be a lawful basis for handling **pre-contractual requests** from potential clients.
 
-## 5. Lawful Basis: Legal Obligation
+_Example: a home-repair quote._ 
+When a potential client asks a company for an estimate to paint a house, no contract has yet been executed. Yet to issue the estimate the company needs at least the subject's name, family name, and email in order to send the quote. Here contract is the lawful basis.
 
-Processing is lawful when it is required to comply with a legal mandate imposed by EU or national law. In these scenarios, processing is permitted even if the data subject does not provide consent or if a contract has not yet been executed.
+**Strict interpretation.** Contractual necessity must be interpreted **strictly, not broadly**: it must be demonstrated that the processing is necessary to perform/execute the contract or to address the pre-contractual request. Outside that situation, the basis cannot be stretched to other uses.
 
-Valid examples of legal obligations include:
+_Example: data not necessary for the quote._ 
+If, for the painting estimate, I collect the client's name and email (necessary) but also the client's **date of birth**, that extra data is not necessary to send the estimate. The contract basis cannot be spread to cover it.
 
-* **Financial and Real Estate Compliance:** Financial institutions and real estate agencies conducting mandatory anti-money laundering (AML) verifications or consulting official lists of registered debtors.
-* **Employment Reporting:** The absolute duty of employers to report employee salary data and social security numbers to tax and social security authorities.
-* **Suspicious Transactions:** Financial organizations reporting suspicious transactions directly to competent regulatory authorities under established anti-money laundering frameworks.
+### 3.2 Legal Obligation
 
----
+Processing is lawful when it is necessary to comply with a **legal obligation** to which the controller is subject (e.g. obligations imposed by law such as accounting, tax, or anti-money-laundering requirements). [The lecture develops legal obligation and legitimate interest alongside the contract example as listed Article 6 grounds.]
 
-## 6. Lawful Basis: Legitimate Interest
+### 3.3 Legitimate Interest
 
-Data processing can be carried out to pursue the legitimate interests of a company, an enterprise, or a third party, provided that these interests do not override the fundamental rights, freedoms, and interests of the data subject.
+Processing may be based on the **legitimate interest** pursued by the controller or by a third party, provided this interest is not overridden by the interests or fundamental rights and freedoms of the data subject — i.e. a **balancing** is required.
 
-* **Key Characteristics:** It must refer to a real, present interest expected in the near future. Speculative, overly general, or vague interests are strictly excluded.
+### 3.4 Consent
 
-* **Case-by-Case Assessment:** Companies cannot simply claim a legitimate interest; they must prove it by conducting a mandatory, documentable case-by-case evaluation.
-
-### The Three-Step Legitimate Interest Assessment (LIA)
-
-To validate this legal basis, companies utilize a standardized template split into three sequential tests:
-
-1. **Purpose Test:** Assesses the real intent behind the processing. It answers questions regarding why the company wants to process the data, what benefits are expected, whether third parties or the wider public benefit, and compliance with industry guidelines or codes of practice.
-2. **Necessity Test:** Evaluates whether the processing is strictly necessary and proportional to achieve the identified purpose. It checks if the same goal can be achieved via less intrusive means or by processing significantly less data.
-3. **Balancing Test:** Considers the nature of the personal data (e.g., whether it involves special categories, criminal offenses, children, or vulnerable groups) and the reasonable expectations of the individual based on their relationship with the controller. It measures the severity, likelihood, and impact of potential data control loss, ensuring individual rights are not overridden.
-
-### Recognized Examples of Legitimate Interest
-
-While the GDPR does not provide an exhaustive list, common examples recognized by the regulation and the Article 29 Working Party include:
-
-* Fraud prevention.
-* Ensuring staff health and safety (e.g., monitoring employees via corporate badges for security and management purposes).
-* IT, network, and physical security.
-* Direct marketing and advertising, specifically when advertising represents the core commercial job of the company.
-* Unsolicited non-commercial messages (e.g., political campaigns or fundraising).
-* Exercise of freedom of expression or information (e.g., media, arts, and journalism using names and basic data without defamation).
-* Scientific, historical, or statistical research.
-
-_Example 1 (Video Surveillance)_: Banks, jewelry shops, or petrol stations located in areas prone to property crimes can lawfully utilize video surveillance systems without obtaining consent. The legitimate interest consists of preventing dangerous situations and offenses. However, a strict balance remains mandatory: if a camera records video of a customer's highly private life completely unrelated to safety, it infringes on privacy rights, and the footage must be destroyed immediately.
-
-_Example 2 (Copyright Infringement & Balancing Failure)_: Phonogram producers in Italy and Spain requested telecom operators (such as TIM) to hand over the IP addresses of users who allegedly infringed copyrights on songs. While the producers had a clear legitimate interest in identifying copyright infringers, European courts ruled that in the mandatory balancing of rights, the users' fundamental right to private life and data privacy outweighed the protection of commercial exploitation rights. Consequently, telecom operators were justified in refusing to disclose the IP addresses.
+Consent is one of the six lawful bases, treated in detail in the next section.
 
 ---
 
-## 7. Lawful Basis: Consent
+## 4. Consent
 
-Consent is highly visible, but there is a profound **common misconception** that it is the default or primary basis for all data processing.
+### 4.1 Requirements of Valid Consent
 
-### Consent and Privacy by Design
+Consent must be **freely given, specific, informed, and unambiguous**. The request for consent, when given in the context of a written declaration that also concerns other matters, must be **clearly distinguishable** from the other matters, in an **intelligible and easily accessible form, using clear and plain language** (Article 7.2). Any part of such a declaration that infringes the regulation shall **not be binding**.
 
-Overusing consent or asking for it when another lawful basis applies (such as contract or legitimate interest) is a **severe compliance mistake**. European Data Protection Authorities view this as a failure to comply with the principle of **Privacy by Design**. It indicates that the data controller does not understand the real legal grounds of their own processing operations.
+### 4.2 Information to Be Provided (Informed Consent / _informativa privacy_)
 
-Example: In Italy, when requesting a quote from utility suppliers (gas, electricity, or insurance), an email address is entirely sufficient to receive the estimate. A telephone number is not contractually necessary. If the company requests a phone number to make follow-up sales calls, they can only do so if the user explicitly ticks a separate box to give separate, valid consent for marketing calls.
+To obtain informed consent, the data subject must be given at least:
 
-### Requirements for Valid Consent (Article 4.11 & Article 7)
+- The **identity of the controller** and the **purposes** of the processing.
+- The **type of data** that will be collected and processed.
+- The existence of the **right to withdraw** consent.
+- Whether the data will be **transferred to third parties / other controllers or processed by a processor** — if I, as controller, will not process the data directly but will appoint a processor, I must state who will process it.
+- The fact that this information is part of the **privacy policy**.
 
-According to **Article 4.11**, consent must be a clear affirmative action indicating a data subject's specific wishes. To be legally valid, it must meet four criteria:
+All of this serves the **transparency principle**, one of the main principles of the GDPR.
 
-* **Freely Given:** The individual must have a genuine choice. It is invalid if there is an imbalance of power or dependency between the controller and the subject. It also forbids **bundling**: consent cannot be made a mandatory condition for executing a contract or receiving a service if the processing is not necessary for that service.
-* **Specific:** Consent cannot be granted as a general, blanket authorization for any purpose. It requires strict **granularity**, meaning individuals must be free to choose separate check-boxes for different activities (e.g., separate consents for core service, marketing, transferring data to third parties, or behavioral profiling).
-* **Informed:** The request must use clear, plain language adapted to the audience, avoiding lengthy or complex legal jargon. The information must be easily and continuously accessible via the company's privacy policy.
-* **Unambiguous:** It requires an active statement or clear affirmative action, such as manually ticking an **unticked box**. **Pre-ticked boxes, silence, or total passivity/inactivity can never be interpreted as valid consent**.
+### 4.3 How Information Must Be Provided
 
-### Mandatory Information for Informed Consent
+The information must be **intelligible, easily accessible, and in clear and plain language** (Article 7.2), and it is essential to consider the audience.
 
-To satisfy the GDPR **Principle of Transparency**, the controller must explicitly provide the following details before consent is given:
-* Identity of the data controller.
-* Specific purposes of the processing.
-* Types of data collected and processed.
-* The explicit existence of the right to withdraw consent at any time.
-* Whether the data will be shared with, transferred to, or processed by designated third-party processors.
-### No Detriment and the Cookie Wall / Paywall Controversy
+_Example: the* informativa privacy.* 
+In Italian practice, people sign an_ informativa privacy *many times. It should not be written in difficult legal wording but in clear, plain language, and it must remain **easily accessible** — e.g. after an online sale, the signed information must always be findable on the website, so the user can always retrieve what they signed (or, where the information was given to perform a contract, can still access it).
 
-For consent to be free, choosing not to consent must result in **no detriment** or damage to the user. A company cannot punish a user who refuses non-essential tracking by offering less favorable pricing or restricted experiences.
+### 4.4 Unambiguous Consent
 
-* **Cookie Wall:** A mechanism blocking website access unless users accept all cookies. The European Data Protection Board (EDPB) expressly prohibits this practice because it destroys free choice.
-* **Paywall Alternative ("Consent or Pay"):** A mechanism forcing users to either accept profiling cookies or buy a paid subscription to view content.
+Consent must be obtained by a **statement or a clear affirmative action**.
 
-Example (The Italian Real Estate & Renovation Case): A local real estate agency requests a client's phone number strictly to contact them if they are running late for a property viewing appointment. However, the agency intends to sell these phone numbers to home renovation companies for marketing. This practice is completely illegal unless the agency obtains a separate, specific, granular, and freely given consent to transfer data to third parties. Furthermore, if the agent writes this phone number on a loose piece of paper and leaves it exposed on a shared desk where ten other unauthorized employees operate, it constitutes a severe security failure and a processing detriment to the data subject.
+**Valid (unambiguous):** requiring the user to **tick an unticked box**; actively choosing technical settings (e.g. for cookies — essential vs. non-essential); or other conduct that clearly indicates acceptance of the specific proposed processing.
 
-Example (The Italian Newspaper Paywall Conflict): In October 2022, major Italian newspapers and magazines (including *La Repubblica* and *La Stampa*) implemented a "Consent or Pay" wall, forcing non-subscribers to either accept tracking/profiling cookies or purchase an annual subscription to read articles. The Italian Data Protection Authority (*Garante Privacy*) initiated proceedings, evaluating this setup as a structural violation where consent is not freely given. Conversely, data protection authorities in Austria and France have provisionally deemed cookie paywalls acceptable, arguing that newspapers incur high publishing costs and can require payment or data monetization, though users have launched counter-proceedings against these decisions.
+**Invalid:** interpreting **silence or inactivity** as consent (never allowed), or using a **pre-ticked box**. These are illegal under the GDPR because they are clear evidence that consent was not unambiguously given.
 
-### Withdrawal of Consent (Article 7.3)
+### 4.5 Withdrawal of Consent (Article 7.3)
 
-Data subjects maintain an absolute right to withdraw their consent at any time.
+The data subject has the **right to withdraw consent at any time**, and withdrawal must be **as easy as giving consent** (it should not require a new effort). The data subject must be informed of this right **before** giving consent.
 
-* **Equivalence of Effort:** Withdrawing consent must be **as easy as it was to give it**. If consent was given with a single click on a website, the company cannot force the user to call a telephone call center or write formal letters to undo it; a corresponding one-click digital option must exist.
-* **Temporal Effect:** Withdrawal does not affect the lawfulness of processing carried out before the withdrawal. Processing is lawful up to the moment of withdrawal; it becomes immediately unlawful if processing continues after that point.
-* **Consequence:** Upon withdrawal, data must be deleted immediately unless another valid lawful basis (e.g., compliance with a legal obligation like anti-money laundering laws) overrides it.
+Withdrawal does **not** affect the lawfulness of processing carried out **before** withdrawal: up to the moment of withdrawal the processing is lawful; it becomes unlawful only if the controller continues processing **after** the withdrawal is exercised.
 
-### Corporate Accountability and Record-Keeping
+_Example: the real-estate agency._ 
+I gave consent for a real-estate agency to use my number to arrange apartment-viewing appointments, but I no longer agree and do not want them to keep processing my data — I can withdraw the consent.
 
-Under GDPR compliance and accountability, companies must securely store and maintain comprehensive reports and evidence regarding consent logs. 
-They must be able to legally prove:
+_Example: withdrawal must use equally easy means._ 
+If I gave consent by ticking a box on a website, I must be able to withdraw equally easily (e.g. on a website); forcing me to phone a call center to withdraw is **not** as easy as giving consent, and is not GDPR-compliant.
 
-* Which specific individual gave consent.
-* Exactly when and how the consent was obtained.
-* The precise scope of what the individual agreed to.
-* Records of when a user executed a request for withdrawal or deletion.
+After withdrawal, data processed on the basis of consent must be **deleted immediately**, because the consent is no longer valid — **unless** another lawful basis applies from that moment on.
+
+_Example: bank and anti-money laundering._ 
+A subject gave consent for a bank to use financial data, then withdraws it. If processing has meanwhile become mandatory under anti-money-laundering legislation, the bank no longer processes on the basis of consent but on the basis of **legal obligation**.
+
+### 4.6 Records / Proof of Consent
+
+Controllers and processors should keep **records (evidence)** of consent — both when consent is obtained and when a withdrawal/deletion request is received. Companies must be able to prove that consent was validly obtained, recording: **which individual** gave consent, **when** it was obtained, **how** it was obtained, and **to what exactly** the individual agreed.
 
 ---
 
-## 1. Justification Grounds for Processing Personal and Sensitive Data
+## 5. Other Justification Grounds: Vital Interest and Public Interest / Official Authority
 
-The General Data Protection Regulation (GDPR) establishes strict frameworks regarding when personal and special categories of personal data (sensitive data) can be processed.
+Beyond contract, legitimate interest, and consent, personal data may be processed when necessary to protect the **vital interest** of the data subject or of another natural person, or when processing is necessary for the **performance of a task carried out in the public interest or in the exercise of official authority** vested in the controller (**Article 6.1(d) and 6.1(e)**).
 
-### Processing Based on Vital and Public Interests
-In addition to standard legal grounds such as contracts, legitimate interest, and consent, personal data processing is allowed under specific circumstances under Article 6(1) of the GDPR:
-* **Vital Interests (Article 6(1)(d)):** Processing is lawful when it is necessary to protect the vital interests of the data subject or another natural person.
-  _Example: An ambulance service needs to handle the health data of an individual suffering from an acute medical condition or disease. It is legally permitted to process all necessary data, including health data, to safeguard that person's vital interests._
-* **Public Interest or Official Authority (Article 6(1)(e)):** Processing is lawful when it is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller, as provided by Article 6(1)(d)/(e) .
-  _Example: This ground covers the essential public safety and investigative activities routinely carried out by the police force._
+_Example: the ambulance._ 
+An ambulance protecting the vital interest of a person with a disease may process all the data needed, including health data, to protect that vital interest (likewise for protecting safety).
 
-When processing is justified under these specific grounds of protecting vital interests or performing public duties, the standard restrictive provisions set out in Article 9 for sensitive data do not apply in the same restrictive manner. Public authorities or authorized entities can process the data without seeking the specific explicit permission usually mandatory for sensitive information.
+_Example: the police._ 
+Activities carried out by the police are an example of processing necessary for the performance of a task in the public interest or exercise of official authority.
 
-### The General Prohibition of Sensitive Data (Article 9(1))
-The foundational rule of the GDPR regarding special categories of personal data—commonly referred to as **sensitive data**—is that its processing is **always prohibited**. According to Article 9(1), this prohibition applies strictly to data revealing or concerning:
-* Racial or ethnic origin 
-* Political opinions 
-* Religious or philosophical beliefs 
-* Trade union membership 
-* Genetic data and biometric data processed for the purpose of uniquely identifying a natural person 
-* Data concerning health 
-* A natural person's sex life or sexual orientation 
-
-### Exceptions to the Prohibition (Article 9(2))
-The general prohibition on processing sensitive data is only lifted if two cumulative conditions are met: the controller must have a standard lawful basis for processing personal data, **and** one of the specific exempting conditions listed under Article 9(2) must be fully satisfied. The primary justification grounds include:
-
-* **Explicit Consent (Article 9(2)(a)):** The data subject must give explicit consent to the processing of those sensitive personal data for one or more specified purposes. This consent must strictly follow standard GDPR criteria: it must be freely given, specific, and unambiguous. 
-  While regular personal data consent can sometimes be inferred from specific behavior, sensitive data requires **written evidence or a signed statement** (e.g., a physical piece of paper or a specific digital signature) in virtually all practical scenarios.
-* **Employment, Social Security, and Social Protection Law (Article 9(2)(b)):** Processing is allowed if it is necessary to carry out obligations or exercise specific rights of the controller or the data subject in the field of employment, social security, and social protection law, insofar as it is authorized by national law or collective agreements providing safeguards. This is conceived entirely in the exclusive interest of the employees rather than the employer.
-  _Example: An employer needs to prepare the monthly company payroll. To accomplish this, the employer is legally permitted to communicate relevant sensitive employee data to an external professional consultant appointed specifically to process the payroll._
-* **Protection of Vital Interests with Incapacity (Article 9(2)(c)):** Sensitive data can be processed if it is necessary to protect vital interests or safety, and the data subject is **physically or legally incapable of giving consent**. This exception is strictly centered on protecting the data subject, never the controller.
-* **Data Manifestly Made Public (Article 9(2)(e)):** Processing is permitted if it relates to personal data that has been clearly and intentionally made public by the data subject.
-  _Example: An individual chooses to publish specific details regarding their health condition, a disease they are battling, or their sexual orientation directly onto their public personal social media profiles, such as Instagram or Facebook. Because the individual intentionally rendered this information public, third parties may process it without needing to request explicit consent._
-* **Establishment, Exercise, or Defense of Legal Claims (Article 9(2)(f)):** Data can be processed when necessary for the establishment, exercise, or defense of legal claims or whenever courts are acting in their judicial capacity.
-  _Example: A landlord initiates a legal action before a judge against a tenant who has failed to pay their apartment rental fees. The landlord is fully authorized to process and use the tenant’s relevant data for this action. The judge, in turn, is authorized to process that data to evaluate the dispute, as individuals must be allowed to defend their legal rights and interests._
-* **Substantial Public Interest (Article 9(2)(g)):** Processing is allowed when necessary for reasons of substantial public interest laid down in law. This processing must be strictly proportionate, respect the essence of data protection rights, and maintain specific measures to safeguard the data subject's fundamental rights. It requires a careful balancing act between the collective public interest and individual privacy rights.
-* **Preventive and Occupational Medicine (Article 9(2)(h)):** Processing is allowed for the purposes of preventive and occupational medicine, assessing an employee's working capacity, medical diagnosis, or managing healthcare systems. This addresses a broader community interest than standard employment law.
-  _Example: Public health systems or corporate medical officers process health data to implement wide-scale preventive medicine programs. Even though the precise identities of all subjects may not be known initially, processing the subsequent individual medical data is permissible because it serves the collective safety and health interests of the entire workforce and community._
-
-Before any sensitive data processing begins, the controller must determine, document, and prove exactly which justification ground applies. Failing to document this renders the processing completely unlawful.
-
-### The Role of National Legislation
-Article 9 concludes by stating that EU Member States may maintain or introduce further conditions, including specific limitations, regarding the processing of genetic data, biometric data, or data concerning health. 
-
-Therefore, compliance requires looking beyond the general framework of the GDPR. A data controller must always double-check the specific **national law of the country where the processing occurs**, as local member state legislations frequently adopt much stricter requirements for these highly sensitive classes of information.
+Importantly, when processing is needed to protect a **vital interest** or to perform duties in the **public interest**, the special restrictions of **Article 9 on sensitive data do not apply** — a public authority or other subject may, in these cases, process even **sensitive data** without the specific permission otherwise required.
 
 ---
 
-## 9. Subjects Involved in Data Processing
+## 6. Processing of Special Categories of Data (Sensitive Data)
 
-The GDPR identifies specific actors involved in any data processing operation. It is critical during legal evaluations not to confuse these operational roles with foundational GDPR principles or the rights of data subjects.
+### 6.1 General Prohibition (Article 9.1)
 
-### The Core Definitions (Article 4)
-* **Data Subject:** The natural living person whose personal data is being processed, and who is the primary subject of protection under the GDPR framework.
-* **Data Controller (*Titolare del trattamento*):** The natural or legal person, public authority, agency, or other body which, alone or jointly with others, **determines the purposes and means** of the processing of personal data.
-* **Data Processor (*Responsabile del trattamento*):** A natural or legal person, public authority, agency, or other body which **processes personal data on behalf of the controller**.
-* **Recipient:** A natural or legal person, public authority, agency, or another body to which personal data is disclosed, regardless of whether they are a third party or not. It is distinct from the data subject, controller, or processor. 
-* **Third Party:** Any natural or legal person, public authority, agency, or body *other* than the data subject, the controller, the processor, and the persons who are under the direct authority of the controller. They represent external entities who may only process data under very specific, legally defined exceptions.
+The processing of **special categories of personal data is, as a rule, prohibited**. Article 9.1 lists data revealing **racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership**, as well as **genetic data, biometric data** processed to uniquely identify a natural person, and data concerning a person's **health, sex life, or sexual orientation**.
 
-### Determining Roles: Controller vs. Processor
-Distinguishing between a controller and a processor can be complex in real-world business environments. To determine the true legal status of an entity, organizations must evaluate a set of targeted diagnostic criteria:
+### 6.2 Lifting the Prohibition (Article 9.2)
 
-* **Initiative:** Did you take the initiative to start collecting or processing the data in any other way? (Yes $\rightarrow$ Controller)
-* **Purpose:** Did you decide the underlying purpose of the processing? (Yes $\rightarrow$ Controller)
-* **Data Types:** Did you decide which types of personal data are to be collected and from which types of individuals? (Yes $\rightarrow$ Controller) 
-* **Instructions:** Are you giving instructions to another entity processing personal data rather than following instructions from someone else? (Yes $\rightarrow$ Controller)
-* **Benefit:** Are you the party mainly benefiting from the results of the processing? (Yes $\rightarrow$ Controller)
-* **Relationship:** Do you have a direct relationship with the data subject? (Yes $\rightarrow$ Controller)
-* **Monitoring:** Do you monitor other entities' execution of the service? (Yes $\rightarrow$ Controller)
+The prohibition is lifted only when, **in addition to a lawful basis under Article 6**, one of the conditions in **Article 9.2** is satisfied. The conditions discussed:
 
-Answering "yes" to these parameters indicates that the entity functions as a controller, while "no" answers suggest a processor role.
-
-_Example: A practicing lawyer processes personal and highly sensitive details belonging to both their own client and the opposing party during a lawsuit. While the lawyer acts to benefit the client and gathers information based on the client's original dispute, the lawyer decides autonomously how to structure the defense, which data points are legally required for court briefs, and does not follow operational data instructions from the client. By answering affirmatively to the initiatives of purpose, collection, and autonomous decision-making, the lawyer acts legally as an independent, **autonomous data controller**, not a processor hired by the client._
-
-### Key European Court of Justice (ECJ) Case Law
-The boundaries between roles have been continually clarified by the ECJ, utilizing guidelines such as **EDPB Guidelines 07/2020**:
-* ***Wirtschaftsakademie* Case:** The ECJ ruled that the administrator of a fan page hosted on a social network qualifies as a data controller. Despite operating within a larger network platform, the administrator's decisions mean they shoulder full Article 24 controller responsibilities.
-* ***Fashion ID* Case (2019):** The ECJ declared that a commercial website embedding a social plugin (specifically the Facebook "Like" button) acts as a controller alongside Facebook Ireland, due to making it possible to automatically transmit visitors' personal data to Facebook.
-* ***Jehovah's Witnesses* Case:** The ECJ established that a religious community acts as a controller jointly with its individual members who take part in organized door-to-door preaching. Even if individual members argue they are mere processors, or even if the central community leadership never explicitly sees the specific personal data collected or provides written instructions, the community is a joint controller because it organizes, coordinates, and encourages the framework of the activity.
+- **(a) Explicit consent.** The data subject gives **explicit consent** to the processing of those sensitive data for one or more specified purposes. The consent must follow all the usual rules (freely given, unambiguous, specific, etc.).
+- **(b) Employment / social security / social protection.** Processing necessary to carry out the obligations and exercise specific rights of the controller or data subject in the field of employment, social security, and social protection law, where authorized by national law or a collective agreement with appropriate safeguards. The rationale: these activities are conceived in the **exclusive interest of the employees**, not of the employer. _Example: the employer (controller) may communicate the necessary employee data to an external consultant/professional appointed to prepare the **payroll**._
+- **(c) Vital interest where consent is impossible.** Processing necessary to protect the **vital interest** of the data subject or of another person where the data subject is **physically or legally incapable of giving consent** — again, in the interest of the data subject, never of the controller.
+- **(e) Data manifestly made public by the data subject.** _Example: publishing one's own sensitive data — e.g. data on sexual orientation, or news about one's own disease/health — on a personal Instagram or Facebook account._ This works as a sort of consent: since the data is rendered public by the subject, consent is not required to process it.
+- **(f) Legal claims and courts.** Processing necessary for the **establishment, exercise, or defense of legal claims**, or whenever courts act in their judicial capacity (the work of lawyers and judges). _Example: if I sue a tenant who is not paying rent, I will process that subject's data to bring the case before a judge; likewise the judge processes the data of the parties to the dispute._
+- **(g) Substantial public interest.** Processing necessary for reasons of **substantial public interest**, which must be **proportionate**, respect the essence of the right to data protection, and provide suitable and specific safeguards for the fundamental rights and interests of the data subject. The public interest must be **real and existing**, and a **balancing** with the data subject's interests is required.
 
 ---
 
-## 3. Joint Controllers (Article 26)
+## 7. Obligations of the Controller
 
-When two or more controllers **jointly determine the purposes and means of processing**, they are formally designated as **Joint Controllers**. 
+The controller must be able to **demonstrate compliance** — i.e. show that the measures and steps taken are effective. Demonstrating compliance also means that, when the situation or the processing changes, the controller must **review, update, modify, and amend** the policy in line with the new measures adopted to remain GDPR-compliant.
 
-### Identifying a Joint Relationship
-Organizations operate under joint controllership if they can answer "Yes" to the following core operational parameters:
-1. Do you have a common objective and purpose with other parties regarding the processing?
-2. Are you using the exact same set of personal data for this processing as another controller?
-3. Did you design the process with another controller?
-4. Do you have common information management tools with another controller?
+### 7.1 Choice of the Data Processor
 
-### The Joint Arrangement Requirements
-Joint controllers must establish a clear, transparent internal legal arrangement to map out their respective compliance duties under the GDPR. This arrangement must explicitly detail who fulfills the obligation to provide mandatory privacy information notices to data subjects, and how data subject rights are managed. Within this contract, the joint controllers can designate a single contact point for data subjects.
+If a controller works with a **processor**, it has the duty to choose subjects that provide **sufficient guarantees** of respecting GDPR requirements. For this reason a processor is appointed through a **Data Processing Agreement (DPA)**, in which the controller specifies all the duties, responsibilities, and obligations to which the processor is subject. Without this, the controller could not demonstrate that it took all necessary measures — including in the choice of a person able to provide guarantees in the processing of data.
+
+### 7.2 Security of Processing
+
+The controller must implement appropriate **technical and organizational measures** corresponding to the specific **risk** of each case.
+
+### 7.3 Further Controller Duties
+
+- Carry out, under certain circumstances, a **Data Protection Impact Assessment (DPIA)**.
+- Appoint a **Data Protection Officer (DPO)** where required — **mandatory** for big companies processing large amounts of data. Other companies that do not process large amounts of data may still appoint a DPO voluntarily, to be safer.
+- **Cooperate with the data protection authority** — in Italy the _Garante per la protezione dei dati personali_ (privacy/data-protection guarantor); each EU Member State has its own data-protection authority.
 
 ---
 
-## 4. Obligations and Liability Frameworks
+## 8. Obligations of the Processor (Articles 28–29)
 
-### Obligations of the Data Controller
-The data controller bears the largest burden of regulatory compliance and organizational liability under GDPR Article 24.
-Their primary mandatory duties include:
-* **Demonstrating Compliance:** Controllers must implement technical and organizational security measures to ensure and actively prove that all processing aligns with the GDPR.
-* **Privacy by Design and Default:** They must ensure that data protection principles are structurally integrated into systems from the absolute start, a responsibility that remains with the controller even if external processors do the practical work.
-* **Maintaining Records:** Controllers must maintain comprehensive records detailing exactly how, why, and on what legal justification grounds data is processed.
-* **Data Breach Notification:** If a breach occurs, the controller must notify the relevant Data Protection Authority within **72 hours** of discovery, and inform individual subjects without undue delay.
-* **Vetting Processors:** Controllers are legally required to employ only data processors that provide sufficient technical and organizational guarantees, structured via a binding **Data Processing Agreement (DPA)**.
-* **Impact Assessments and DPOs:** When undertaking high-risk processing or handling massive volumes of data, controllers must perform a Data Protection Impact Assessment (DPIA) and officially appoint a Data Protection Officer (DPO).
+- **Records of processing activities.** The processor must keep records documenting **how, for which purposes, and on which grounds** it processes personal data (subject to specific exemptions, to be examined later). This is framed both as an **obligation** and as an **instrument that protects the processor**: in case of a data breach, having recorded that all necessary measures were taken can help the processor defend itself.
+- **Security of processing.** The processor must implement appropriate **technical and organizational measures** corresponding to the specific risk. This obligation, originally on the controller, is **transmitted to the processor** upon appointment.
+- **Data Processing Agreement.** The delegation of processing must be arranged **contractually**, through the DPA executed between controller and processor.
+- **Notification of data breaches.** The processor must **notify data breaches to the controller**, because the controller is then obliged to notify the affected data subjects and the data-protection authorities.
+- **Relationship with the DPO.** Where a DPO is appointed, the processor is also involved in the designation and in the relationship with the DPO; the processor must **assist and inform the controller** in fulfilling its GDPR obligations, including in case of a breach or any other relevant event.
 
-### Obligations of the Data Processor
-While processors act on strict instructions, they maintain independent obligations under the GDPR:
-* **Independent Record Keeping:** Processors must keep detailed records of all processing activities carried out on behalf of a controller.
-* **Security Implementation:** They must implement technical security protections matching the structural risks of their assigned tasks.
-* **Immediate Breach Alerts:** Processors are legally bound to notify the data controller immediately upon discovering any data breach within their systems.
-* **DPO and Vetting Support:** Processors must actively assist the controller in achieving full compliance and cooperate with the controller's DPO.
+### 8.1 Acting Only on the Controller's Instructions
 
-### The Chain of Civil Liability
-The allocation of liability between controllers and processors forms a protective chain for the data subject:
+The processor can process data **only in accordance with the instructions given by the controller**, except in the cases already seen where processing is necessary for performing an obligation, protecting a vital interest, and so on (where the controller's instructions are not needed).
 
-* **The Front-Facing Rule:** Before the data subject and public supervisory authorities, the **Data Controller is always the primary liable party** . Because individuals hand over data to the controller, the controller answers directly for processing failures or processor errors.
-* **The Re-qualification Rule:** If a processor violates or completely ignores the explicit instructions given by the controller, the processor is instantly **re-qualified as a Data Controller** under the law. They lose their processor protections and inherit full direct liability and administrative exposure before data subjects.
-* **The Right of Recourse:** If a data breach occurs due to a processor's negligence, the controller may be forced to pay immediate damages to the injured individuals or authorities. However, under the DPA and mutual indemnity laws, the controller retains the legal right to pursue secondary claims against the processor to recover those financial losses. Ultimately, the economic risk of a processor-caused breach stops with the processor.
+**Re-qualification as controller.** If the processor does **not respect** the controller's instructions, the processor is **re-qualified as a controller** and thereby becomes responsible **also before the data subject**. This holds even where no problem arises: simply not following the controller's indications turns the processor into a controller before the data subject, assuming all the controller's responsibilities. This is presented as a very important principle to remember.
+
+### 8.2 Chain of Responsibility (Controller vs. Processor)
+
+Before the data subject, the **last responsible party is always the controller**, because the data subject communicated the data to the controller. The processor is **not directly responsible before the data subject** or the supervisory authority (so long as it stays within instructions); its responsibility runs toward the **controller**.
+
+Therefore, if a breach occurs: data subjects or the supervisory authority claim **compensation and damages from the controller**; the controller pays; and the controller then **recovers those damages from the processor** if the breach was caused by the processor. The chain must be clear: the controller answers externally, then turns to the processor internally.
+
+> The rules on the processor are contained in **Articles 28 and 29**. Joint controllers and the processor will be examined further in the next class. The lecture stops at **slide 50**.
