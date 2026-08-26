@@ -5,6 +5,8 @@
 			- **01_Big_Data_Architectures**
 				- **Big Data Architectures**
 
-- [[02 - Hadoop and MapReduce]]
+- [[01 - Hadoop and MapReduce]]
+- [[02 - MapReduce Programs]]
+- [[03 - WordCount Example]]
 
 %% End Waypoint %%

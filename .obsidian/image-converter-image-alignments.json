@@ -240,5 +240,47 @@
       "height": "",
       "wrap": false
     }
+  },
+  "Fundamentals of AI/Theory/03 - Learning Theory.md": {
+    "f8058111e19431a200e0aecb38f63129": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "1f44bb9e5ed64d7815fdc5459aeab111": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "85d6162418f6ef1123aafe9043e810d8": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Fundamentals of AI/Theory/04 - Unsupervised Learning.md": {
+    "795986d2da85c55118baa32113c8d1bb": {
+      "position": "right",
+      "width": "",
+      "height": "",
+      "wrap": true
+    }
+  },
+  "Fundamentals of AI/Theory/05 - Supervised Learning.md": {
+    "37c9653fcc9d7a946ad25201817883f6": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "6a8cf3a80b0c03984c2b6e89a4051a98": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
   }
 }
