@@ -170,5 +170,12 @@
   "Data Ethics & Data Protection/2 - Data Ethics Preview": "📁",
   "Data Ethics & Data Protection/5 - Data Ethics": "📁",
   "Fundamentals of AI/Theory": "📁",
-  "Fundamentals of AI/Q&A": "📁"
+  "Fundamentals of AI/Q&A": "📁",
+  "Fundamentals of AI/Theory/01 - Intro Probability and Statistics.md": "📄",
+  "Fundamentals of AI/Theory/03 - Learning Theory.md": "📄",
+  "Fundamentals of AI/Theory/04 - Unsupervised Learning.md": "📄",
+  "Fundamentals of AI/Theory/05 - Supervised Learning.md": "📄",
+  "Fundamentals of AI/Theory/06 - Neural Networks.md": "📄",
+  "Fundamentals of AI/Theory/07 - Logistic Regression & Calibration.md": "📄",
+  "Fundamentals of AI/Theory/08 - Convolutional Neural Networks.md": "📄"
 }

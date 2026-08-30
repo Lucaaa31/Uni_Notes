@@ -6,5 +6,7 @@
 - [[04 - Unsupervised Learning]]
 - [[05 - Supervised Learning]]
 - [[06 - Neural Networks]]
+- [[07 - Logistic Regression & Calibration]]
+- [[08 - Convolutional Neural Networks]]
 
 %% End Waypoint %%
