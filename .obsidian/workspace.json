@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "25786c41bd764f52",
+        "id": "7660194eef4a5286",
         "type": "tabs",
         "children": [
           {
-            "id": "2922d1a92ea59db8",
+            "id": "3e71f43d6c8ee13e",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista grafo"
+              "icon": "lucide-file",
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -192,8 +192,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "549141998eab43d1",
+  "active": "3e71f43d6c8ee13e",
   "lastOpenFiles": [
+    "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/1 - Stochastic Simulation.md",
+    "Mathematical Methods for AI/Summary/2 - Linear Models/2 - Generalized Linear Models & Classification Frameworks.md",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/02_Big_Data_Architectures/02_Big_Data_Architectures.md",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/02_Big_Data_Architectures/01 - Hadoop and MapReduce.md",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/01_Introduction/01_Introduction.md",
+    "Distributed Architecture/Distributed Architecture.md",
+    "Distributed Architecture/Temp.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/04 - Spark Programs.md",
+    "Data Ethics & Data Protection/4 - GDPR/4 - GDPR.md",
+    "Data Ethics & Data Protection/4 - GDPR/6 - Data Protection Law.md",
     "Fundamentals of AI/Theory/08 - Convolutional Neural Networks.md",
     "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788104608085.webp",
     "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788095359204.webp",
@@ -223,17 +233,8 @@
     "Fundamentals of AI/Theory/Resources",
     "Fundamentals of AI/Theory",
     "Fundamentals of AI/Q&A/Q&A.md",
-    "Fundamentals of AI/Q&A/03 - Learning Theory & Unsupervised Learning.md",
-    "Fundamentals of AI/Q&A/01 - Intro AI-ML and probability.md",
     "Fundamentals of AI/Q&A",
-    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/04 - Execute Spark Application.md",
-    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/03 - Examples of Programs.md",
-    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/02 - Spark Official Terminology.md",
-    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/01 - Spark Programs.md",
-    "Distributed Architecture/01_Hadoop_and_MapReduce/02_Big_Data_Architectures/03 - WordCount Example.md",
-    "Data Ethics & Data Protection/5 - Data Ethics/4 - Algorithmic Fairness.md",
     "Data Ethics & Data Protection/5 - Data Ethics/Resources",
-    "Data Ethics & Data Protection/5 - Data Ethics/5 - Fairness Qualitative Assessment.md",
     "Data Ethics & Data Protection/5 - Data Ethics",
     "Data Ethics & Data Protection/4 - GDPR",
     "Data Ethics & Data Protection/dsd",
