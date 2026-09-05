@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fundamentals of AI/Theory/08 - Convolutional Neural Networks.md",
+                "file": "Fundamentals of AI/Theory/09 - From RNNs to Transformers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08 - Convolutional Neural Networks"
+              "title": "09 - From RNNs to Transformers"
             }
           }
         ]
@@ -199,19 +199,23 @@
   },
   "active": "35ebccfbf5dd4a7e",
   "lastOpenFiles": [
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788538887352.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788538760724.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788535998020.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788535795524.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788535115634.webp",
-    "Fundamentals of AI/Theory/09 - CNN Architectures.md",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788637155984.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788636361186.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788636193149.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788635910957.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788633945658.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788633747878.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788633369928.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788633307014.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788633143224.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788632463172.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788632442921.webp",
+    "Fundamentals of AI/Theory/04 - Unsupervised Learning.md",
+    "Fundamentals of AI/Theory/03 - Learning Theory.md",
+    "Fundamentals of AI/Theory/09 - From RNNs to Transformers.md",
+    "Fundamentals of AI/Previous_Questions.pdf",
     "Fundamentals of AI/Theory/08 - Convolutional Neural Networks.md",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788452452872.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788450031967.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788448165457.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788446593216.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788372537847.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788372466744.webp",
+    "Fundamentals of AI/Theory/09 - CNN Architectures.md",
     "Data Ethics & Data Protection/Data Ethics & Data Protection.md",
     "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/1 - Stochastic Simulation.md",
     "Mathematical Methods for AI/Summary/2 - Linear Models/2 - Generalized Linear Models & Classification Frameworks.md",
@@ -224,17 +228,14 @@
     "Data Ethics & Data Protection/4 - GDPR/4 - GDPR.md",
     "Data Ethics & Data Protection/4 - GDPR/6 - Data Protection Law.md",
     "Fundamentals of AI/Theory/07 - Logistic Regression & Calibration.md",
-    "Fundamentals of AI/Theory/03 - Learning Theory.md",
     "Fundamentals of AI/Theory/06 - Neural Networks.md",
     "Fundamentals of AI/Theory/01 - Intro Probability and Statistics.md",
-    "Fundamentals of AI/Theory/04 - Unsupervised Learning.md",
     "Fundamentals of AI/Theory/05 - Supervised Learning.md",
     "d.md",
     "conflict-files-obsidian-git.md",
     "Data Ethics & Data Protection/4 - GDPR/27 marzo da fare.md",
     "Data Ethics & Data Protection/2 - Data Ethics Preview/2 - From Data Protection to the AI Act.md",
     "Data Ethics & Data Protection/2 - Data Ethics Preview/2 - Data Ethics Preview.md",
-    "Data Ethics & Data Protection/2 - Data Ethics Preview/1 - The Evolution of Data Ethics and Regulation.md",
     "Data Ethics & Data Protection/2 - Data Ethics Preview",
     "Fundamentals of AI/Theory/Resources",
     "Fundamentals of AI/Theory",
@@ -244,7 +245,6 @@
     "Data Ethics & Data Protection/4 - GDPR",
     "Data Ethics & Data Protection/dsd",
     "Data Ethics & Data Protection/3 - Datafication and Dataprotection",
-    "Data Ethics & Data Protection/2 - Data Ethics",
     "Distributed Architecture/01_Hadoop_and_MapReduce/Design_Patterns/Design_Patterns.canvas",
     "Senza nome.canvas"
   ]

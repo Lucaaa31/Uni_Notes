@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "📚",
       "📄",
       "📁",
       "🥩",
-      "⚖",
-      "LiAtom"
+      "⚖"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -181,5 +181,7 @@
   "Data Ethics & Data Protection/4 - GDPR/4 - Data Controller, Data Processor and Joint Controllership under the GDPR.md": "📄",
   "Data Ethics & Data Protection/4 - GDPR/5 - Principles of Processing and Data Subject Rights.md": "📄",
   "Data Ethics & Data Protection/4 - GDPR/6 - Data Protection Law.md": "📄",
-  "Data Ethics & Data Protection/4 - GDPR/7 -  Data Protection Law 2.md": "📄"
+  "Data Ethics & Data Protection/4 - GDPR/7 -  Data Protection Law 2.md": "📄",
+  "Fundamentals of AI/Theory/09 - From RNNs to Transformers.md": "📄",
+  "Fundamentals of AI/Previous_Questions.pdf": "📚"
 }

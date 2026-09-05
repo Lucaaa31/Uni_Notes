@@ -15,7 +15,6 @@ We start by defining the convolution, a fundamental mathematical operation used 
 
 Given two functions $f, g: [-\pi , \pi] \rightarrow \mathbb{R}$ their convolution $(\star)$ is a function s.t.:
 $$(f \star g)(x) = \int_{- \pi}^\pi f(t) g(x - t) \, dt$$
-
 where:
 - $g(x-t)$ is the kernel, that is the filter (a matrix) applied at the input
 - $(f \star g)(x)$ is called feature map that is the result of the kernel applied to the image
@@ -504,3 +503,179 @@ If $x$ is the output of a perceptron, the standard for non-linearities in that p
 The authors of the paper stated that the training with descent gradient was much slower using this saturating function (e.g. tanh) w.r.t. non-saturating one $f(x) = \max(0, x)$. For this reason they used the Rectified Linear Units.
 
 ### Data Augmentation
+The authors of the paper have used two distinct technique of data augmentation, both of them are really **computationally cheap**, because of that there was no need to store them on disk, they are generated at run-time by the CPU while the GPU is training the previous batch.
+
+The two technique are:
+- Cropping + Horizontal flipping
+- RGB jittering
+
+#### Cropping + Horizontal flipping
+The image of the dataset are $256 \times 256$, the first layer of the AlexNet receives resolution of $224 \times 224$, this resolution is achieved by cropping the images. 
+In particular, from the original images **we extract 5 different patches**: the 4 corners + the center.
+![[08 - Convolutional Neural Networks-1788588313627.webp|650]]Each patch is then duplicated through the horizontal flip, so from $1$ image we obtain $10$ samples.
+
+This augmentation is not made only at training time, but also during the test: the prediction in made by averaging all the predictions made by the softmax layer over the $10$ images.
+
+#### RGB Jittering
+The idea is to slightly shift the colors of each image in a way that mimics natural variation in lighting and color. This is done by:
+1. Apply a PCA over the entire dataset in order to find the **principal directions of color variation**
+2. Then, **add a small perturbation** along each image of the dataset.
+Authors says that this technique is very useful because object identity becomes invariant towards changes in the intensity and color illumination.
+#### Dropout
+Already discussed before.
+
+## VGGNet
+This network was the winner of ILSRVC of 2014, developed by Visual Geometry Group, and was deeper than the AlexNet.
+![[08 - Convolutional Neural Networks-1788590980080.webp]]
+
+VGG has some rules:
+- Every convolutional layer is $3 \times 3$ with stride 1, in many layers the input size matches the output size of the previous layer, so even the padding is $1$
+- All Max Pooling layers are $2 \times 2$ with stride $2$
+- After a Pooling layer, the number of channel in the convolutional layer is doubled
+
+At the end of the convolutional block there’s a ReLU activation function.
+
+### Core Idea
+The idea of VGG is to use only 3x3 convolutional blocks, and this is why the architecture is said to be uniform.
+The main reason behind this is that if we stack multiple 3x3 blocks we get the same receptive field of a larger filter with less parameters and flops.
+
+In general if we have:
+- $L$, the number of consecutive convolutional layers
+- $K \times K$ the kernel dimension with stride 1
+The total receptive field size is:
+$$
+1 + L(K \times K)
+$$
+![[08 - Convolutional Neural Networks-1788592277175.webp]]
+Substituting a larger convolution with a stack of smaller ones has two advantages:
+- The model can create more complex decision boundaries increasing representative power, because the number of non linearities increases.
+- The number of parameters and floating point operations decreases
+
+### Overall Structure
+Both versions of VGG have 5 stages. At the end of each stage there is a $2 \times 2$ stride $2$ Max-pooling layer that halves the image resolution. The first convolutional layer of the next stage will then double the number of channels.
+
+Max Polling main goal is to enlarge receptive fields through down-sampling:
+- Stage 1: 2 blocks
+- Stage 2: 2 blocks
+- Stage 3: 2 blocks
+- Stage 4: 3 blocks (4 blocks in VGG-19)
+- Stage 5: 3 blocks (4 in VGG-19)
+
+The fully connected layers are similar to AlexNet. The difference between VGG and AlexNet is therefore in the feature extraction.
+
+One thing to notice is that the FLOPs remain constant in each convolutional block.
+
+### Representative power
+VGG has a very good representative power. It is demonstrated that if we remove the fully connected layer and the softmax the network can be used for a variety of computer vision tasks with good results.
+
+To sum up the steps are:
+- Train VGG 16 on ImageNet
+- Remove the FC1000
+- For the new task you work with the “frozen” VGG architecture
+- Eventually add task-specific FC’s (like a FC100 if you have to perform classification on 100 classes, or any other header for any task), train and test on the transformed vectors by the VGG
+
+This was a sign that with deeper networks you could get better features.
+
+### Depth and Feature Quality
+Early layers detect simple and general features, like edges. As we go deeper the features start getting more complex and specific, in deeper layers features detect entire objects.
+This is allowed by the fact that the **receptive filter size increases as we go deeper**.
+
+For this reason narrow networks cannot capture complex interactions between the basic features, meanwhile deep networks can. Being able to use abstract features is a key factor in telling similar images apart.
+
+Enlarging the filters on the shallow network works but not as efficiently as increasing depth.
+
+DNN prior hierarchy: more complex features are built upon simpler features. Therefore building complex features on basic features works better than learning complex features right away.
+
+Lastly, deeper networks have way more activations than short networks, therefore the model’s function is more complex and representative
+
+
+## GoogLeNet
+This network was introduced in the $2014$. 
+It does not use **global average pooling**.
+Like we said before at the time, thanks to VGGNet, there was the idea that to enhance the performances we had to make larger and deeper networks:
+- **Deeper:** adding more layers in sequence. 
+	- AlexNet (2012) had $8$ layers, VGGNet (2014) had 16-19 layers
+- **Wider:** increasing the number of filters (that means adding more channels in output) per layer
+
+The problem was that both directions scaled very poorly:
+- More layers → vanishing gradients, harder to train
+- More filters → quadratic growth in parameters and computation
+
+GoogLeNet tried to find a solution.
+### Core Idea
+The core idea was based on **finding the right filter size to use at each layer**, from theory we know that:
+- **small filters:** capture fine-grained local patterns
+- **large filters:** capture broader spatial structures
+
+We use the **Inception module answers: use all of them in parallel**.
+A single Inception module takes the same input and passes it through four parallel branches simultaneously:
+![[08 - Convolutional Neural Networks-1788614047110.webp]]
+
+All four branches produce outputs with the **same spatial dimensions** (height × width) thanks to appropriate **padding**, so they can be **concatenated along the channel axis** and passed to the next layer. The network then learns which filter responses are most useful for the task, rather than the designer having to choose a single scale.
+
+### Computational Problem
+The naive version of this idea is **computationally prohibitive**.
+The core issue is that **every spatial filter must operate across the full channel depth of the input**, and large filters like 5×5 are extremely expensive when the input has hundreds of channels.
+
+For example, if we apply a filter $5 \times 5$ on an input of 256 for make 128 channel in output we have:
+$$
+5 \times 5 \times 256 \times 128 = 819.200 \text{ Parameters}
+$$
+#### Solution: $1 \times 1$ convolution as bottleneck
+Google researchers introduced a **$1 \times 1$ convolutional layer before the bigger ones**.
+This layer is useful because it **reduce the dimensionality** (imbuto) by:
+1. Takes the high depth input, e.g. 256 channels
+2. It compresses the input, e.g. 32 channels
+3. The successive layers (e.g. a $5 \times 5$) works on this, so it is less expensive
+![[08 - Convolutional Neural Networks-1788617392650.webp|624]]
+
+```Pseudo
+Without bottleneck:
+  Input (256ch) ──→ 5×5 conv ──→ Output (32ch)
+  Cost: 32 × 5×5 × 256 = 204,800 parameters
+
+With bottleneck:
+  Input (256ch) ──→ 1×1 conv (16ch) ──→ 5×5 conv ──→ Output (32ch)
+  Cost: (16×1×1×256) + (32×5×5×16) = 4,096 + 12,800 = 16,896 parameters
+```
+This bottleneck layer became a **foundational building block of modern** CNN like ResNet. 
+
+The insight that channel reduction via 1×1 convolutions decouples spatial filtering cost from input depth turned out to be one of the most reusable ideas in deep learning architecture design.
+
+## Residual Network 
+
+### Context
+Thanks to batch normalization it became possible to train more and more deep networks. 
+The idea was to create deep NN that **emulates the smaller state-of-art ones** and add them **extra layers** in order to enhance them. 
+**Example:** imagine we have a classic NN of 20 layers, we want to create a deeper one of 56 layers that is better, we use:
+- 20 layers equals to the small model
+- The other 36 will be extra layers that add complexity enhancing the model
+
+In theory a deeper network should performs at least the same compared to a smaller one, but not in this case: **the deeper network on the test set performed worse**.
+
+The initial guess was that the deep model was **overfitting** but, after having trained the small models on the same training set, they discovered that the deep model was **underfitting** because even on training data it performed worse.
+In particular they trained the deeper network of 56 with:
+- 20 layers equals to the small model
+- the other 36 as identity function
+In theory the performance should be the same.
+![[08 - Convolutional Neural Networks-1788618013407.webp]]
+
+The problem is that the deeper NN had problems to emulates the classic network: **they had trouble in approximating the identity functions**
+
+### Solution - Residual Blocks
+The idea is to change the network architecture in order to facilitate the emulation of the identity function.
+
+This change is made by adding an **additive shortcut** (or residual connection).
+
+Let's see the difference between the plain block and the residual block:
+- **Plain block:** In a classic convolutional layer the block try to learn from an input $x$ the full transformation $H(x)$ $$\text{Output=}H(x)$$
+- **Residual block:** In this configuration the input $x$ takes two path:
+	1. Goes in the convolutional layer that calculates a **Residual Transformation**
+	2. Takes the shortcut and skip the layer
+	3. At the end of the two paths the results are summed and then we apply the activation (e.g. ReLU) $$\text{Output} = F(x) + x$$
+The residual solution is better because if the network sees that the convolutional block does not optimizes the prediction it can turn it off by setting $F(x) = 0$, so that in output we have $0 + x = x$ that is the identity function.
+Also it helps during the backpropagation because the gradient w.r.t. the loss goes directly backwards without calculating the new weights for the layer, this prevents vanishing gradient.
+![[08 - Convolutional Neural Networks-1788619649789.webp]]
+
+
+

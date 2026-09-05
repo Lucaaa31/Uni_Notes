@@ -8,5 +8,6 @@
 - [[06 - Neural Networks]]
 - [[07 - Logistic Regression & Calibration]]
 - [[08 - Convolutional Neural Networks]]
+- [[09 - From RNNs to Transformers]]
 
 %% End Waypoint %%
