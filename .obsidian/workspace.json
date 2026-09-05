@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7660194eef4a5286",
+        "id": "462bc88a267d94bc",
         "type": "tabs",
         "children": [
           {
-            "id": "3e71f43d6c8ee13e",
+            "id": "35ebccfbf5dd4a7e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Fundamentals of AI/Theory/08 - Convolutional Neural Networks.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "08 - Convolutional Neural Networks"
             }
           }
         ]
@@ -76,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.51103591918945
+    "width": 270.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "101c0b53c52faf0d",
@@ -192,8 +197,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3e71f43d6c8ee13e",
+  "active": "35ebccfbf5dd4a7e",
   "lastOpenFiles": [
+    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788538887352.webp",
+    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788538760724.webp",
+    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788535998020.webp",
+    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788535795524.webp",
+    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788535115634.webp",
+    "Fundamentals of AI/Theory/09 - CNN Architectures.md",
+    "Fundamentals of AI/Theory/08 - Convolutional Neural Networks.md",
+    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788452452872.webp",
+    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788450031967.webp",
+    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788448165457.webp",
+    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788446593216.webp",
+    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788372537847.webp",
+    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788372466744.webp",
+    "Data Ethics & Data Protection/Data Ethics & Data Protection.md",
     "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/1 - Stochastic Simulation.md",
     "Mathematical Methods for AI/Summary/2 - Linear Models/2 - Generalized Linear Models & Classification Frameworks.md",
     "Distributed Architecture/01_Hadoop_and_MapReduce/02_Big_Data_Architectures/02_Big_Data_Architectures.md",
@@ -204,24 +223,12 @@
     "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/04 - Spark Programs.md",
     "Data Ethics & Data Protection/4 - GDPR/4 - GDPR.md",
     "Data Ethics & Data Protection/4 - GDPR/6 - Data Protection Law.md",
-    "Fundamentals of AI/Theory/08 - Convolutional Neural Networks.md",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788104608085.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788095359204.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788095242709.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788095222220.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788094947925.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788094068023.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788093969853.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788093906148.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788093872054.webp",
-    "Fundamentals of AI/Theory/Resources/08 - Convolutional Neural Networks-1788093851223.webp",
     "Fundamentals of AI/Theory/07 - Logistic Regression & Calibration.md",
     "Fundamentals of AI/Theory/03 - Learning Theory.md",
     "Fundamentals of AI/Theory/06 - Neural Networks.md",
     "Fundamentals of AI/Theory/01 - Intro Probability and Statistics.md",
     "Fundamentals of AI/Theory/04 - Unsupervised Learning.md",
     "Fundamentals of AI/Theory/05 - Supervised Learning.md",
-    "Data Ethics & Data Protection/Data Ethics & Data Protection.md",
     "d.md",
     "conflict-files-obsidian-git.md",
     "Data Ethics & Data Protection/4 - GDPR/27 marzo da fare.md",
@@ -229,10 +236,8 @@
     "Data Ethics & Data Protection/2 - Data Ethics Preview/2 - Data Ethics Preview.md",
     "Data Ethics & Data Protection/2 - Data Ethics Preview/1 - The Evolution of Data Ethics and Regulation.md",
     "Data Ethics & Data Protection/2 - Data Ethics Preview",
-    "Fundamentals of AI/Theory/Theory.md",
     "Fundamentals of AI/Theory/Resources",
     "Fundamentals of AI/Theory",
-    "Fundamentals of AI/Q&A/Q&A.md",
     "Fundamentals of AI/Q&A",
     "Data Ethics & Data Protection/5 - Data Ethics/Resources",
     "Data Ethics & Data Protection/5 - Data Ethics",
