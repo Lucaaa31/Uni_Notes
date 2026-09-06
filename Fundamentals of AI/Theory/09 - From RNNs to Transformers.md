@@ -152,7 +152,12 @@ Since “estamos” = “we are” a possible distribution of the attention weig
 - $a_{12}=0.45$
 - $a_{13}=a_{14}=0.05$
 
-Next, in order to predict the second word, we repeat the same process seen with $s_0$, but with $s_1$:
+Next, in order to predict the second word, we repeat the same process seen with $s_0$, but with $s_1$.
+
+**We use a different context vector in each time-step of decoder:**
+- Input sequence not bottlenecked through single vector
+- At each time-step of decoder, context vector looks at different parts of the input
+
 ![[09 - From RNNs to Transformers-1788637155984.webp]]
 We repeat the process with $s_2,s_3\cdots s_{m}$, until the placeholder word “stop” is produced by the decoder.
 What emerges from the previous explanation is that the decoder only needs the hidden state sequence produced by the encoder. Moreover the order of the hidden states is not important.
@@ -160,3 +165,108 @@ What emerges from the previous explanation is that the decoder only needs the hi
 We could literally compute $h_1,h_2,\cdots$ and forget about $x_1,x_2,\cdots$.
 
 Another point worth mentioning is that no labels are needed to learn the MLP that computes attention: the weights of the MLP are learned by backpropagating. Attention weights instead are computed on-line and are different based on the input sequence.
+
+
+## General Formulation for Attention
+**Tokens:** set of input vectors $x_1, ..., x_n \in R^D$
+**Features:** the characteristics of each token.
+
+We can put these tokens together as a matrix where:
+- each row is a token
+- different columns refer to different features
+![[09 - From RNNs to Transformers-1788674574398.webp|146]]
+
+### Attention Coefficients
+Now, we want to **transform** our tokens to another set of vectors, that we'll call output tokens $y_1, ..., y_N \in R^D$.
+The value of one output token $y_i$ should depend not just on the corresponding input token $x_i$ , but on all the vectors $x_1, ..., x_n$.
+
+A simple idea is to have $y_n$ as the linear combination of the inputs:
+$$
+y_n = \sum_{m=1}^N a_{nm}x_m \in R^D
+$$
+where:
+- $a_{nm}$ is called **attention weight**
+	- Small: the input tokens have little influence on $y_n$
+	- Big: the input tokens have huge influence on $y_n$
+
+We can also define a **partition unity**:
+- $a_{nm} \ge 0$
+- $\sum_{m=1}^N a_{nm} = 1$
+In this case if we pay more attention to a input, it will be at the expenses of the other ones.
+
+#### How to Compute the Weights
+The user computes a **query** and the system search for the **most similar** key and retrieve the corresponding value.
+
+![[09 - From RNNs to Transformers-1788675374420.webp]]
+
+
+### Similarity Function
+Following what we have seen, we can compute the attention weights based on some similarity functions between one input token and the other ones, there are two ways:
+- **hard similarity:** the similarity score can assume 1 or 0, but it is not flexible because this means that we will use only one token
+- **soft similarity:** the score in a continuous value between $[0, 1]$
+
+We can use a softmax function:
+$$
+a_{nm} = \frac{\exp(x^T_n x_m)}{\sum_{i=1}^N \exp(x_n^T x_i)}
+$$
+In compact notation:
+$$
+Y = \text{Softmax}[XX^T]X
+$$
+![[09 - From RNNs to Transformers-1788675892039.webp]]
+This process is called **self-attention** because we are using the same sequence $X$ to determine the queries, keys and values.
+
+## Self-Attention
+The formula
+$$
+Y = \text{Softmax}[XX^T]X
+$$
+is not very useful because the weights are fixed for each input sequence, so there are **learnable parameters**.
+
+To correct this we can map the input tokens using a **learnable linear transformation**:
+$$\tilde{X} = X{\color{magenta}W} \quad W \in \mathbb{R}^{D \times D}$$
+$$\downarrow$$
+$$\boxed{Y = \operatorname{Softmax}[\tilde{X}\tilde{X}^T]\tilde{X} = \operatorname{Softmax}[XW W^T X^T]XW}$$
+Now we have the learnable parameters.
+The only problem is that the matrix $XW W^T X^T$ is not symmetric, and we need asymmetry because some words have to be always strongly associated with other but not viceversa:
+- "Chisel" has to be strongly associated with tools
+- But "Tool" only sometimes because there exists a lot of other tools
+
+To fix this we can use a **separate** learnable linear transformation for query, key and value:
+$$
+Q = X W^{(q)}, \qquad K=X W^{(k)}, \qquad V = X W^{(v)}
+$$
+The softmax becomes:
+$$
+Y = \text{Softmax}[QK^T]V
+$$
+### Recap
+Essentially, we are performing a linear combination of the values $V$ using a learned matrix of weights. **Differently from convolutions, these weights are not fixed, but they depend on the input signal $X$.**
+
+
+### Self-Attention Layer
+**Problem:** The gradients of the softmax function become exponentially small for inputs of high magnitude.
+
+We can prevent this by re-scaling the product of queries and keys before the softmax:
+$$
+Y = \text{Attention}(Q, K, V) = \text{Softmax}  [\frac{Q K^T}{\sqrt{D_k}}  ] V
+$$
+This is generally calle **self-attention layer**.
+![[09 - From RNNs to Transformers-1788677089308.webp|150]]
+
+
+### General Attention Layer
+In the **self-attention layer,** queries, keys and values are generated from the same input sequence.
+![[09 - From RNNs to Transformers-1788677409977.webp|160]]
+
+If the query are generated from another input signal, this is called **cross-attention**.
+![[09 - From RNNs to Transformers-1788677437343.webp|163]]
+
+## Multi-head Attention
+
+
+
+
+
+
+
