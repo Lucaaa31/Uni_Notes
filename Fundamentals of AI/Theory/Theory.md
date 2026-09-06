@@ -9,5 +9,10 @@
 - [[07 - Logistic Regression & Calibration]]
 - [[08 - Convolutional Neural Networks]]
 - [[09 - From RNNs to Transformers]]
+- [[10 - Self-Supervised and Generative Models]]
+- [[11 - Federated Learning]]
+- [[12 - Object Detection]]
+- [[13 - Semantic Segmentation]]
+- [[14 - Reinforcement Learning]]
 
 %% End Waypoint %%

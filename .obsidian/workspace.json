@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "40db70212f43d59f",
+        "id": "0427f2aee66f832e",
         "type": "tabs",
         "children": [
           {
-            "id": "bba3b2f5836db2be",
+            "id": "54569245795133b0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fundamentals of AI/Theory/09 - From RNNs to Transformers.md",
+                "file": "Fundamentals of AI/Theory/13 - Semantic Segmentation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09 - From RNNs to Transformers"
+              "title": "13 - Semantic Segmentation"
             }
           }
         ]
@@ -60,7 +60,7 @@
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "byCreatedTime"
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
               "title": "Ricerca"
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.51103591918945,
-    "collapsed": true
+    "width": 270.51103591918945
   },
   "right": {
     "id": "101c0b53c52faf0d",
@@ -97,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mathematical Methods for AI/Vaccarino/5 - FML/3 - Learning with Infinite Hypothesis Sets.md",
+                "file": "Distributed Architecture/01_Hadoop_and_MapReduce/01_Big_Data_Architectures/02 - Hadoop and MapReduce.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +106,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a 3 - Learning with Infinite Hypothesis Sets"
+              "title": "Riferimenti a 02 - Hadoop and MapReduce"
             }
           },
           {
@@ -116,12 +115,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data Ethics & Data Protection/5 - Data Ethics/1 - Automatic Decision Making.md",
+                "file": "Senza nome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da 1 - Automatic Decision Making"
+              "title": "Collegamenti in uscita da Senza nome"
             }
           },
           {
@@ -197,54 +196,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bba3b2f5836db2be",
+  "active": "54569245795133b0",
   "lastOpenFiles": [
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788677437343.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788677409977.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788677089308.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788675892039.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788675374420.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788674574398.webp",
-    "Fundamentals of AI/Theory/Theory.md",
-    "Fundamentals of AI/Theory/06 - Neural Networks.md",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788637155984.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788636361186.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788636193149.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788635910957.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788633945658.webp",
+    "Fundamentals of AI/Theory/12 - Object Detection.md",
+    "Fundamentals of AI/Theory/11 - Federated Learning.md",
+    "Fundamentals of AI/Theory/Resources/11 - Federated Learning-1788717366085.webp",
+    "Fundamentals of AI/Theory/Resources/11 - Federated Learning-1788717341442.webp",
+    "Fundamentals of AI/Theory/Resources/11 - Federated Learning-1788717337846.webp",
+    "Fundamentals of AI/Theory/Resources/11 - Federated Learning-1788711843029.webp",
+    "Fundamentals of AI/Theory/14 - Reinforcement Learning.md",
+    "Fundamentals of AI/Theory/13 - Semantic Segmentation.md",
+    "Fundamentals of AI/Theory/10 - Self-Supervised and Generative Models.md",
     "Fundamentals of AI/Theory/09 - From RNNs to Transformers.md",
     "Fundamentals of AI/Theory/08 - Convolutional Neural Networks.md",
-    "Fundamentals of AI/Theory/07 - Logistic Regression & Calibration.md",
     "Fundamentals of AI/Previous_Questions.pdf",
-    "Distributed Architecture/01_Hadoop_and_MapReduce/01_Introduction/01_Introduction.md",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788706511439.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788706508160.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788706315397.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788705417280.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788704605764.webp",
+    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788703266002.webp",
     "Fundamentals of AI/Theory/04 - Unsupervised Learning.md",
     "Fundamentals of AI/Theory/03 - Learning Theory.md",
-    "Fundamentals of AI/Theory/05 - Supervised Learning.md",
-    "d.md",
-    "Fundamentals of AI/Theory/01 - Intro Probability and Statistics.md",
-    "Fundamentals of AI/Theory/2 - Learning Theory.md",
-    "Senza nome.base",
-    "Fundamentals of AI/Theory/Resources",
-    "Fundamentals of AI/Q&A/Q&A.md",
-    "Fundamentals of AI/Theory",
-    "Fundamentals of AI/Theory.md",
-    "Fundamentals of AI/Q&A/03 - Learning Theory & Unsupervised Learning.md",
-    "Fundamentals of AI/Q&A/01 - Intro AI-ML and probability.md",
-    "Distributed Architecture/01_Hadoop_and_MapReduce/02_Big_Data_Architectures/02 - MapReduce Programs.md",
-    "Distributed Architecture/01_Hadoop_and_MapReduce/01_Introduction/01 - Big Data Architectures.md",
-    "Distributed Architecture/01_Hadoop_and_MapReduce/01_Introduction/02 - HDFS Architecture.md",
-    "Fundamentals of AI/Fundamentals of AI.md",
-    "Fundamentals of AI/Project - Semantic Segmentation/Project - Semantic Segmentation.md",
-    "Fundamentals of AI/Q&A",
-    "Distributed Architecture/01_Hadoop_and_MapReduce/02_Big_Data_Architectures/01 - Hadoop and MapReduce.md",
+    "Fundamentals of AI/Theory/09 - CNN Architectures.md",
+    "Data Ethics & Data Protection/Data Ethics & Data Protection.md",
+    "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/1 - Stochastic Simulation.md",
+    "Mathematical Methods for AI/Summary/2 - Linear Models/2 - Generalized Linear Models & Classification Frameworks.md",
     "Distributed Architecture/01_Hadoop_and_MapReduce/02_Big_Data_Architectures/02_Big_Data_Architectures.md",
-    "Distributed Architecture/01_Hadoop_and_MapReduce/03_Design_Patterns/Filtering Patterns.md",
-    "Distributed Architecture/01_Hadoop_and_MapReduce/03_Design_Patterns/Data Organization Patterns.md",
-    "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/7 - JAGS from R.pdf",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/5 -Two-factors.pdf",
-    "Mathematical Methods for AI/Gasparini/2 - Linear Models/3 - Linear Models in R.pdf",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/02_Big_Data_Architectures/01 - Hadoop and MapReduce.md",
+    "Distributed Architecture/01_Hadoop_and_MapReduce/01_Introduction/01_Introduction.md",
+    "Distributed Architecture/Distributed Architecture.md",
+    "Distributed Architecture/Temp.md",
+    "Distributed Architecture/02_Spark_Core_and_SQL/Introduction_to_Apache_Spark/04 - Spark Programs/04 - Spark Programs.md",
+    "Data Ethics & Data Protection/4 - GDPR/4 - GDPR.md",
+    "Data Ethics & Data Protection/4 - GDPR/6 - Data Protection Law.md",
+    "Fundamentals of AI/Theory/07 - Logistic Regression & Calibration.md",
+    "Fundamentals of AI/Theory/06 - Neural Networks.md",
+    "Fundamentals of AI/Theory/01 - Intro Probability and Statistics.md",
+    "Fundamentals of AI/Theory/05 - Supervised Learning.md",
+    "Data Ethics & Data Protection/2 - Data Ethics Preview",
+    "Fundamentals of AI/Theory/Resources",
+    "Fundamentals of AI/Theory",
+    "Fundamentals of AI/Q&A",
     "Data Ethics & Data Protection/5 - Data Ethics/Resources",
     "Data Ethics & Data Protection/5 - Data Ethics",
+    "Data Ethics & Data Protection/4 - GDPR",
+    "Data Ethics & Data Protection/dsd",
+    "Data Ethics & Data Protection/3 - Datafication and Dataprotection",
     "Distributed Architecture/01_Hadoop_and_MapReduce/Design_Patterns/Design_Patterns.canvas",
     "Senza nome.canvas"
   ]
