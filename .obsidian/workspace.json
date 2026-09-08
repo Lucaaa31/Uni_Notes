@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fundamentals of AI/Theory/01 - Intro Probability and Statistics.md",
+                "file": "Fundamentals of AI/Theory/09 - From RNNs to Transformers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Intro Probability and Statistics"
+              "title": "09 - From RNNs to Transformers"
             }
           }
         ]
@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.51103591918945,
-    "collapsed": true
+    "width": 270.51103591918945
   },
   "right": {
     "id": "101c0b53c52faf0d",
@@ -198,30 +197,68 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4f78b7798fea66ec",
+  "floating": {
+    "id": "b08a712e6a0d50b0",
+    "type": "floating",
+    "children": [
+      {
+        "id": "78c6ea2516c2975b",
+        "type": "window",
+        "children": [
+          {
+            "id": "8771e5898a89263b",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b189ae23ef8dc2de",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Fundamentals of AI/Previous_Questions.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "Previous_Questions"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 960,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "54569245795133b0",
   "lastOpenFiles": [
     "Fundamentals of AI/Previous_Questions.pdf",
-    "Fundamentals of AI/Theory/01 - Intro Probability and Statistics.md",
-    "Fundamentals of AI/Theory/03 - Learning Theory.md",
-    "Fundamentals of AI/Theory/07 - Logistic Regression & Calibration.md",
-    "Fundamentals of AI/Theory/13 - Semantic Segmentation.md",
-    "Fundamentals of AI/Theory/12 - Object Detection.md",
-    "Fundamentals of AI/Theory/11 - Federated Learning.md",
-    "Fundamentals of AI/Theory/Resources/11 - Federated Learning-1788717366085.webp",
-    "Fundamentals of AI/Theory/Resources/11 - Federated Learning-1788717341442.webp",
-    "Fundamentals of AI/Theory/Resources/11 - Federated Learning-1788717337846.webp",
-    "Fundamentals of AI/Theory/Resources/11 - Federated Learning-1788711843029.webp",
-    "Fundamentals of AI/Theory/14 - Reinforcement Learning.md",
-    "Fundamentals of AI/Theory/10 - Self-Supervised and Generative Models.md",
     "Fundamentals of AI/Theory/09 - From RNNs to Transformers.md",
     "Fundamentals of AI/Theory/08 - Convolutional Neural Networks.md",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788706511439.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788706508160.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788706315397.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788705417280.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788704605764.webp",
-    "Fundamentals of AI/Theory/Resources/09 - From RNNs to Transformers-1788703266002.webp",
+    "Fundamentals of AI/Theory/10 - Self-Supervised and Generative Models.md",
+    "Fundamentals of AI/Theory/03 - Learning Theory.md",
+    "Fundamentals of AI/Theory/05 - Supervised Learning.md",
     "Fundamentals of AI/Theory/04 - Unsupervised Learning.md",
+    "Fundamentals of AI/Theory/11 - Federated Learning.md",
+    "Fundamentals of AI/Theory/12 - Object Detection.md",
+    "Fundamentals of AI/Theory/14 - Reinforcement Learning.md",
+    "Fundamentals of AI/Theory/13 - Semantic Segmentation.md",
+    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788788012762.webp",
+    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788787901738.webp",
+    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788787559315.webp",
+    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788787265126.webp",
+    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788787187725.webp",
+    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788787078141.webp",
+    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788786935707.webp",
+    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788786479635.webp",
+    "Fundamentals of AI/Theory/01 - Intro Probability and Statistics.md",
+    "Fundamentals of AI/Theory/07 - Logistic Regression & Calibration.md",
+    "Fundamentals of AI/Theory/Resources/11 - Federated Learning-1788717366085.webp",
+    "Fundamentals of AI/Theory/Resources/11 - Federated Learning-1788717341442.webp",
     "Fundamentals of AI/Theory/09 - CNN Architectures.md",
     "Data Ethics & Data Protection/Data Ethics & Data Protection.md",
     "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/1 - Stochastic Simulation.md",
@@ -235,7 +272,6 @@
     "Data Ethics & Data Protection/4 - GDPR/4 - GDPR.md",
     "Data Ethics & Data Protection/4 - GDPR/6 - Data Protection Law.md",
     "Fundamentals of AI/Theory/06 - Neural Networks.md",
-    "Fundamentals of AI/Theory/05 - Supervised Learning.md",
     "Data Ethics & Data Protection/2 - Data Ethics Preview",
     "Fundamentals of AI/Theory/Resources",
     "Fundamentals of AI/Theory",

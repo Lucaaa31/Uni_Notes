@@ -1,3 +1,4 @@
+
 # Risk Theory
 
 Given a distribution $\mathcal{D}$ over space of labeled examples $\mathcal{X} \times \mathcal{Y}$, $\mathcal{D}$ is unknown and it represents the population we care about. Assume the labels are produced by a function $f : \mathcal{X} \rightarrow\mathcal{Y}$ and $Y = f(X)$.

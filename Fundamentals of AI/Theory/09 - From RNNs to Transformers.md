@@ -5,8 +5,8 @@ We cannot expect our model to handle multiple inputs together in a single proces
 - It would be an architecture highly independent from the input size
 
 Example of the case capitalization. 
-103
-Main Idea: To have an internal state that is updated as the input sequence is processed
+
+**Main Idea:** To have an internal state that is updated as the input sequence is processed
 $$h_t = f_W (h_{t-1}, x_t)$$
 where:
 - $h_t$ is the new state
