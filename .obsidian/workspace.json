@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6907e6724b48f50a",
+        "id": "239749202ae62215",
         "type": "tabs",
         "children": [
           {
-            "id": "4e25ca8380f2e356",
+            "id": "8455c2618705aef6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Information Theory for Data Science/Introduction/Entropy.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Entropy"
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -80,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 270.51103591918945,
-    "collapsed": true
+    "width": 270.51103591918945
   },
   "right": {
     "id": "101c0b53c52faf0d",
@@ -177,6 +172,27 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "700f197c4769cfb9",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {
+                "tabWorkspace": {
+                  "version": 1,
+                  "openTabs": [
+                    {
+                      "tabId": "tab-1793114109892-hpry4p8",
+                      "conversationId": "conv-1793114126057-rnn5gdv4y"
+                    }
+                  ],
+                  "activeTabId": "tab-1793114109892-hpry4p8"
+                }
+              },
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
         ],
         "currentTab": 5
@@ -195,11 +211,25 @@
       "command-palette:Apri riquadro comandi": false,
       "bases:Crea nuova Base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "realclaudian:Open Claudian": false
     }
   },
-  "active": "4e25ca8380f2e356",
+  "active": "549141998eab43d1",
   "lastOpenFiles": [
+    "2026-10-27.md",
+    "Innovation Management/00 - Types of IPR and Appropriability.md",
+    "Senza nome.base",
+    "Excalidraw/Drawing 2026-10-27 16.13.20.excalidraw.md",
+    "Excalidraw/Drawing 2026-10-27 16.11.42.excalidraw.md",
+    "Excalidraw",
+    "Innovation Management/Resources/00 - Types of IPR and Appropriability-1793113229164.webp",
+    "Innovation Management/Resources/00 - Types of IPR and Appropriability-1793112714254.webp",
+    "Innovation Management/Resources",
+    "Information Theory for Data Science/Introduction/Senza nome.md",
+    "Innovation Management",
+    "Information Theory for Data Science/Introduction/Entropy.md",
+    "2026-10-23.md",
     "Information Theory for Data Science/Introduction/Resources/Entropy-1790960193487.webp",
     "Information Theory for Data Science/Introduction/Resources/Entropy-1790959104804.webp",
     "Information Theory for Data Science/Introduction/Resources/Entropy-1790958533326.webp",
@@ -208,7 +238,6 @@
     "Information Theory for Data Science/Introduction/Resources/Entropy-1790773377317.webp",
     "Information Theory for Data Science/Introduction/Resources",
     "Information Theory for Data Science/Introduction/Introduction.md",
-    "Information Theory for Data Science/Introduction/Entropy.md",
     "Information Theory for Data Science/Information Theory for Data Science.md",
     "Data Ethics & Data Protection/Data Ethics & Data Protection.md",
     "Information Theory for Data Science/Introduction",
@@ -227,25 +256,13 @@
     "Fundamentals of AI/Theory/13 - Semantic Segmentation.md",
     "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788788012762.webp",
     "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788787901738.webp",
-    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788787559315.webp",
-    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788787265126.webp",
-    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788787187725.webp",
     "Fundamentals of AI/Theory/01 - Intro Probability and Statistics.md",
     "Fundamentals of AI/Theory/07 - Logistic Regression & Calibration.md",
     "Fundamentals of AI/Theory/09 - CNN Architectures.md",
     "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/1 - Stochastic Simulation.md",
     "Mathematical Methods for AI/Summary/2 - Linear Models/2 - Generalized Linear Models & Classification Frameworks.md",
-    "Distributed Architecture/01_Hadoop_and_MapReduce/02_Big_Data_Architectures/02_Big_Data_Architectures.md",
-    "Distributed Architecture/01_Hadoop_and_MapReduce/02_Big_Data_Architectures/01 - Hadoop and MapReduce.md",
-    "Distributed Architecture/01_Hadoop_and_MapReduce/01_Introduction/01_Introduction.md",
-    "Distributed Architecture/Distributed Architecture.md",
-    "Distributed Architecture/Temp.md",
     "Data Ethics & Data Protection/2 - Data Ethics Preview",
     "Fundamentals of AI/Theory/Resources",
-    "Fundamentals of AI/Theory",
-    "Fundamentals of AI/Q&A",
-    "Data Ethics & Data Protection/5 - Data Ethics/Resources",
-    "Data Ethics & Data Protection/5 - Data Ethics",
     "Distributed Architecture/01_Hadoop_and_MapReduce/Design_Patterns/Design_Patterns.canvas",
     "Senza nome.canvas"
   ]

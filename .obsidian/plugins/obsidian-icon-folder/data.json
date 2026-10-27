@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🛫",
       "ℹ",
       "📚",
       "📄",
-      "📁",
-      "🥩"
+      "📁"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -190,5 +190,6 @@
   "Fundamentals of AI/Theory/13 - Semantic Segmentation.md": "📄",
   "Fundamentals of AI/Theory/14 - Reinforcement Learning.md": "📄",
   "Information Theory for Data Science": "ℹ",
-  "Information Theory for Data Science/Introduction": "📁"
+  "Information Theory for Data Science/Introduction": "📁",
+  "Innovation Management": "🛫"
 }
