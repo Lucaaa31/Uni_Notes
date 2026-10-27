@@ -11,10 +11,14 @@
             "id": "8455c2618705aef6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Innovation Management/03 - Patent Intelligence and Landscapes.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "03 - Patent Intelligence and Landscapes"
             }
           }
         ]
@@ -210,21 +214,25 @@
       "templates:Inserisci modello": false,
       "command-palette:Apri riquadro comandi": false,
       "bases:Crea nuova Base": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "549141998eab43d1",
+  "active": "8455c2618705aef6",
   "lastOpenFiles": [
-    "2026-10-27.md",
+    "Innovation Management/01 - Patents - From Filing to Post-grant Challenges.md",
     "Innovation Management/00 - Types of IPR and Appropriability.md",
-    "Senza nome.base",
-    "Excalidraw/Drawing 2026-10-27 16.13.20.excalidraw.md",
-    "Excalidraw/Drawing 2026-10-27 16.11.42.excalidraw.md",
-    "Excalidraw",
+    "Innovation Management/Resources/00 - Types of IPR and Appropriability-1793116685764.webp",
+    "Innovation Management/Resources/00 - Types of IPR and Appropriability-1793116654955.webp",
     "Innovation Management/Resources/00 - Types of IPR and Appropriability-1793113229164.webp",
     "Innovation Management/Resources/00 - Types of IPR and Appropriability-1793112714254.webp",
+    "Excalidraw/Drawing 2026-10-27 16.13.20.excalidraw.md",
+    "Innovation Management/03 - Patent Intelligence and Landscapes.md",
+    "Innovation Management/02 - IPR as a Strategic Choice.md",
+    "2026-10-27.md",
+    "Senza nome.base",
+    "Excalidraw/Drawing 2026-10-27 16.11.42.excalidraw.md",
+    "Excalidraw",
     "Innovation Management/Resources",
     "Information Theory for Data Science/Introduction/Senza nome.md",
     "Innovation Management",
@@ -254,13 +262,7 @@
     "Fundamentals of AI/Theory/12 - Object Detection.md",
     "Fundamentals of AI/Theory/14 - Reinforcement Learning.md",
     "Fundamentals of AI/Theory/13 - Semantic Segmentation.md",
-    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788788012762.webp",
-    "Fundamentals of AI/Theory/Resources/13 - Semantic Segmentation-1788787901738.webp",
     "Fundamentals of AI/Theory/01 - Intro Probability and Statistics.md",
-    "Fundamentals of AI/Theory/07 - Logistic Regression & Calibration.md",
-    "Fundamentals of AI/Theory/09 - CNN Architectures.md",
-    "Mathematical Methods for AI/Gasparini/3 - Bayesian Statistics/1 - Stochastic Simulation.md",
-    "Mathematical Methods for AI/Summary/2 - Linear Models/2 - Generalized Linear Models & Classification Frameworks.md",
     "Data Ethics & Data Protection/2 - Data Ethics Preview",
     "Fundamentals of AI/Theory/Resources",
     "Distributed Architecture/01_Hadoop_and_MapReduce/Design_Patterns/Design_Patterns.canvas",
