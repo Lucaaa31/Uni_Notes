@@ -1,5 +1,7 @@
 {
   "cssTheme": "",
   "theme": "obsidian",
-  "enabledCssSnippets": []
+  "enabledCssSnippets": [
+    "claude-preview"
+  ]
 }

@@ -1,13 +1,10 @@
 # Why Intellectual Property Rights matter
-
 **Core problem:** if I spend time and money to invent something, how can I prevent others from copying the idea and benefiting from it?
 
 Firm value today is driven mostly by **intangible assets** (R&D, patents, software, data, know-how) rather than tangible ones (buildings, machines): a factory can be rebuilt, a name and know-how cannot.
 
 ### The Matrix
-
 Economists classify goods along two dimensions:
-
 - **Rivalry:** if I use it, you cannot use it (a coffee is rival, a theorem is not).
 - **Excludability:** the owner can stop those who do not pay from using it (Netflix is excludable, a theorem is not).
 ![[00 - Types of IPR and Appropriability-1793116654955.webp|469]]
@@ -24,7 +21,7 @@ Excludability is often a matter of **enforcement**, not a fixed property of the 
 ## The Appropriability Problem
 
 **Appropriability:** the ability of the innovator to reap the economic benefits of its investments in innovation by limiting imitation by rivals.
-![[00 - Types of IPR and Appropriability-1793116685764.webp]]
+![[00 - Types of IPR and Appropriability-1793116685764.webp|413]]
 **Free riders:** copy the innovation without bearing the cost of R&D → the innovator cannot capture the returns → private under-investment in R&D.
 
 ### Solutions
@@ -45,14 +42,12 @@ Excludability is often a matter of **enforcement**, not a fixed property of the 
 ## Informal methods
 
 Keep a competitive advantage over imitators **without direct legal protection**:
-
 - **Secrecy:** trade secrets, NDAs, non-compete clauses (Coca-Cola recipe)
 - **Complexity:** knowledge so specific and complex that it is hard to imitate or reverse-engineer
 - **Lead time:** first-mover advantages + continuous incremental innovation
 - **Complementary assets:** distribution, after-sales, marketing that imitators lack
 
 Usually **preferred** because less costly and less time-consuming, but:
-
 - **Sector matters:** in pharma and chemistry knowledge is codified → imitation is easy → informal methods protect less
 - **Size matters:** large firms use formal methods more (they can afford filing and renewal fees)
 
