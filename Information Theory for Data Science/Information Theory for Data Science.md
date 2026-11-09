@@ -1,4 +1,4 @@
 %% Begin Waypoint %%
-- **[[Introduction]]**
+- **[[Information Theory for Data Science/Introduction/Introduction]]**
 
 %% End Waypoint %%

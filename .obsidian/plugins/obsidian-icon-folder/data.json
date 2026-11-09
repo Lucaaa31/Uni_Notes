@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🖥",
       "🛫",
       "ℹ",
       "📚",
-      "📄",
-      "📁"
+      "📄"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -195,5 +195,9 @@
   "Innovation Management/00 - Types of IPR and Appropriability.md": "📄",
   "Innovation Management/01 - Patents - From Filing to Post-grant Challenges.md": "📄",
   "Innovation Management/02 - IPR as a Strategic Choice.md": "📄",
-  "Innovation Management/03 - Patent Intelligence and Landscapes.md": "📄"
+  "Innovation Management/03 - Patent Intelligence and Landscapes.md": "📄",
+  "Computer-aided Simulations lab": "🖥",
+  "Computer-aided Simulations lab/01 - Introduction.md": "📄",
+  "Computer-aided Simulations lab/02 - Discrete-Event Modeling.md": "📄",
+  "Computer-aided Simulations lab/03 - Structure of the Simulator.md": "📄"
 }
