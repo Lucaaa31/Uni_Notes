@@ -1,4 +1,7 @@
 %% Begin Waypoint %%
-- **[[Information Theory for Data Science/Introduction/Introduction]]**
+- **Resources**
+
+- [[01 - Information and Entropy]]
+- [[02 - Source coding and entropy of multiple variables]]
 
 %% End Waypoint %%

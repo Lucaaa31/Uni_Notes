@@ -11,10 +11,14 @@
             "id": "884187a4a5acc82d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Information Theory for Data Science/02 - Source coding and entropy of multiple variables.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "02 - Source coding and entropy of multiple variables"
             }
           }
         ]
@@ -192,16 +196,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "549141998eab43d1",
+  "active": "884187a4a5acc82d",
   "lastOpenFiles": [
-    "Computer-aided Simulations lab/03 - Structure of the Simulator.md",
+    "Information Theory for Data Science/00 - TEMP.md",
+    "Information Theory for Data Science/02 - Source coding and entropy of multiple variables.md",
+    "Information Theory for Data Science/Resources/02 - Source coding and entropy of multiple variables-1794326065748.webp",
+    "Information Theory for Data Science/Resources/02 - Source coding and entropy of multiple variables-1794246259017.webp",
+    "Information Theory for Data Science/Resources/02 - Source coding and entropy of multiple variables-1794245971394.webp",
+    "Information Theory for Data Science/Resources/02 - Source coding and entropy of multiple variables-1794245884990.webp",
+    "Information Theory for Data Science/Resources/02 - Source coding and entropy of multiple variables-1794245515513.webp",
+    "Information Theory for Data Science/Resources/Entropy-1790960193487.webp",
+    "Information Theory for Data Science/01 - Information and Entropy.md",
+    "Information Theory for Data Science/Introduction/Introduction.md",
+    "Information Theory for Data Science/Resources/Entropy-1790959104804.webp",
+    "Information Theory for Data Science/Resources/Entropy-1790781122764.webp",
+    "Information Theory for Data Science/Resources/Entropy-1790958533326.webp",
+    "Information Theory for Data Science/Resources/Entropy-1790777311213.webp",
+    "Information Theory for Data Science/Resources",
+    "Information Theory for Data Science/Introduction",
+    "Innovation Management/Innovation Management.md",
     "TMP.md",
+    "Computer-aided Simulations lab/03 - Structure of the Simulator.md",
     "Computer-aided Simulations lab/Senza nome",
     "Computer-aided Simulations lab/02 - Discrete-Event Modeling.md",
     "Computer-aided Simulations lab/01 - Introduction.md",
-    "Computer-aided Simulations lab/Resources/Discrete-Event Modeling-1793799873560.webp",
-    "Computer-aided Simulations lab/Resources/Discrete-Event Modeling-1793798594293.webp",
-    "Computer-aided Simulations lab/Resources/Introduction-1793728866947.webp",
     "Computer-aided Simulations lab/Resources",
     "Innovation Management/01 - Patents - From Filing to Post-grant Challenges.md",
     "Mathematical Methods for AI/Mathematical Methods for AI.md",
@@ -209,10 +227,6 @@
     "Fundamentals of AI/Q&A/01 - Intro AI-ML and probability.md",
     "Innovation Management/00 - Types of IPR and Appropriability.md",
     "Innovation Management/03 - Patent Intelligence and Landscapes.md",
-    "Innovation Management/Resources/00 - Types of IPR and Appropriability-1793116685764.webp",
-    "Innovation Management/Resources/00 - Types of IPR and Appropriability-1793116654955.webp",
-    "Innovation Management/Resources/00 - Types of IPR and Appropriability-1793113229164.webp",
-    "Innovation Management/Resources/00 - Types of IPR and Appropriability-1793112714254.webp",
     "Excalidraw/Drawing 2026-10-27 16.13.20.excalidraw.md",
     "Innovation Management/02 - IPR as a Strategic Choice.md",
     "2026-10-27.md",
@@ -222,23 +236,13 @@
     "Innovation Management/Resources",
     "Information Theory for Data Science/Introduction/Senza nome.md",
     "Innovation Management",
-    "Information Theory for Data Science/Introduction/Entropy.md",
     "2026-10-23.md",
-    "Information Theory for Data Science/Introduction/Resources/Entropy-1790960193487.webp",
-    "Information Theory for Data Science/Introduction/Resources/Entropy-1790959104804.webp",
-    "Information Theory for Data Science/Introduction/Resources/Entropy-1790958533326.webp",
-    "Information Theory for Data Science/Introduction/Resources",
-    "Information Theory for Data Science/Introduction/Introduction.md",
     "Information Theory for Data Science/Information Theory for Data Science.md",
     "Data Ethics & Data Protection/Data Ethics & Data Protection.md",
-    "Information Theory for Data Science/Introduction",
     "Information Theory for Data Science",
     "Fundamentals of AI/Theory/05 - Supervised Learning.md",
     "Fundamentals of AI/Theory/04 - Unsupervised Learning.md",
     "Fundamentals of AI/Theory/03 - Learning Theory.md",
-    "Fundamentals of AI/Theory/09 - From RNNs to Transformers.md",
-    "Fundamentals of AI/Theory/08 - Convolutional Neural Networks.md",
-    "Fundamentals of AI/Theory/10 - Self-Supervised and Generative Models.md",
     "Distributed Architecture/01_Hadoop_and_MapReduce/Design_Patterns/Design_Patterns.canvas",
     "Senza nome.canvas"
   ]

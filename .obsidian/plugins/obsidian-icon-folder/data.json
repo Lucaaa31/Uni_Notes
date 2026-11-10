@@ -190,7 +190,6 @@
   "Fundamentals of AI/Theory/13 - Semantic Segmentation.md": "📄",
   "Fundamentals of AI/Theory/14 - Reinforcement Learning.md": "📄",
   "Information Theory for Data Science": "ℹ",
-  "Information Theory for Data Science/Introduction": "📁",
   "Innovation Management": "🛫",
   "Innovation Management/00 - Types of IPR and Appropriability.md": "📄",
   "Innovation Management/01 - Patents - From Filing to Post-grant Challenges.md": "📄",
@@ -199,5 +198,7 @@
   "Computer-aided Simulations lab": "🖥",
   "Computer-aided Simulations lab/01 - Introduction.md": "📄",
   "Computer-aided Simulations lab/02 - Discrete-Event Modeling.md": "📄",
-  "Computer-aided Simulations lab/03 - Structure of the Simulator.md": "📄"
+  "Computer-aided Simulations lab/03 - Structure of the Simulator.md": "📄",
+  "Information Theory for Data Science/01 - Information and Entropy.md": "📄",
+  "Information Theory for Data Science/02 - Source coding and entropy of multiple variables.md": "📄"
 }
