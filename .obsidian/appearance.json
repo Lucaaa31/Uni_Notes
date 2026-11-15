@@ -3,5 +3,6 @@
   "theme": "obsidian",
   "enabledCssSnippets": [
     "claude-preview"
-  ]
+  ],
+  "showRibbon": true
 }
