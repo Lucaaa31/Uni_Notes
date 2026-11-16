@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer-aided Simulations lab/04 - Measuring Performance.md",
+                "file": "Computer-aided Simulations lab/08 - Best Practice.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04 - Measuring Performance"
+              "title": "08 - Best Practice"
             }
           }
         ]
@@ -198,24 +198,27 @@
   },
   "active": "9ba17b1002fcf375",
   "lastOpenFiles": [
-    "Computer-aided Simulations lab/Resources/04 - Measuring Performance-1794737842024.webp",
-    "Computer-aided Simulations lab/Resources/04 - Measuring Performance-1794735502397.webp",
-    "Computer-aided Simulations lab/Resources/04 - Measuring Performance-1794506457397.webp",
-    "Computer-aided Simulations lab/Resources/04 - Measuring Performance-1794506192278.webp",
-    "Computer-aided Simulations lab/03 - Structure of the Simulator.md",
+    "Computer-aided Simulations lab/07 - Random-Variable Generators.md",
+    "Computer-aided Simulations lab/08 - Best Practice.md",
+    "Computer-aided Simulations lab/Resources/07 - Random-Variable Generators-1794850831506.webp",
+    "Computer-aided Simulations lab/Resources/07 - Random-Variable Generators-1794850791197.webp",
+    "Computer-aided Simulations lab/Resources/07 - Random-Variable Generators-1794850688688.webp",
+    "Computer-aided Simulations lab/Resources/07 - Random-Variable Generators-1794850608388.webp",
+    "Computer-aided Simulations lab/Resources/07 - Random-Variable Generators-1794850513662.webp",
+    "Computer-aided Simulations lab/Resources/07 - Random-Variable Generators-1794850491332.webp",
+    "Computer-aided Simulations lab/Resources/07 - Random-Variable Generators-1794850454373.webp",
+    "Computer-aided Simulations lab/Resources/07 - Random-Variable Generators-1794850414260.webp",
+    "Computer-aided Simulations lab/Resources/07 - Random-Variable Generators-1794850393869.webp",
+    "Computer-aided Simulations lab/Resources/07 - Random-Variable Generators-1794850151993.webp",
+    "Computer-aided Simulations lab/06 - Random-Number Generation.md",
+    "Computer-aided Simulations lab/05 - Output Analysis.md",
     "Computer-aided Simulations lab/04 - Measuring Performance.md",
+    "Computer-aided Simulations lab/03 - Structure of the Simulator.md",
     "Mathematical Methods for AI/Mathematical Methods for AI.md",
     "Information Theory for Data Science/02 - Source coding and entropy of multiple variables.md",
     "Information Theory for Data Science/00 - TEMP.md",
-    "Information Theory for Data Science/Resources/02 - Source coding and entropy of multiple variables-1794326065748.webp",
-    "Information Theory for Data Science/Resources/02 - Source coding and entropy of multiple variables-1794246259017.webp",
-    "Information Theory for Data Science/Resources/02 - Source coding and entropy of multiple variables-1794245971394.webp",
-    "Information Theory for Data Science/Resources/02 - Source coding and entropy of multiple variables-1794245884990.webp",
-    "Information Theory for Data Science/Resources/02 - Source coding and entropy of multiple variables-1794245515513.webp",
-    "Information Theory for Data Science/Resources/Entropy-1790960193487.webp",
     "Information Theory for Data Science/01 - Information and Entropy.md",
     "Information Theory for Data Science/Introduction/Introduction.md",
-    "Information Theory for Data Science/Resources/Entropy-1790959104804.webp",
     "Information Theory for Data Science/Resources",
     "Information Theory for Data Science/Introduction",
     "Innovation Management/Innovation Management.md",
@@ -240,10 +243,7 @@
     "Innovation Management",
     "2026-10-23.md",
     "Information Theory for Data Science/Information Theory for Data Science.md",
-    "Data Ethics & Data Protection/Data Ethics & Data Protection.md",
     "Information Theory for Data Science",
-    "Fundamentals of AI/Theory/05 - Supervised Learning.md",
-    "Fundamentals of AI/Theory/04 - Unsupervised Learning.md",
     "Distributed Architecture/01_Hadoop_and_MapReduce/Design_Patterns/Design_Patterns.canvas",
     "Senza nome.canvas"
   ]
